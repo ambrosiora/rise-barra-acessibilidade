@@ -1,0 +1,449 @@
+/* estilos de impressão inicio*/
+@media print {
+
+    @page {
+      size: 210mm 297mm !important;
+      margin-top: 15mm !important;
+      margin-left: 20mm !important;
+      margin-bottom: 15mm !important;
+      margin-right: 20mm !important;
+    }
+  
+    body,
+    html,
+    section, .bg-red {
+      background-color: transparent !important;
+      background: transparent !important;
+    }
+  
+    p {
+      widows: 3;
+    }
+  
+    p {
+      orphans: 3;
+    }
+  
+    /*Utilizar em todos elementos que você não quer que ele se quebre no meio*/
+    *[data-nao-quebra="1"],
+    .step,
+    .podcast-box,
+    .time-line-lista,
+    .element-home,
+    .figura,
+    .img-ilustrativa,
+    .image-padding-inner,
+    .elemento-box-coluna-flex,
+    .colunas-img-content,
+    .elemento-multimedia,
+    .elemento-box-multimedia,
+    .slider-v1,
+    .blockquote,
+    .box-container,
+    .saida-codigo,
+    .codigo,
+    .colunas-img-content,
+    .figuras-imagem,
+    .div-reflita,
+    .figura,
+    .tabela,
+    ._2-colunas,
+    ._2-colunas-2,
+    .image-padding-inner {
+      page-break-inside: avoid !important;
+    }
+  
+    /*Utilizar em todos elementos que você quer que tenha uma quebra de pagina ANTES dele*/
+    *[data-quebra="1"],
+    .referencias-bibliograficas,
+    .section-atividades,
+    .titulo-topico,
+    .section-autor,
+    .section-topicos,
+    .section-topicos,
+    .container-titulo {
+      display: block !important;
+      page-break-before: always !important;
+    }
+  
+    /*quando quero que algo não apareça*/
+    *[data-hide="1"],
+    .podcast-box,
+    .logo-unipar-intro,
+    .video-aula-div,
+    .bg-exercicios,
+    .divisor-whopper,
+    .placeholder-image,
+    .video-aula-div,
+    .element-home,
+    .orbitas-titulo,
+    .header-images-column,
+    .tabs-container,
+    .audiobook-container,
+    .audiobook,
+    .image-padding-inner,
+    .absolute-bg,
+    .step-progress,
+    .oi-content,
+    .scroll-lottie,
+    .section-audiobook,
+    .menu,
+    .videoaula-embed,
+    .btn-link.button,
+    .w-webflow-badge,
+    .img-section,
+    .access-button,
+    .divisor,
+    .video.w-video.w-embed,
+    .section-footer,
+    .icone-home-01,
+    .icone-home-02 {
+      display: none !important;
+    }
+  
+    /* texto de acessibilidade*/
+    .texto-acessibilidade {
+      position: static;
+      left: 0px;
+      top: 0px;
+      width: auto;
+      height: auto;
+      overflow: visible;
+    }
+  
+    /* fim texto de acessibilidade*/
+  
+  
+    /*zerando espaços */
+    .section-conteudo,
+    .section-verde,
+    .section-conteudo.cor-bg-amarelo,
+    .section-verde.bg-agora,
+    .divisor,
+    .section-conteudo.cor-bg-verde,
+    .section-conteudo.cor-bg-verde.remove-space {
+      padding: 0px !important;
+      margin: 0px !important;
+    }
+  
+    /*remover background do agora é com você*/
+    .elemento-multimedia.box-destaque {
+      background-image: none !important;
+      background: none !important;
+    }
+  
+    /*capa*/
+    .section-capa {
+      background-color: rgba(15, 13, 92, .65) !important;
+    }
+  
+    /* background das seções*/
+    .section-conteudo,
+    .div-perguntas,
+    .texto-acessibilidade,
+    .section-conteudo.cor-bg-amarelo,
+    .section-verde,
+    .section-conteudo.cor-bg-verde,
+    .section-conteudo.cor-bg-verde.remove-space,
+    .section-conteudo.cor-bg-amarelo {
+      background-color: transparent !important;
+      background-image: none !important;
+      padding: 0px !important;
+    }
+  
+    /*configuração capa*/
+    .BG-video-home {
+      max-width: 820px !important;
+      height: 970px !important;
+      margin-left: 40px !important;
+  
+    }
+  
+    /*fim configuração capa*/
+  
+  
+    /* configuração de texto */
+    blockquote {
+      font-size: 0.9em !important;
+      text-align: justify !important;
+    }
+  
+    p,
+    ul,
+    ol,
+    .bullets-abc {
+      font-size: 0.95em !important;
+      text-align: justify !important;
+      line-height: 1.4em !important;
+    }
+  
+    .secao-pdf {
+      display: block !important;
+    }
+  
+    h1 {
+      font-size: 1.7em !important;
+  
+    }
+  
+    .titulo-divs {
+      font-size: 0.7em !important;
+    }
+  
+    h2 {
+      font-size: 1.4em !important;
+    }
+  
+    h3 {
+      font-size: 1.2em !important;
+    }
+  
+    h4 {
+      font-size: 1em !important;
+    }
+  
+    h5 {
+      font-size: 1em !important;
+    }
+  
+    /* fim da configuração de texto*/
+  
+    /*trocar cor dos texto das sections verdes*/
+    .titulo-divs.text-white,
+    .titulo-divs,
+    .section-verde,
+    .section-conteudo.cor-bg-verde {
+      color: #070d22 !important;
+    }
+  
+    .heading-menor.text-color-white {
+      -webkit-text-stroke-color: rgba(15, 13, 92, .9) !important;
+      font-size: 0.6em !important;
+    }
+  
+    /*trocar cor do título da capa*/
+    .titulo-capa-principal .titulo-divs.text-white {
+      color: #fff !important;
+      font-size: 1em !important;
+    }
+  
+    .titulo-capa-principal .heading-menor.text-color-white {
+      -webkit-text-stroke-color: rgba(255, 255, 255, .9) !important;
+      font-size: 0.8em !important;
+    }
+  
+    /*remover espaço do box multimidia branco*/
+    .elemento-multimedia.box-destaque.off-bg,
+    .elemento-multimedia.box-destaque {
+      padding: 0px !important;
+    }
+  
+    /* remover box shadow*/
+    .elemento-multimedia.box-destaque {
+      box-shadow: none !important;
+    }
+  
+    /* gráficos de background */
+    * {
+      -webkit-print-color-adjust: exact !important;
+      /* Chrome, Safari */
+      color-adjust: exact !important;
+      /*Firefox*/
+    }
+  
+  
+    /*icones menores 2c-icones*/
+    .imagem-icone-2-colunas {
+      width: 80px !important;
+      height: 80px !important;
+    }
+  
+    /*2c icones*/
+    .step-number {
+      width: 10% !important;
+      border: none !important;
+      box-shadow: none !important;
+      font-size: 1.3em !important;
+    }
+  
+    /*configurações dos boxes*/
+    .box-container {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .titulo-box {
+      font-size: 1.1em !important;
+    }
+  
+    .elemento-multimedia {
+      padding: 70px 25px 20px !important;
+    }
+  
+    /*fim configuraçõe box*/
+  
+  
+    /*configurações 2c imagem*/
+    .card-box-left {
+      width: 40% !important;
+    }
+  
+    .card-box-text {
+      padding: 20px 20px 20px 40px !important;
+      min-height: 300px !important;
+    }
+  
+    /*fim configuraçõe 2 imagem*/
+  
+    /* configurações do elemento timeline*/
+    .w-layout-grid {
+      display: block !important;
+  
+    }
+  
+    .placeholder-image {
+      margin-bottom: 20px;
+      display: block !important;
+    }
+  
+    /* fim das configurações do elemento timeline*/
+  
+    th,
+    td {
+      padding: 7px !important;
+      font-size: 12px !important;
+    }
+  
+    .process-grid {
+      position: static !important;
+      display: block !important;
+      margin-top: 2em !important;
+      margin-bottom: 2em !important;
+      padding-top: 20px !important;
+      padding-bottom: 20px !important;
+      grid-column-gap: 20px !important;
+      grid-row-gap: 72px !important;
+      grid-template-columns: 0.75fr 1fr !important;
+      grid-template-rows: auto !important;
+    }
+  
+    .process-grid:medium {
+      grid-template-columns: 1.2fr !important;
+    }
+  
+    .placeholder-image {
+      position: sticky !important;
+      top: 100px !important;
+    }
+  
+    .placeholder-image.filter {}
+  
+    .placeholder-image.filter.step-mobile {
+      position: static !important;
+      width: 100% !important;
+      margin-bottom: 2rem !important;
+    }
+  
+    .placeholder-image.filter.step-mobile:medium {
+      opacity: 0.19 !important;
+    }
+  
+    .placeholder-image.filter.step-mobile:small {
+      background-image: linear-gradient(to bottom, hsla(0, 0.00%, 100.00%, 0.80), hsla(0, 0.00%, 100.00%, 0.80)) !important;
+    }
+  
+    .Image:local-styles {
+      justify-self: start !important;
+      align-self: start !important;
+    }
+  
+    .titulo-topico {
+      min-height: 0px !important;
+      ;
+    }
+  
+    .exercico-whopper {
+      color: black;
+    }
+
+    .home {
+        height: 100vh;
+        max-height: 100vh;
+      }
+      
+    .exercicio-whopper {
+        color: black;
+      }
+    
+    .time-line-lista.siga-regra {
+        border-top: 0px !important;
+    }
+    
+    /* Apresentação*/
+
+    .grid-apresentacao {
+      display: block !important;
+      filter: invert(1); 
+
+    }
+
+    /* Espaçamentos*/
+    .padding-inner {
+      position: relative;
+      z-index: 10;
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+    
+    .padding-inner:small {
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+    
+    .padding-inner:tiny {
+      padding-right: 1vw;
+      padding-left: 1vw;
+    }
+
+    .grid-apresentacao {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .container-topicos {
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+    }
+    
+    .div-titulo {
+      margin-left: 0px;
+    }
+  
+    .titulo-topico {
+      margin-bottom: 50px;
+    }
+
+    .exercicio-whopper {
+      width: 100%;
+    }
+    
+    .fatos-e-dados {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .section-atividades {
+      min-height: 100px;
+    }
+
+
+    /* Cor texto */
+
+    .referencias-bibliograficas {
+      filter: invert(1);
+    }
+  
+    /* tag de fechamento media print*/
+  }

@@ -1,0 +1,116 @@
+/* estilos de impressão inicio*/
+@media print{
+
+    @page{
+        size: 210mm 297mm !important;
+        margin-top: 15mm !important;
+        margin-left: 20mm !important;
+        margin-bottom: 15mm !important;
+        margin-right: 20mm !important;
+    }
+
+
+    /* texto de acessibilidade*/
+    .texto-acessibilidade {
+        position:static;
+        left:0px;
+        top:0px;
+        width:auto;
+        height:auto;
+        overflow:visible;
+      }
+      /* fim texto de acessibilidade*/
+
+    p {
+        widows: 3;
+    }
+
+    p {
+        orphans: 3;
+    }
+
+    body, html, section, .section.cor-bg1, .section.cor-bg2, .section.mapa, .section.a-definir, .section.encerramento {
+        background-color: transparent !important;
+        background: transparent !important;
+    }
+
+    /*Utilizar em todos elementos que você não quer que ele se quebre no meio*/
+    *[data-nao-quebra="1"], blockquote, .elemento-multimedia {
+        page-break-inside: avoid !important;
+    }
+
+    /*Utilizar em todos elementos que você quer que tenha uma quebra de pagina ANTES dele*/
+    *[data-quebra="1"], .navbar-container, .section.encerramento, .apresentacao-container{
+        display: block !important;
+        page-break-before: always !important;
+    }
+
+    /*quando quero que algo não apareça*/
+    *[data-hide="1"], .circ-number-content, .separacao-jornada.down, .texto-destaque, .span-marcador.box-dark, .span-marcador.box-dark.cor-2, .section-separacao._5, .oi-content, .audiobook, .referencias-popup, .section-separacao, .section-separacao.apresentacao, .elemento-multimedia.cor-3g.podcast, .videoaula-embed {
+        display:none !important;
+    }
+
+    /*ajuste do elemento storytelling*/
+    .acordeon-conteudo-2{
+        height: initial !important;
+    }
+    .content-accordeon-2.boxes{
+        background-color: #d9eef8 !important;
+    }
+
+    /*capa*/
+    .section-capa{
+        max-width: 820px !important;
+        height: 970px !important;
+        margin-left: 40px !important;
+        display: block !important;
+        background-size: auto  !important;
+    }
+
+
+    /*apresentação*/
+    .apresentacao-container{
+        background-image: none !important;
+        display: block !important;
+        text-align-last: center !important;
+        background-size: auto !important;
+    }
+
+    /*titulos principais*/
+    .titulo-section-container, .titulo-section-container.cor-2{
+        min-height: 80px !important;
+    }
+
+    /*paddings */
+
+    .section{
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+
+    }
+
+    /*progress grid*/
+    .process-grid{
+        display: block !important;
+    }
+
+    .placeholder-image{
+        margin-bottom: 15px !important;
+    }
+
+    .titulo-topico{
+        margin-left: 10px !important;
+        padding-bottom: 15px !important;
+        font-size: 1.5em !important;
+        margin: 0px !important;
+    }
+
+    h3{
+        padding: 10px 10px !important;
+        font-size: 1.1em !important;
+    }
+
+    .section.encerramento{
+        display: block !important;
+    }
+}

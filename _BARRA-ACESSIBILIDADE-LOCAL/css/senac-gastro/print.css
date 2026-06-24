@@ -1,0 +1,53 @@
+/* estilos de impressão inicio*/
+@media print {
+  @page {
+    size: 210mm 297mm !important;
+    margin-top: 15mm !important;
+    margin-left: 20mm !important;
+    margin-bottom: 15mm !important;
+    margin-right: 20mm !important;
+  }
+  body,
+  html,
+  section, .section-home-menu, .padding-global, .menu-content-wrapper, .menu-background{
+    background-color: transparent !important;
+    background: transparent !important;
+  }
+  
+  p {
+    widows: 3;
+  }
+  
+  p {
+    orphans: 3;
+  }
+  /*Utilizar em todos elementos que você não quer que ele se quebre no meio*/
+  *[data-nao-quebra="1"], ._2-colunas-acessibilidade, .step, .box, .elemento-podcast, .box-reflita, .box-container-dica-chef,  .colunas-img-content, .imagem-inicial, .imagem-legenda
+   {
+    page-break-inside: avoid !important;
+  }
+  
+  /*Utilizar em todos elementos que você quer que tenha uma quebra de pagina ANTES dele*/
+  *[data-quebra="1"]{
+    display: block !important;
+    page-break-before: always !important;
+  }
+  
+  /*quando quero que algo não apareça*/
+  *[data-hide="1"], .footer, .section-pricing-content, .shape-divider, .navbar, .oi-content, ._3d-grid, .spacer-xlarge 
+  {
+    display: none !important;
+  }
+  /* texto de acessibilidade*/
+  .texto-acessibilidade {
+    position: static;
+    left: 0px;
+    top: 0px;
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+  
+  /* fim texto de acessibilidade*/
+    /* tag de fechamento media print*/
+  }

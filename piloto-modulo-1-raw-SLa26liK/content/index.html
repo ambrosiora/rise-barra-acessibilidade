@@ -20,8 +20,28 @@ sandbox sha: 42753f3391b109fa3788c525c22880445ab48325
   </head>
   <body>
     <div id="app"></div>
-    
+
       <script src="lib/rise/0e7c42eb.js"></script>
-    
+
+    <!-- B42 Barra de Acessibilidade (PoC) - mesmo import do cliente unipar (aula-01.html).
+         Caminho ../../ porque este index.html fica dentro de content/, um nivel abaixo
+         da aula-01.html. O script descobre a propria pasta via document.currentScript,
+         entao imagens/css/vendors carregam relativos a _BARRA-ACESSIBILIDADE-LOCAL/. -->
+
+    <!-- Adaptacao para SPA (Rise): a barra, ao iniciar no DOMContentLoaded, le o
+         primeiro <h1> da pagina (b42-accessibility.min.js:284, $getLocation) e quebra
+         se nao existir. No Webflow o <h1> ja vem no HTML estatico; no Rise o conteudo
+         - e o <h1> - so e renderizado pelo React depois. Garantimos um <h1> de
+         fallback oculto antes de carregar a barra. Nao alteramos o bundle minificado. -->
+    <script>
+      if (!document.querySelector('h1')) {
+        var b42H1Fallback = document.createElement('h1');
+        b42H1Fallback.textContent = document.title || 'Rise';
+        b42H1Fallback.style.display = 'none';
+        document.body.appendChild(b42H1Fallback);
+      }
+    </script>
+    <script src="../../_BARRA-ACESSIBILIDADE-LOCAL/b42-accessibility.min.js" data-mode="rise" data-remove-pdf="true" data-print-css="mundo-aprendiz" data-dark-css="mundo-aprendiz" data-contrast-css="mundo-aprendiz"></script>
+
   </body>
 </html>

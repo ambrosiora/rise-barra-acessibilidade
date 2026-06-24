@@ -1,0 +1,161 @@
+/* esconder itens*/
+.w-webflow-badge {
+  display: none !important;
+  }
+
+@media print{
+  
+@page{
+    size: 210mm 297mm !important;
+    margin: 15mm 20mm 15mm 20mm !important;
+}
+
+/*aplicar a transparencia nos backgrounds*/
+body, html, section, .introducao, .consideracoes-content-texto-2 {
+	background-color: transparent !important;
+	background: transparent !important;
+}
+      
+p {
+    widows: 3;
+}
+
+p {
+    orphans: 3;
+}
+
+/*Utilizar em todos elementos que você não quer que ele se quebre no meio*/
+*[data-nao-quebra="1"], blockquote, .box, .colunas-img-content, .figuras-imagem, .figura-ilustracao, .tabela, ._2-colunas {
+    page-break-inside: avoid !important;
+}
+
+/*Utilizar em todos elementos que você quer que tenha uma quebra de pagina ANTES dele*/
+*[data-quebra="1"], .section-container-titulo, .container-titulo, .consideracoes-finais-container {
+    display: block;
+    page-break-before: always !important;
+}
+
+/*quando quero que algo não apareça*/
+*[data-hide="1"], .image-23, .video-embed, .box-destaque-texto, .navbar-container, .rodape, .texto-destaque{
+    display:none !important;
+}
+
+
+/* texto de acessibilidade*/
+.texto-acessibilidade {
+  position:static;
+  left:0px;
+  top:0px;
+  width:auto;
+  height:auto;
+  overflow:visible;
+}
+/* fim texto de acessibilidade*/
+
+
+/* esconder itens da impressão */
+.navbar-container, .container-instrucoes-navegacao, .imagem-titulo, .oi-content, .b42-container-btn-accessibility.b42-bottom-right {
+  display: none !important;
+}
+
+  
+/* background das seções*/
+.section-conteudo{
+  background-color: transparent !important;
+  background-image: none !important;
+  padding: 0px !important;
+}
+  
+
+/*configuração do título*/
+.titulo-conteudo{
+  margin:0px 20px 0px 20px !important;
+}
+.container-titulo {
+  min-height:150px !important;
+  padding-right:0px !important;
+  padding-left:0px !important;
+}
+.section-container-titulo{
+  margin-left:0px !important;
+  margin-right: 0px !important;
+}
+/*fim da configuração do título*/
+
+/*configuração objetivos de aprendizagem*/
+
+
+/*fim objetivos de aprendizagem*/
+
+
+
+  
+/*configuração capa*/
+
+/*fim configuração capa*/
+
+
+/* configuração de texto */
+p, ol, ul, blockquote{
+  text-align: justify !important;
+}
+/* fim da configuração de texto*/
+
+
+/* configuração itens em duas colunas*/
+.duas-colunas-conteudo-imagem{
+  display: contents !important;
+}
+
+.duas-colunas-conteudo-imagem>h1,h2,h3,h4,h5,h6,p,blockquote,ul, ol{
+  padding-left: 10px !important;
+  padding-right:  10px !important;
+}
+
+/* fim da configuração itens em duas colunas*/
+
+
+/* configuração view QR-CODE*/
+.qrcode{
+  	width:85% !important;
+}
+
+.qrcode-helper{
+  	width:38% !important;
+}
+/* fim configuração view QR-CODE*/
+
+
+/*titulo */
+.container-titulo{
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-conteudo{
+  padding-left: 20vw;
+}
+
+
+/*considerações finais*/
+
+.consideracoes-content-texto-2{
+  display: contents !important;
+}
+
+.consideracoes-finais-container{
+  background-image: none !important;
+}
+
+
+/*timeline números*/
+.container-img-timeline-2{
+  width: 15%;
+}
+
+/* tag de fechamento media print*/
+  }

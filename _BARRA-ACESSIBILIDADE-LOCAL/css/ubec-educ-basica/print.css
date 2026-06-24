@@ -1,0 +1,201 @@
+  /* estilos de impressão inicio*/
+  @media print{
+  
+    @page{
+        size: 210mm 297mm !important;
+        margin-top: 15mm !important;
+        margin-left: 20mm !important;
+        margin-bottom: 15mm !important;
+        margin-right: 20mm !important;
+    }
+  
+    body, html, section {
+        background-color: transparent !important;
+        background: transparent !important;
+        /* display: block !important; */
+        margin: 0px !important;
+        padding: 0px !important;    
+        font-size: 25px !important;
+    }
+          
+    p {
+        widows: 3;
+    }
+  
+    p {
+        orphans: 3;
+    }
+  
+    /*Utilizar em todos elementos que você não quer que ele se quebre no meio*/
+    *[data-nao-quebra="1"], blockquote, .box, .saida-codigo, .codigo, .colunas-img-content, .figuras-imagem, .figura-ilustracao, .tabela, ._2-colunas, ._2-colunas-2 {
+        page-break-inside: avoid !important;
+    }
+  
+    /*Utilizar em todos elementos que você quer que tenha uma quebra de pagina ANTES dele*/
+    *[data-quebra="1"], .heading-wrapper {
+        display: block !important;
+        page-break-before: always !important;
+    }
+  
+    /*quando quero que algo não apareça*/
+    *[data-hide="1"], .video-aula, .btn-link.button, .image-intercection.topo, .image-intercection.gambi, .btn-iniciar.btn-hero.w-button, .section-conteudo.titulo-principal, .audiobook, .divisor.d-foto, .w-webflow-badge, .access-button, .video.w-video.w-embed, .divisor, .container-encerramento, .aviso-legal, .rodape, .navbar.w-nav, .sectionavancar, .menu {
+        display:none !important;
+    }
+  
+    /* texto de acessibilidade*/
+    .texto-acessibilidade {
+      position:static;
+      left:0px;
+      top:0px;
+      width:auto;
+      height:auto;
+      overflow:visible;
+      background-color: transparent !important;
+    }
+    /* fim texto de acessibilidade*/
+  
+  
+    /* esconder itens da impressão */
+    .access-button, .audiobook, .section-encerramento, .div-video, .videoaula-embed, .oi-content, .elemento-pattern, .div-imagem-ilustrativa {
+      display: none !important;
+    }
+  
+      
+    /* background das seções*/
+    .section-conteudo, .cor-2, .referencias {
+      background-color: transparent !important;
+      background-image: none !important;
+      padding: 0px !important;
+    }
+      
+    /*configuração capa*/
+    .capa-container{
+        /* max-width: 860px !important; */
+        background-color: transparent !important;
+        min-height: 1090px !important;
+        position: static !important;
+        display: block !important;
+    }
+  
+    .imagem-capa-layer{
+      position: absolute !important;
+      left: auto !important;
+      top: auto !important;
+      right: 2% !important;
+      bottom: 0% !important;
+      z-index: 200 !important;
+    }
+  
+    .icones-capa{
+      position: static !important;
+    }
+  
+    .div-titulo{
+      margin-left: 0px !important;
+      max-width:fit-content !important;
+    }
+    .div-capa-imagem{
+      display: list-item;
+      position: relative !important;
+      }
+  
+      .image-symbol{
+        position: sticky !important;
+      }
+      .titulo-capa-container{
+        margin-left: 10px !important;
+        margin-top: 20% !important;
+      }
+    .titulo-capa{
+         font-size: 1.8em !important;
+    }
+    /*fim configuração capa*/
+  
+  
+    /* configuração de texto */
+    blockquote {
+        margin-top: 25px !important;
+        margin-bottom: 25px !important;
+        padding:20px 20px 20px 20px !important;
+        font-size: 0.9em !important;
+        text-align:justify !important;
+    }
+  
+    p, ul, ol, .bullets-abc {
+        font-size: 0.95em !important;
+        text-align:justify !important;
+        line-height: 1.4em !important;
+    }
+  
+  .referencias-texto p {
+        color: #333333 !important;
+    }
+  
+  .secao-pdf{
+    display: block !important;
+  }
+  
+    h1 {
+        font-size: 1.8em !important;
+        margin-top: 30px !important;
+    }
+  
+    .titulo-texto {
+        font-size: 1.8em !important;
+    }
+  
+    h2 {
+        font-size: 1.5em !important;
+    }
+  
+    h3 {
+        font-size: 1.3em !important;
+    }
+  
+    h4 {
+        font-size: 1.1em !important;
+    }
+     h5 {
+        font-size: 1.1em !important;
+    }
+    .txt-coringa.w-richtext, .txt-destaque.w-richtext, .txt-atencao.w-richtext, .txt-saiba-mais.w-richtext {
+      margin-right: 40px;
+  } 
+    .titulo-box {
+        font-size: 1.4em !important;
+    }
+    /* fim da configuração de texto*/
+  
+  
+    /*configuração boxes*/
+    .box {
+        box-shadow: none !important;
+    }
+  
+    .box-icon.atencao{
+      max-height: 300px !important;
+    }
+    .txt-atencao{
+      margin-right: 20px !important;
+    }
+  
+    /* fim configuração dos boxes */
+  
+    /* gráficos de background */
+    * {
+        -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+        color-adjust: exact !important;                 /*Firefox*/
+    }
+  
+  
+    th, td {
+        padding: 7px !important;
+        font-size: 12px !important;
+    }
+    /* QR code helper */
+    .col-qr.qrcode-helper{
+      filter: invert(1);
+    }
+    
+    /* tag de fechamento media print*/
+  }

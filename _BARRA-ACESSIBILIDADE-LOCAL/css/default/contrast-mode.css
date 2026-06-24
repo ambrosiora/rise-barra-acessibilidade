@@ -1,0 +1,211 @@
+body {
+	background-color: #000 !important;
+	color: #EBDE17 !important;
+}
+
+blockquote {
+	border-top: 2px solid #EBDE17 !important;
+	border-bottom: 2px solid #EBDE17 !important;
+	background-image: url('../../images/icon-aspas-contraste.svg') !important;
+}
+
+h1,
+h2,
+h3,
+p:not(.b42-addon-title):not(.b42-addon-subtitle),
+h4,
+h5,
+h6,
+blockquote,
+.slider-numeros,
+.accordeon-titulo,
+.popup-titulo1,
+.text-block-2,
+.bem-vindo,
+.legenda-slider,
+.side-video-info,
+.texto-video-aula,
+.prof-nome,
+.texto-video-aula .w-richtext,
+ul,
+ol {
+	color: #EBDE17;
+}
+
+* table tr:nth-child(even) {
+    background-color: #252525 !important;
+}
+
+* table tr:nth-child(odd) {
+   background-color: #202020 !important;
+}
+
+table th {
+   background-color: #101010 !important;
+   color:#EBDE17 !important;
+}
+
+table td{
+	color:#EBDE17;
+}
+
+.conteudo,
+.section-conteudo,
+.rodape {
+	background-color: transparent !important; 
+	background-image: none !important;
+}
+
+.slider-content-2.slide-texto,
+.slider-content-2.slide-numero-texto,
+.acordeon-conteudo-2,
+.tab-contents,
+.acordeon-conteudo,
+.slider-2,
+.slider-numeros,
+.card-home,
+.section-encerramento,
+.card-box-text,
+.curador-box-popup,
+.audiobook,
+.popup-container,
+._2-colunas {
+	background-color: rgba(255,
+	255,
+	255,
+	0.08) !important;
+	background-image: none !important;
+}
+
+.div-titulo {
+	background-color: rgba(45,
+	45,
+	45,
+	0.90) !important;
+}
+
+.service-card,
+.categoria,
+._2-colunas-icone-bg {
+	background-color: #000 !important;
+}
+
+.box {
+	border-left-color:#EBDE17 !important;
+	background-color: #131313 !important;
+}
+
+._2-colunas.w-row {
+	border-left-color:#EBDE17 !important;
+	border-right-color:#EBDE17 !important;
+}
+
+.button.w-button,
+.button-popup,
+.link {
+	color: #EBDE17 !important;
+	border-color:#EBDE17 !important;
+}
+
+.legenda {
+	border-top: 1px dotted #EBDE17 !important;
+}
+
+.acordeoni-item {
+	background-color: #131313 !important;
+	color: #EBDE17 !important;
+}
+
+.plus-wrap {
+	background-color: #202020 !important;
+}
+
+.plus-l-2,
+.plus---2 {
+	background-color: #EBDE17 !important;
+}
+
+.tab-contents.w-tab-content {
+	border-left-color:#EBDE17 !important;
+	border-bottom-color:#EBDE17 !important;
+}
+
+.tab-link-tabs.w-inline-block.w-tab-link.w--current,
+.tab-video-aula.w-inline-block.w-tab-link.w--current {
+	background-color: #EBDE17 !important;
+	color: #000 !important;
+}
+
+.tab-link-tabs.w-inline-block.w-tab-link {
+	color: #EBDE17 !important;
+}
+
+.card_frente {
+	background-color: #202020 !important;
+	background-image: linear-gradient(132deg,
+	#333,
+	#202020) !important;
+}
+
+.card_atras {
+	background-color: #131313 !important;
+}
+
+.seta-2,
+.seta-1 {
+	background-image: linear-gradient(132deg,
+	#EBDE17,
+	#EBDE20) !important;
+	color: #000  !important;
+}
+
+.div-figura-content.inverter-color {
+	filter: invert(100%);
+}
+
+.inverter-cor {
+ -webkit-filter: invert(1) !important;
+  filter: invert(1) !important;
+}
+
+.image-intercection {
+	display: none;
+}
+
+.imagem-capa-bg {
+	filter: grayscale(100%);
+}
+
+.topo-box .icon {
+	background-color: #131313;
+}
+
+.span-marcador,
+.span-marcador.text-dark {
+	color: #000
+}
+
+#b42-anotation-barra-title {
+    color: #000;
+}
+
+
+.b42-anotation-conteudo {
+    color: #000;
+}
+
+#b42-anotation-text {
+	color: #000;
+}
+
+#b42-line-break {
+	color: #000;
+}
+
+span.grifa {
+    color: #000;
+}
+
+.b42-collapse-accessibility-tool {
+    color: #000 !important;
+}

@@ -1,0 +1,192 @@
+@media print{
+
+  @page{
+    size: 210mm 297mm !important;
+    margin-top: 15mm !important;
+    margin-left: 18mm !important;
+    margin-bottom: 15mm !important;
+    margin-right: 18mm !important;
+  }
+
+  body, html, section {
+    background-color: transparent !important;
+    background: transparent !important;
+  }
+        
+  p {
+    widows: 3;
+  }
+
+  p {
+    orphans: 3;
+  }
+
+  /*Utilizar em todos elementos que você não quer que ele se quebre no meio*/
+  *[data-nao-quebra="1"], blockquote, .olho-container, .texto-acessibilidade, .box-download, .box-destaque-texto, .container-2c-lateral, .container-titulo, .box-natrilha, .box-m1, .box-m2, .box-m3, .colunas-img-content, .figuras-imagem, .figura-ilustracao, .tabela, ._2-colunas, .objetivos-container, .final-modulo, ._2-colunas-imagem{
+    page-break-inside: avoid !important;
+  }
+
+  /*Utilizar em todos elementos que você quer que tenha uma quebra de pagina ANTES dele*/
+  *[data-quebra="1"], .objetivos-de-aprendizagem, .objetivos-container, .container-titulo, .section-container-titulo, .final-modulo, .consideracoes-container, .referencias-content, .container-titulo-disciplina{
+    display: block;
+    page-break-before: always !important;
+  }
+
+  /*quando quero que algo não apareça*/
+  *[data-hide="1"], .container-foto-capa{
+    display:none !important;
+  }
+
+  .video-embed{
+    margin-top: 0px !important; 
+    margin-bottom: 0px !important; 
+    display: none !important;
+  }
+
+  /* texto de acessibilidade*/
+  .texto-acessibilidade {
+    position:static;
+    left:0px;
+    top:0px;
+    width:auto;
+    height:auto;
+    overflow:visible;
+  }
+  /* fim texto de acessibilidade*/
+  .referencias-content{
+  padding-left: 0vw !important;;
+  }
+  
+  .div-objetivos-content{
+    max-width: 90% !important;
+  }
+  
+  .div-block{
+    padding: 20px !important;
+    align-items: center !important;
+  }
+
+  /* esconder itens da impressão */
+  .navbar-container, .container-instrucoes-navegacao, .imagem-titulo, .oi-content, .b42-container-btn-accessibility.b42-bottom-right, .consideracoes-content-imagem, .rodape{
+    display: none !important;
+  }
+
+    
+  /* configuração das seções*/
+  .section-conteudo, .section-conteudo.modelo-1, .section-conteudo.modelo-2, .section-referencias, .consideracoes-container, .consideracoes-content-texto{
+    background-color: transparent !important;
+    background-image: none !important;
+    padding: 0px !important;
+    min-height: 0px !important;
+  }
+  /*fim das seções*/
+
+  /* considerações finais */
+  .consideracoes-content-texto{
+    max-width: none;
+    display: block;
+    margin: 0px !important;
+  }
+  /*fim das considerações finais*/
+
+    
+  /*configuração do título*/
+  .titulo-conteudo{
+    margin:20px 20px 0px 20px !important;
+  }
+  .container-titulo {
+    min-height:150px !important;
+    padding-right:0px !important;
+    padding-left:0px !important;
+  }
+  .section-container-titulo{
+    margin-left:0px !important;
+    margin-right: 0px !important;
+  }
+  /*fim da configuração do título*/
+
+
+  /*configuração objetivos de aprendizagem*/
+  .objetivos-gradiente {
+    background-image: radial-gradient(circle farthest-corner at 0% 50%, #fff 28%, rgb(255 255 255 / 80%) 68%) !important;
+  }
+  /*fim objetivos de aprendizagem*/
+    
+  /*configuração capa*/
+  .capa-pattern{
+    max-width: 820px !important;
+    padding: 20px 20px 30px !important;
+  }
+
+  .capa-titulo-container{
+    margin-left: 0px !important;
+  }
+
+  .titulo-capa-principal{
+    font-size:2em;
+  }
+  /*fim configuração capa*/
+
+
+  /* configuração de texto */
+  .w-richtext{
+    text-align: justify !important; 
+  }
+    
+  .titulo-conteudo, h1{
+    font-size: 2.3em;
+  }
+  /* fim da configuração de texto*/
+ 
+  /* configuração 2 colunas numero */
+  .imagem-icone-2-colunas.numeros{
+    max-width: 90% !important;
+  }
+
+  .div-numero{
+    width: 105px !important;
+    height: 105px !important;
+  }
+  /* fim 2 colunas numero*/
+
+  /* configuração itens em duas colunas*/
+  .duas-colunas-conteudo-imagem{
+    display: contents !important;
+  }
+
+  .duas-colunas-conteudo-imagem>h1,h2,h3,h4,h5,h6,p,blockquote,ul, ol{
+    padding-left: 10px !important;
+    padding-right:  10px !important;
+  }
+  /* fim da configuração itens em duas colunas*/
+
+  /* configuração view QR-CODE*/
+  .qrcode{
+    width:85% !important;
+  }
+
+  .qrcode-helper{
+    width:38% !important;
+  }
+  /* fim configuração view QR-CODE*/
+
+  /* gráficos de background */
+  * {
+    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+    color-adjust: exact !important;                 /*Firefox*/
+  }
+  
+  .capa-titulo-container{
+    padding-left: 30px !important;
+    max-width: 90vw !important;
+  }
+  
+  .capa-foto-container{
+    max-width: 10vw !important;
+    min-width: 0vw !important;
+  }
+  .box-m2{
+    display: block !important;
+  }
+  /* tag de fechamento media print*/
+}

@@ -1,0 +1,7 @@
+@font-face{
+    font-family: dyslexia;
+    src: url('../fonts/OpenDyslexic-Regular.otf');
+}
+*:not(.ap):not(.ap *){
+    font-family: dyslexia !important;
+}
