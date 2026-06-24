@@ -1,0 +1,1725 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Jun 24 2026 14:30:54 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="69e633bc7a5bc75aa854b4cb" data-wf-site="69e633bc7a5bc75aa854b4c6">
+<head>
+  <meta charset="utf-8">
+  <title>Aula 01</title>
+  <meta content="Aula 01" property="og:title">
+  <meta content="Aula 01" name="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/sistemas-hidraulicos-pneumaticos.webflow.css" rel="stylesheet" type="text/css">
+  <style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="294ff5cb-e08a-aa94-0262-02cc7a4a6879"] {display:block;-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="294ff5cb-e08a-aa94-0262-02cc7a4a6876"] {-webkit-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="7db44e89-b475-d653-09af-5fbc803d0131"] {display:block;-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="7db44e89-b475-d653-09af-5fbc803d012e"] {-webkit-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="4c1add4c-570b-cc70-b71f-372171bb6362"] {display:block;-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="4c1add4c-570b-cc70-b71f-372171bb635f"] {-webkit-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}@media (max-width:991px) and (min-width:768px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="294ff5cb-e08a-aa94-0262-02cc7a4a6879"] {display:block;-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="294ff5cb-e08a-aa94-0262-02cc7a4a6876"] {-webkit-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="7db44e89-b475-d653-09af-5fbc803d0131"] {display:block;-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="7db44e89-b475-d653-09af-5fbc803d012e"] {-webkit-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="4c1add4c-570b-cc70-b71f-372171bb6362"] {display:block;-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="4c1add4c-570b-cc70-b71f-372171bb635f"] {-webkit-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}@media (max-width:767px) and (min-width:480px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="294ff5cb-e08a-aa94-0262-02cc7a4a6876"] {-webkit-transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="294ff5cb-e08a-aa94-0262-02cc7a4a6879"] {-webkit-transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:block;}html.w-mod-js:not(.w-mod-ix) [data-w-id="7db44e89-b475-d653-09af-5fbc803d012e"] {-webkit-transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="7db44e89-b475-d653-09af-5fbc803d0131"] {-webkit-transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:block;}html.w-mod-js:not(.w-mod-ix) [data-w-id="4c1add4c-570b-cc70-b71f-372171bb635f"] {-webkit-transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="4c1add4c-570b-cc70-b71f-372171bb6362"] {-webkit-transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:block;}}@media (max-width:479px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="294ff5cb-e08a-aa94-0262-02cc7a4a6876"] {-webkit-transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="294ff5cb-e08a-aa94-0262-02cc7a4a6879"] {-webkit-transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:block;}html.w-mod-js:not(.w-mod-ix) [data-w-id="7db44e89-b475-d653-09af-5fbc803d012e"] {-webkit-transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="7db44e89-b475-d653-09af-5fbc803d0131"] {-webkit-transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:block;}html.w-mod-js:not(.w-mod-ix) [data-w-id="4c1add4c-570b-cc70-b71f-372171bb635f"] {-webkit-transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-20%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="4c1add4c-570b-cc70-b71f-372171bb6362"] {-webkit-transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null%, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:block;}}</style>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Exo:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Bebas Neue:300,400,500,600,700","Inter:300,400,500,600,700","Inter:300,400,500,600,700","Source Code Pro:300,400,500,600,700"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <script src="js/scormfunctions.js" type="text/javascript"></script>
+  <script src="js/scormvalidate.js" type="text/javascript"></script>
+  <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+  <!-- scripts player podcast -->
+  <link rel="stylesheet" href="https://s3.amazonaws.com/assets.b42.com.br/player/mediaelementplayer.css">
+  <link rel="stylesheet" href="https://s3.amazonaws.com/assets.b42.com.br/player/plugins/speed/speed.min.css">
+  <!-- scripts player audiobook -->
+  <link rel="stylesheet" href="https://assets.eadstock.com.br/go/static/libs/b42-audio-player/css/b42-audio-player.min.css">
+  <style>
+.hide, .hide.w-button {
+  display: none;
+}
+/*acessibilidade*/ 
+.texto-acessibilidade {
+  position:absolute;
+  left:0px;
+  top:-500px;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+/* esconder itens*/
+.w-webflow-badge {
+  display: none !important;
+}
+/* player-media elemente transparente */
+.mejs__container, .mejs__controls:not([style*='display: none']){
+  background: transparent !important;
+}
+/* quebra dos links */
+.span-hyphen, a {
+overflow-wrap: break-word;
+}
+/* espaçamento no box do webgo*/
+  .link-content {
+    padding-bottom: 10px;
+}
+</style>
+  <script>
+window.addEventListener('load', () => {
+    doStart(false);
+});
+</script>
+</head>
+<body>
+  <div class="global-styles w-embed">
+    <style>
+/* Snippet gets rid of top margin on first element in any rich text*/
+.w-richtext>:first-child {
+	margin-top: 0;
+}
+/* Snippet gets rid of bottom margin on last element in any rich text*/
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0;
+}
+/* Snippet prevents all click and hover interaction with an element */
+.clickable-off {
+	pointer-events: none;
+}
+/* Snippet enables all click and hover interaction with an element */
+.clickable-on{
+  pointer-events: auto;
+}
+/* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+/*Hide focus outline for main content element*/
+main:focus-visible {
+	outline: -webkit-focus-ring-color auto 0px;
+}
+/* Make sure containers never lose their center alignment*/
+.container-medium, .container-small, .container-large {
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+/*Reset buttons, and links styles*/
+a {
+	text-decoration: inherit;
+	font-size: inherit;
+}
+/*Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+/*Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/*estilo de tabela*/  
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid #ffffff; /*cor das bordas*/
+    border-collapse: collapse;
+}
+th, td {
+    padding: 14px;
+    text-align: left;
+}
+table tr:nth-child(even) {
+    background-color: #fff8f9; /*cor 1*/
+}
+table tr:nth-child(odd) {
+   background-color: #fce0e5; /*cor 2*/
+}
+table th {
+    background-color: #4c0a01; /*cor do background da tabela*/
+    color: #ffffff; /*cor do título da tabela*/
+}
+/*player responsivo*/ 
+.b42-video-player{
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+/*quebrar links*/ 
+.span-hyphen, a {
+overflow-wrap: break-word;
+}
+/*scroll bar estilizada 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  padding-right: 3px;
+	padding-right: 3px;
+  }
+::-webkit-scrollbar-button {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #f9b233;
+  border: 0px none #f9b233;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f9b233;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+  padding-right: 3px;
+	padding-right: 3px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+*/
+.link-content {
+	margin-top: 40px;
+  margin-bottom: 20px;
+}
+</style>
+  </div>
+  <div id="content" class="page-wrap">
+    <div class="main">
+      <div data-w-id="8794424f-6621-5531-26ab-6a26db72902e" class="home">
+        <div class="container">
+          <div class="home-whopper">
+            <div class="home-content"><img src="images/logo-unipar-red.svg" loading="lazy" width="100" alt="" class="logo-unipar">
+              <div class="tag">Aula</div>
+              <h1 class="titulo-aula">Introdução aos sistemas fluido-mecânicos</h1>
+            </div>
+            <div data-w-id="8f13a32a-a1c6-3f8d-0360-f9ab6e4ac72a" class="element-home"><img src="images/a1-capa.jpg" loading="lazy" width="400" sizes="(max-width: 479px) 100vw, 400px" alt="" srcset="images/a1-capa-p-500.jpg 500w, images/a1-capa.jpg 705w" class="image-label-element"></div><img src="images/bg-element-03.svg" loading="lazy" width="150" data-w-id="7746d760-0a1a-1815-139d-75f207b09ae4" alt="" class="icone-home-01"><img src="images/bg-element-02.svg" loading="lazy" width="150" alt="" class="icone-home-02">
+          </div>
+        </div>
+      </div>
+      <div class="conteudo">
+        <section class="section-topicos">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="container-topicos">
+                <p> Nesta aula, os seguintes tópicos serão explorados:</p>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="_2-colunas-icones">
+                      <div class="_2-colunas">
+                        <div class="column-4">
+                          <div class="_2-colunas-icone-bg text-color-white">
+                            <div class="numero-icone-2-colunas"></div>
+                            <div class="numero-2c">1</div>
+                          </div>
+                        </div>
+                        <div class="column-text">
+                          <div class="titulo-colunas-icon">Tópico</div>
+                          <div class="w-richtext">
+                            <p>Conceitos fundamentais e aplicações industriais</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="_2-colunas">
+                        <div class="column-4">
+                          <div class="_2-colunas-icone-bg text-color-white">
+                            <div class="numero-icone-2-colunas"></div>
+                            <div class="numero-2c">2</div>
+                          </div>
+                        </div>
+                        <div class="column-text">
+                          <div class="titulo-colunas-icon">Tópico</div>
+                          <div class="w-richtext">
+                            <p>Princípios físicos dos sistemas fluido-mecânicos</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="_2-colunas">
+                        <div class="column-4">
+                          <div class="_2-colunas-icone-bg text-color-white">
+                            <div class="numero-icone-2-colunas"></div>
+                            <div class="numero-2c">3</div>
+                          </div>
+                        </div>
+                        <div class="column-text">
+                          <div class="titulo-colunas-icon">Tópico</div>
+                          <div class="w-richtext">
+                            <p>Comparação entre sistemas hidráulicos e pneumáticos</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="oi-content">
+                    <div class="grid-topicos">
+                      <div data-w-id="41852052-dd9c-a2f9-4cf8-96b92eeeb906" class="card-component">
+                        <div class="card-front-content">
+                          <p>tópico</p>
+                          <div class="text-block-21">1</div>
+                        </div>
+                        <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="card-scroll">
+                          <p>Tópico 1: Conceitos fundamentais e aplicações industriais</p>
+                        </div>
+                      </div>
+                      <div data-w-id="43ff7f3a-a416-443e-d0b5-f0a6dad9abc6" class="card-component">
+                        <div class="card-front-content">
+                          <p>tópico</p>
+                          <div class="text-block-21">2</div>
+                        </div>
+                        <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="card-scroll">
+                          <p>Tópico 2: Princípios físicos dos sistemas fluido-mecânicos</p>
+                        </div>
+                      </div>
+                      <div data-w-id="a01b4af2-0d6c-1a1b-c084-9cd2b53a2911" class="card-component">
+                        <div class="card-front-content">
+                          <p>tópico</p>
+                          <div class="text-block-21">3</div>
+                        </div>
+                        <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="card-scroll">
+                          <p>Tópico 3: Comparação entre sistemas hidráulicos e pneumáticos</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="divisor-whopper">
+          <div class="divisor"><img src="images/unipar-escrito-borda.svg" loading="lazy" width="950" alt="" class="unipar-logo-scroll-strock"></div>
+          <div class="divisor"><img src="images/unipar-escrito.svg" loading="lazy" width="950" alt="" class="unipar-logo-scroll-fill"></div>
+        </div>
+        <section class="section">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="titulo-topico">
+                  <div class="div-titulo">
+                    <div data-w-id="676ab6c6-5a37-8cc3-0844-add35f959c4c" style="opacity:0" class="label-titulo">Tópico 01</div>
+                    <h2 data-w-id="1844cb2a-8994-b285-eb89-90e9ebe3fec3" style="opacity:0" class="heading-titulo">Conceitos fundamentais e aplicações industriais<br></h2>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Olá, estudante! Seja bem-vindo(a) ao estudo sobre sistemas hidráulicos e pneumáticos, esse conteúdo é muito importante para seu futuro profissional, mas antes de iniciar o estudo, uma curiosidade...</p>
+                  <p>Você sabia que os sistemas hidráulicos e pneumáticos fazem parte de um campo fundamental da engenharia responsável por utilizar fluidos — líquidos ou gases — como meio de transmissão de energia?</p>
+                  <p>Interessante, não é? Grande parte da automação industrial é realizada não apenas por motores elétricos, mas também por sistemas pneumáticos, quando se busca velocidade, e por sistemas hidráulicos, quando há necessidade de aplicação de forças elevadas. </p>
+                </div>
+                <div class="colunas-img-content">
+                  <div class="flex-column-45 col-with-screens is-2nd">
+                    <div data-w-id="294ff5cb-e08a-aa94-0262-02cc7a4a6875" class="screens"><img src="images/a1-img1.jpg" loading="lazy" data-w-id="294ff5cb-e08a-aa94-0262-02cc7a4a6876" sizes="100vw" alt="" srcset="images/a1-img1-p-500.jpg 500w, images/a1-img1.jpg 675w" class="cover-image">
+                      <div class="screen-bg-1 sb-right"></div>
+                      <div class="screen-bg-2 sb-right"></div>
+                      <div data-w-id="294ff5cb-e08a-aa94-0262-02cc7a4a6879" class="screen-bg-animation"></div>
+                    </div>
+                  </div>
+                  <div class="card-box-text">
+                    <div>
+                      <p>Para compreender como esses sistemas funcionam, é importante iniciar pelos conceitos essenciais que sustentam sua operação, suas aplicações e os motivos pelos quais são amplamente utilizados na indústria moderna. Embora cada tecnologia possua características próprias, ambas compartilham a mesma finalidade: converter energia em movimento de forma controlada, eficiente e segura. Vamos lá?<br></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="margin-top-4em w-richtext">
+                  <h2><strong>Potência fluida: a base dos sistemas hidráulicos e pneumáticos</strong></h2>
+                  <p>Os autores Daines e Daines (2018) definem o termo “potência fluida”, que se refere ao uso de fluidos sob pressão para transmitir e controlar energia mecânica. Essa energia é convertida em movimento linear ou rotativo por meio de atuadores, permitindo realizar trabalhos que exigem força, precisão ou repetitividade.</p>
+                  <p>Existem duas modalidades principais:</p>
+                </div>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="w-richtext">
+                      <ul role="list">
+                        <li><strong>Hidráulica:</strong> utiliza óleo hidráulico (fluido incompressível).</li>
+                        <li>‍<strong>Pneumática: </strong>utiliza ar comprimido (fluido compressível).</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="oi-content">
+                    <p class="texto-destaque">Clique em “+” e confira as informações.</p>
+                    <div class="oi-accordion-v1">
+                      <div data-delay="0" data-hover="false" class="accordion-item w-dropdown">
+                        <div class="faq-item-toggle w-dropdown-toggle">
+                          <div class="accordioon-title-wrapper">
+                            <div class="accordion-title">Hidráulica</div>
+                            <div class="accordion-icon-circle"><img loading="lazy" src="https://uploads-ssl.webflow.com/61d5486e6f7c7a4688a23609/61d54a7a34d78a4b147c6219_Plus%20Icon.svg" alt="" class="faq-icon"></div>
+                          </div>
+                        </div>
+                        <nav class="faq-content-wrap w-dropdown-list">
+                          <div class="faq-content">
+                            <div class="rich-text-box w-richtext">
+                              <p>Utiliza óleo hidráulico (fluido incompressível).</p>
+                            </div>
+                          </div>
+                        </nav>
+                      </div>
+                      <div data-delay="0" data-hover="false" class="accordion-item w-dropdown">
+                        <div class="faq-item-toggle w-dropdown-toggle">
+                          <div class="accordioon-title-wrapper">
+                            <div class="accordion-title">Pneumática</div>
+                            <div class="accordion-icon-circle"><img loading="lazy" src="https://uploads-ssl.webflow.com/61d5486e6f7c7a4688a23609/61d54a7a34d78a4b147c6219_Plus%20Icon.svg" alt="" class="faq-icon"></div>
+                          </div>
+                        </div>
+                        <nav class="faq-content-wrap w-dropdown-list">
+                          <div class="faq-content">
+                            <div class="rich-text-box w-richtext">
+                              <p>Utiliza ar comprimido (fluido compressível).</p>
+                            </div>
+                          </div>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Essas tecnologias possibilitam movimentar cargas, controlar mecanismos, automatizar processos e realizar operações repetitivas com alta confiabilidade.</p>
+                  <p>A escolha entre um sistema ou outro estará relacionada ao tipo de aplicação, ao ambiente operacional e às exigências de força, precisão e velocidade (Filho; Santos, 2018).</p>
+                  <h2 class="margin-top-2em"><strong>Para que servem os sistemas hidráulicos e pneumáticos?</strong></h2>
+                  <p>Esses sistemas estão presentes em praticamente todos os setores industriais. Filho e Santos (2018), Prudente (2015) e Netto e Fernández (2017) definem exemplos reais que ajudarão você a visualizar essas aplicações:</p>
+                  <h3 class="margin-top-2em">Aplicações típicas da hidráulica</h3>
+                  <p>A hidráulica é preferida quando a operação exige altas forças, controle preciso e robustez operacional.</p>
+                  <p>Algumas aplicações comuns incluem:</p>
+                </div>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="w-richtext">
+                      <ul role="list">
+                        <li>Prensas hidráulicas para conformação metálica.</li>
+                        <li>Máquinas injetoras de plástico.</li>
+                        <li>Equipamentos móveis (retroescavadeiras, tratores, guindastes).</li>
+                        <li>Elevadores de carga e plataformas niveladoras.</li>
+                        <li>Máquinas-ferramenta que exigem precisão no posicionamento.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="oi-content">
+                    <p class="texto-destaque espaco-1">Clique nas setas.</p>
+                    <div data-delay="4000" data-animation="slide" class="slider-caixa-texto w-slider" data-hide="1" data-autoplay="false" data-easing="ease" style="opacity:0" data-hide-arrows="false" data-disable-swipe="false" data-w-id="e5438170-d7e8-0399-92ef-091f90a23617" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+                      <div class="w-slider-mask">
+                        <div class="w-slide">
+                          <div class="slider-content-lista">
+                            <div class="slider-numeros">
+                              <div class="text-block">01</div>
+                            </div>
+                            <div class="slider-div-text-info">
+                              <div class="w-richtext">
+                                <p>Prensas hidráulicas para conformação metálica.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w-slide">
+                          <div class="slider-content-lista">
+                            <div class="slider-numeros">
+                              <div class="text-block">02</div>
+                            </div>
+                            <div class="slider-div-text-info">
+                              <div class="w-richtext">
+                                <p>Máquinas injetoras de plástico.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w-slide">
+                          <div class="slider-content-lista">
+                            <div class="slider-numeros">
+                              <div class="text-block">03</div>
+                            </div>
+                            <div class="slider-div-text-info">
+                              <div class="w-richtext">
+                                <p>Equipamentos móveis (retroescavadeiras, tratores, guindastes).</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w-slide">
+                          <div class="slider-content-lista">
+                            <div class="slider-numeros">
+                              <div class="text-block">04</div>
+                            </div>
+                            <div class="slider-div-text-info">
+                              <div class="w-richtext">
+                                <p>Elevadores de carga e plataformas niveladoras.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w-slide">
+                          <div class="slider-content-lista">
+                            <div class="slider-numeros">
+                              <div class="text-block">05</div>
+                            </div>
+                            <div class="slider-div-text-info">
+                              <div class="w-richtext">
+                                <p>Máquinas-ferramenta que exigem precisão no posicionamento.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slider-button-v1 left w-slider-arrow-left">
+                        <div class="w-icon-slider-left"></div>
+                      </div>
+                      <div class="slider-button-v1 right w-slider-arrow-right">
+                        <div class="w-icon-slider-right"></div>
+                      </div>
+                      <div class="slide-nav off w-slider-nav w-slider-nav-invert"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>A capacidade da hidráulica de operar com altas pressões, frequentemente acima de 150 bar, faz dela a escolha ideal para trabalhos de elevada carga.</p>
+                  <h3 class="margin-top-2em">Aplicações típicas da pneumática</h3>
+                  <p>Já a pneumática destaca-se pela velocidade, simplicidade e baixo custo de operação, além de ser extremamente segura em ambientes onde não pode haver contaminação.</p>
+                  <p>Aplicações recorrentes:</p>
+                </div>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="w-richtext">
+                      <ul role="list">
+                        <li>Linhas de montagem automatizadas.</li>
+                        <li>Manipuladores industriais e sistemas <em>pick-and-place</em>.</li>
+                        <li>Portas automáticas industriais.</li>
+                        <li>Sistemas de empacotamento e rotulagem.</li>
+                        <li>Operações rápidas de repetição em fábricas de alimentos e bebidas.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="oi-content">
+                    <p class="texto-destaque espaco-1">Clique nas setas.</p>
+                    <div data-delay="4000" data-animation="slide" class="slider-caixa-texto w-slider" data-hide="1" data-autoplay="false" data-easing="ease" style="opacity:0" data-hide-arrows="false" data-disable-swipe="false" data-w-id="dddbaa6e-d844-33ee-ea8f-6e758c63dba7" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+                      <div class="w-slider-mask">
+                        <div class="w-slide">
+                          <div class="slider-content-lista">
+                            <div class="slider-numeros">
+                              <div class="text-block">01</div>
+                            </div>
+                            <div class="slider-div-text-info">
+                              <div class="w-richtext">
+                                <p>Linhas de montagem automatizadas.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w-slide">
+                          <div class="slider-content-lista">
+                            <div class="slider-numeros">
+                              <div class="text-block">02</div>
+                            </div>
+                            <div class="slider-div-text-info">
+                              <div class="w-richtext">
+                                <p>Manipuladores industriais e sistemas <em>pick-and-place</em>.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w-slide">
+                          <div class="slider-content-lista">
+                            <div class="slider-numeros">
+                              <div class="text-block">03</div>
+                            </div>
+                            <div class="slider-div-text-info">
+                              <div class="w-richtext">
+                                <p>Portas automáticas industriais.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w-slide">
+                          <div class="slider-content-lista">
+                            <div class="slider-numeros">
+                              <div class="text-block">04</div>
+                            </div>
+                            <div class="slider-div-text-info">
+                              <div class="w-richtext">
+                                <p>Sistemas de empacotamento e rotulagem.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w-slide">
+                          <div class="slider-content-lista">
+                            <div class="slider-numeros">
+                              <div class="text-block">05</div>
+                            </div>
+                            <div class="slider-div-text-info">
+                              <div class="w-richtext">
+                                <p>Operações rápidas de repetição em fábricas de alimentos e bebidas.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slider-button-v1 left w-slider-arrow-left">
+                        <div class="w-icon-slider-left"></div>
+                      </div>
+                      <div class="slider-button-v1 right w-slider-arrow-right">
+                        <div class="w-icon-slider-right"></div>
+                      </div>
+                      <div class="slide-nav off w-slider-nav w-slider-nav-invert"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>O ar comprimido é abundante, limpo e fácil de transportar, explicando sua popularidade na automação industrial.</p>
+                </div>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="box-m2">
+                      <div class="container-box-2c">
+                        <div id="w-node-_116052f9-8457-6419-d691-f4777a37b7cf-a854b4cb"><img src="images/icon-mao-massa.svg" loading="lazy" width="190" alt="" class="icone-box"><img src="images/bg-mao-massa.svg" loading="lazy" alt=""></div>
+                        <div class="rt-dark-2 w-richtext">
+                          <h5>Equipamento industrial </h5>
+                          <p>Observe um equipamento industrial próximo a você, ou em sua casa, e tente identificar quais elementos do sistema de potência fluida ele contém. Consegue reconhecer a geração, distribuição e atuação?</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="oi-content">
+                    <div class="accordeon">
+                      <div class="acordeon-box-2">
+                        <div data-w-id="116052f9-8457-6419-d691-f4777a37b7d8" class="mao-na-massa boxes"><img src="images/icon-mao-massa.svg" loading="lazy" alt="" class="image-7"></div>
+                        <div class="acordeon-conteudo-2 boxes">
+                          <div class="content-accordeon-mao-na-massa boxes">
+                            <div class="titulo-mao-na-massa">
+                              <div id="w-node-_116052f9-8457-6419-d691-f4777a37b7dd-a854b4cb">
+                                <div id="w-node-_116052f9-8457-6419-d691-f4777a37b7de-a854b4cb" class="text-block-26">prática de estudo</div>
+                                <p class="paragraph-3">equipamento industrial </p>
+                              </div><img src="images/icon-bg-mao-massa.svg" loading="lazy" width="150" id="w-node-_116052f9-8457-6419-d691-f4777a37b7e2-a854b4cb" alt="" class="icon-mao-na-massa">
+                            </div>
+                            <div class="w-richtext">
+                              <p>Observe um equipamento industrial próximo a você, ou em sua casa, e tente identificar quais elementos do sistema de potência fluida ele contém. Consegue reconhecer a geração, distribuição e atuação?</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <h2><strong>Por que a indústria usa potência fluida?</strong></h2>
+                  <p>A escolha pela hidráulica ou pneumática não acontece por acaso. Autores como Netto e Fernández (2018) e Prudente (2015) citam que esses sistemas oferecem vantagens que justificam seu uso em larga escala.</p>
+                </div>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="w-richtext">
+                      <p>Dentre as<strong> vantagens da hidráulica</strong>, tem-se:</p>
+                      <ul role="list">
+                        <li>Geração de altíssimas forças mesmo com atuadores compactos.</li>
+                        <li>Controle fino de velocidade e posição.</li>
+                        <li>Operação estável mesmo em cargas variáveis.</li>
+                        <li>A utilização de óleo que lubrifica e reduz desgaste interno.</li>
+                        <li>Aplicação em máquinas de precisão e alta rigidez.</li>
+                      </ul>
+                      <p>Já para as <strong>vantagens da pneumática</strong>, tem-se:</p>
+                      <ul role="list">
+                        <li>Movimentos rápidos e repetitivos com baixo custo.</li>
+                        <li>Componentes simples e robustos.</li>
+                        <li>Segurança em ambientes sensíveis (não contamina).</li>
+                        <li>Capacidade de armazenar energia (reservatórios de ar).</li>
+                        <li>Boa relação custo-benefício.</li>
+                        <li>Fácil manutenção.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="oi-content">
+                    <p class="texto-destaque">Clique em “+” e confira as informações.</p>
+                    <div class="acoredeon">
+                      <div class="acordeon-box acc-v2">
+                        <div class="acordeoni-item">
+                          <div class="plus-wrap">
+                            <div class="plus-l-2"></div>
+                            <div class="plus---2"></div>
+                          </div>
+                          <div class="accordeon-titulo-v2">Dentre as<strong>  vantagens da hidráulica</strong>, tem-se</div>
+                        </div>
+                        <div class="acordeon-conteudo">
+                          <div class="content-accordeon acc-content-v2">
+                            <div class="w-richtext">
+                              <ul role="list">
+                                <li>Geração de altíssimas forças mesmo com atuadores compactos.</li>
+                                <li>Controle fino de velocidade e posição.</li>
+                                <li>Operação estável mesmo em cargas variáveis.</li>
+                                <li>A utilização de óleo que lubrifica e reduz desgaste interno.</li>
+                                <li>Aplicação em máquinas de precisão e alta rigidez.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="acordeon-box acc-v2">
+                        <div class="acordeoni-item">
+                          <div class="plus-wrap">
+                            <div class="plus-l-2"></div>
+                            <div class="plus---2"></div>
+                          </div>
+                          <div class="accordeon-titulo-v2">Já para as  <strong>vantagens da pneumática</strong>, tem-se</div>
+                        </div>
+                        <div class="acordeon-conteudo">
+                          <div class="content-accordeon acc-content-v2">
+                            <div class="w-richtext">
+                              <ul role="list">
+                                <li>Movimentos rápidos e repetitivos com baixo custo.</li>
+                                <li>Componentes simples e robustos.</li>
+                                <li>Segurança em ambientes sensíveis (não contamina).</li>
+                                <li>Capacidade de armazenar energia (reservatórios de ar).</li>
+                                <li>Boa relação custo-benefício.</li>
+                                <li>Fácil manutenção.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>As desvantagens também serão analisadas no Tópico 3, quando compararmos diretamente os dois sistemas.</p>
+                </div>
+              </div>
+            </div>
+            <div class="fatos-e-dados margin-top-2em margin-bottom-2em">
+              <div class="padding-inner">
+                <div class="container">
+                  <div class="w-layout-blockcontainer w-container">
+                    <div class="header-fatos-dados"><img src="images/icon-fatos-dados.svg" loading="lazy" alt="" class="icon-fatos-dados"></div>
+                    <div class="text-color-white w-richtext">
+                      <p>O estudo realizado por Herrera<em> et al.</em> (2020) indica que os sistemas pneumáticos possuem ampla presença na indústria moderna, especialmente em aplicações automatizadas. De acordo com os dados consolidados do estudo, aproximadamente 10% de toda a energia elétrica consumida na indústria europeia é destinada à produção de ar comprimido, evidenciando a forte utilização de sistemas pneumáticos em processos industriais automatizados.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-layout-blockcontainer w-container">
+              <div class="margin-top-4em w-richtext">
+                <h2><strong>Interdisciplinaridade da potência fluida</strong></h2>
+                <p>Como todo conceito aplicado, a potência fluida não atua isolada; ela se integra a diversas áreas (Fialho, 2011), como:</p>
+              </div>
+              <div class="objeto-interativo">
+                <div class="texto-acessibilidade">
+                  <div class="w-richtext">
+                    <ul role="list">
+                      <li><strong>Mecânica:</strong> no dimensionamento de movimentos e forças.</li>
+                      <li><strong>Eletrônica / Eletrotécnica:</strong> com sensores e comandos.</li>
+                      <li><strong>Informática / Automação:</strong> por meio de controladores lógicos e sistemas supervisórios.</li>
+                      <li>‍<strong>Materiais:</strong> na seleção de componentes adequados.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div aria-hidden="true" class="oi-content">
+                  <p class="texto-destaque">Clique em “+” e confira as informações.</p>
+                  <div class="acoredeon">
+                    <div class="acordeon-box acc-v2">
+                      <div class="acordeoni-item">
+                        <div class="plus-wrap">
+                          <div class="plus-l-2"></div>
+                          <div class="plus---2"></div>
+                        </div>
+                        <div class="accordeon-titulo-v2">Mecânica</div>
+                      </div>
+                      <div class="acordeon-conteudo">
+                        <div class="content-accordeon acc-content-v2">
+                          <div class="w-richtext">
+                            <p>No dimensionamento de movimentos e forças.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="acordeon-box acc-v2">
+                      <div class="acordeoni-item">
+                        <div class="plus-wrap">
+                          <div class="plus-l-2"></div>
+                          <div class="plus---2"></div>
+                        </div>
+                        <div class="accordeon-titulo-v2">Eletrônica / Eletrotécnica</div>
+                      </div>
+                      <div class="acordeon-conteudo">
+                        <div class="content-accordeon acc-content-v2">
+                          <div class="w-richtext">
+                            <p>Com sensores e comandos.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="acordeon-box acc-v2">
+                      <div class="acordeoni-item">
+                        <div class="plus-wrap">
+                          <div class="plus-l-2"></div>
+                          <div class="plus---2"></div>
+                        </div>
+                        <div class="accordeon-titulo-v2">Informática / Automação</div>
+                      </div>
+                      <div class="acordeon-conteudo">
+                        <div class="content-accordeon acc-content-v2">
+                          <div class="w-richtext">
+                            <p>Por meio de controladores lógicos e sistemas supervisórios.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="acordeon-box acc-v2">
+                      <div class="acordeoni-item">
+                        <div class="plus-wrap">
+                          <div class="plus-l-2"></div>
+                          <div class="plus---2"></div>
+                        </div>
+                        <div class="accordeon-titulo-v2">Materiais</div>
+                      </div>
+                      <div class="acordeon-conteudo">
+                        <div class="content-accordeon acc-content-v2">
+                          <div class="w-richtext">
+                            <p>Na seleção de componentes adequados.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="colunas-img-content">
+                <div class="flex-column-45 col-with-screens is-2nd">
+                  <div data-w-id="7db44e89-b475-d653-09af-5fbc803d012d" class="screens"><img src="images/a1-img2.jpg" loading="lazy" data-w-id="7db44e89-b475-d653-09af-5fbc803d012e" sizes="100vw" alt="" srcset="images/a1-img2-p-500.jpg 500w, images/a1-img2.jpg 771w" class="cover-image">
+                    <div class="screen-bg-1 sb-right"></div>
+                    <div class="screen-bg-2 sb-right"></div>
+                    <div data-w-id="7db44e89-b475-d653-09af-5fbc803d0131" class="screen-bg-animation"></div>
+                  </div>
+                </div>
+                <div class="card-box-text">
+                  <div>
+                    <p>Essa integração de saberes é o que torna a automação industrial contemporânea tão eficiente e flexível.<br>Essa interdisciplinaridade será abordada em aulas posteriores, quando for necessário dimensionar componentes de geração, tratamento e armazenamento de ar, tal como a automação pneumática.<br></p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-richtext">
+                <p>Compreendida a importância dos sistemas hidráulicos e pneumáticos, suas aplicações industriais e o papel da potência fluida na automação, surge uma questão fundamental: por que esses sistemas se comportam de forma tão diferente em termos de força, velocidade e precisão.</p>
+                <p>Para responder a essa pergunta, no próximo tópico estudaremos os princípios físicos dos sistemas fluido-mecânicos, analisando como pressão, vazão e o comportamento dos fluidos influenciam diretamente o desempenho desses sistemas.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-atividades">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="exercicio-whopper">
+                  <div class="objeto-interativo">
+                    <div class="texto-acessibilidade">
+                      <div class="label-titulo-section vermelho">para pensar</div>
+                      <div class="bullet-abc w-richtext">
+                        <p>Os sistemas hidráulicos e pneumáticos utilizam fluidos como meio de transmissão de energia e pertencem a qual área da engenharia?</p>
+                        <ol start="" role="list">
+                          <li>Mecânica estrutural.</li>
+                          <li>Sistemas elétricos industriais.</li>
+                          <li>Potência fluida.</li>
+                          <li>Automação digital.</li>
+                          <li>Processos térmicos.</li>
+                        </ol>
+                        <p><strong>A alternativa C é a correta.</strong></p>
+                        <p><strong>Justificativa:</strong> Hidráulica e pneumática fazem parte da potência fluida, que utiliza fluidos sob pressão para transmitir energia.</p>
+                      </div>
+                    </div>
+                    <div aria-hidden="true" class="oi-content">
+                      <div class="label-titulo-section">para pensar</div>
+                      <div class="bullet-abc w-richtext">
+                        <p>Os sistemas hidráulicos e pneumáticos utilizam fluidos como meio de transmissão de energia e pertencem a qual área da engenharia?</p>
+                      </div>
+                      <div class="acoredeon">
+                        <div data-w-id="e9166c2f-f03d-308a-50da-393f1ea8f91f" class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">a) Mecânica estrutural.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="40926d1e-30d0-9cac-26e2-cc54f696fc52" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">b) Sistemas elétricos industriais.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="7152ef4c-c769-d5ae-93db-4626151aba7c" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">c) Potência fluida.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades" data-w-id="3dc68a47-1ffe-d980-6925-6fd6a8800789" data-animation-type="lottie" data-src="documents/certo-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>Parabéns! A resposta está correta.</strong></p>
+                                  <p>Justificativa: Hidráulica e pneumática fazem parte da potência fluida, que utiliza fluidos sob pressão para transmitir energia.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">d) Automação digital.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="232acfb3-bdb2-bd6d-42ca-eceb2efef5b2" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">e) Processos térmicos.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="a5ec9d50-8ecf-0ea4-64e9-393cdc3b9123" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><img src="images/circulo-unipar-02.svg" loading="lazy" alt="" height="650" class="bg-exercicios">
+        </section>
+        <section class="section">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="titulo-topico">
+                  <div class="div-titulo">
+                    <div data-w-id="5097477c-2ee3-16d3-432a-1687b286578f" style="opacity:0" class="label-titulo">Tópico 02</div>
+                    <h2 data-w-id="5097477c-2ee3-16d3-432a-1687b2865791" style="opacity:0" class="heading-titulo">Princípios físicos dos sistemas fluido-mecânicos<br></h2>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Estudante, agora que você já compreendeu onde os sistemas hidráulicos e pneumáticos são aplicados e por que eles são tão importantes na indústria, é hora de responder a uma pergunta essencial: o que faz esses sistemas funcionarem do ponto de vista físico?</p>
+                  <p>Por que um cilindro hidráulico consegue levantar cargas extremamente elevadas, enquanto um sistema pneumático se destaca pela rapidez, mas não pela mesma capacidade de força?</p>
+                  <p>A resposta para essas diferenças está nos princípios físicos que governam o comportamento dos fluidos sob pressão.</p>
+                </div>
+                <div class="colunas-img-content">
+                  <div class="flex-column-45 col-with-screens is-2nd">
+                    <div data-w-id="4c1add4c-570b-cc70-b71f-372171bb635e" class="screens"><img src="images/a1-img3.jpg" loading="lazy" data-w-id="4c1add4c-570b-cc70-b71f-372171bb635f" sizes="100vw" alt="" srcset="images/a1-img3-p-500.jpg 500w, images/a1-img3-p-800.jpg 800w, images/a1-img3.jpg 1000w" class="cover-image">
+                      <div class="screen-bg-1 sb-right"></div>
+                      <div class="screen-bg-2 sb-right"></div>
+                      <div data-w-id="4c1add4c-570b-cc70-b71f-372171bb6362" class="screen-bg-animation"></div>
+                    </div>
+                  </div>
+                  <div class="card-box-text">
+                    <div>
+                      <p>Os sistemas fluido-mecânicos são fundamentados em conceitos clássicos da mecânica dos fluidos, amplamente discutidos por autores como White (2018), Netto e Fernández (2017) e Godoi e Assunção (2019). Esses princípios explicam como a energia é transmitida, transformada e controlada quando um fluido está em repouso ou em movimento.<br></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Neste tópico, você estudará os conceitos de pressão, vazão, energia no fluido e perdas, que servirão de base para o entendimento dos componentes e circuitos abordados nas próximas aulas.</p>
+                  <h2 class="margin-top-2em"><strong>Pressão: a origem da força nos sistemas fluido-mecânicos</strong></h2>
+                  <p>Vamos começar pelo conceito mais importante, a pressão. </p>
+                  <p>Segundo White (2018), a pressão é definida como a razão entre uma força aplicada e a área sobre a qual essa força atua, conforme a relação:</p>
+                  <p>\[P = \dfrac{F}{A}\]</p>
+                  <p>em que \(P\) é a pressão aplicada ao fluido (Pa ou bar), \(F\) é força aplicada perpendicularmente à superfície (N) e \(A\) é a área sobre a qual a força é distribuída (m²). </p>
+                  <p>No Sistema Internacional de Unidades (SI), a pressão é expressa em pascal (Pa), sendo comum, na prática industrial, a utilização da unidade bar, onde \(1\ \text{bar} = 10^5\ \text{Pa}\).</p>
+                  <p>Esse conceito simples explica por que os sistemas hidráulicos podem gerar forças tão elevadas. Como o óleo hidráulico é considerado praticamente incompressível, a pressão aplicada ao fluido é transmitida de forma eficiente por todo o sistema.</p>
+                  <p>Na prática industrial, sistemas hidráulicos operam frequentemente com pressões acima de 150 bar, podendo chegar a valores ainda maiores em aplicações específicas, como prensas e equipamentos móveis (Filho; Santos, 2018).</p>
+                  <p>Já nos sistemas pneumáticos, a pressão de trabalho é significativamente menor, normalmente entre 6 e 12 bar. Ainda assim, essa pressão é suficiente para uma grande variedade de aplicações automatizadas, especialmente quando o foco está na velocidade e na repetitividade (Fialho, 2011).</p>
+                  <h2 class="margin-top-2em"><strong>Vazão: controlando a velocidade do movimento</strong></h2>
+                  <p>Agora pense no seguinte cenário: dois cilindros operam com a mesma pressão, mas apresentam velocidades diferentes. O que muda?</p>
+                  <p>Nesse caso, o fator determinante é a vazão, que representa o volume de fluido que escoa por um ponto do sistema em um determinado intervalo de tempo (Rollins, 2004), de acordo com a equação:</p>
+                  <p>\[Q = \dfrac{V}{t}\]</p>
+                  <p>em que \(Q\) é a vazão volumétrica do fluido (m³/s ou L/min), \(V\) é o volume de fluido deslocado (m³ ou L) e \(t\) é o tempo necessário para o escoamento (s ou min).</p>
+                  <p>Perceba que dependendo da unidade utilizada para o volume e tempo, a vazão apresenta resultados também com unidades diferentes.</p>
+                  <p>Enquanto a pressão define a força, a vazão define a <strong>velocidade do movimento</strong>.</p>
+                </div>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="w-richtext">
+                      <p>Na prática:</p>
+                      <ul role="list">
+                        <li>Maior vazão → maior velocidade do atuador;</li>
+                        <li>Menor vazão → movimentos mais lentos e controlados.</li>
+                      </ul>
+                      <p>Esse conceito é fundamental para:</p>
+                      <ul role="list">
+                        <li>Dimensionar bombas e compressores.</li>
+                        <li>Selecionar válvulas adequadas.</li>
+                        <li>Ajustar tempos de ciclo em sistemas automatizados.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="oi-content">
+                    <p class="texto-destaque">Clique em “+” e confira as informações.</p>
+                    <div class="acoredeon">
+                      <div class="acordeon-box acc-v2">
+                        <div class="acordeoni-item">
+                          <div class="plus-wrap">
+                            <div class="plus-l-2"></div>
+                            <div class="plus---2"></div>
+                          </div>
+                          <div class="accordeon-titulo-v2">Na prática</div>
+                        </div>
+                        <div class="acordeon-conteudo">
+                          <div class="content-accordeon acc-content-v2">
+                            <div class="w-richtext">
+                              <ul role="list">
+                                <li>Maior vazão → maior velocidade do atuador;</li>
+                                <li>Menor vazão → movimentos mais lentos e controlados.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="acordeon-box acc-v2">
+                        <div class="acordeoni-item">
+                          <div class="plus-wrap">
+                            <div class="plus-l-2"></div>
+                            <div class="plus---2"></div>
+                          </div>
+                          <div class="accordeon-titulo-v2">Esse conceito é fundamental para</div>
+                        </div>
+                        <div class="acordeon-conteudo">
+                          <div class="content-accordeon acc-content-v2">
+                            <div class="w-richtext">
+                              <ul role="list">
+                                <li>Dimensionar bombas e compressores.</li>
+                                <li>Selecionar válvulas adequadas.</li>
+                                <li>Ajustar tempos de ciclo em sistemas automatizados.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>É comum, no início dos estudos, confundir pressão com vazão. Por isso, vale reforçar que pressão gera força e vazão controla a velocidade.</p>
+                  <h2 class="margin-top-2em"><strong>Energia no fluido e conversões de energia</strong></h2>
+                  <p>Os sistemas hidráulicos e pneumáticos não criam energia; eles realizam conversões de energia, em conformidade com a lei da conservação da energia.</p>
+                  <p>De forma simplificada, ocorre a seguinte sequência:</p>
+                </div>
+                <div class="time-line-lista">
+                  <div class="w-layout-grid process-grid"><img src="images/a1-img5.jpg" loading="lazy" width="612" id="w-node-_57ca792e-f1fa-da1a-7351-2ec1f799f06f-a854b4cb" alt="" srcset="images/a1-img5-p-500.jpg 500w, images/a1-img5-p-800.jpg 800w, images/a1-img5-p-1080.jpg 1080w, images/a1-img5.jpg 1200w" sizes="(max-width: 479px) 48vw, (max-width: 767px) 49vw, (max-width: 991px) 356px, 462px" class="placeholder-image filter step-mobile">
+                    <div>
+                      <div id="w-node-_57ca792e-f1fa-da1a-7351-2ec1f799f071-a854b4cb" class="step-content">
+                        <div id="w-node-_57ca792e-f1fa-da1a-7351-2ec1f799f072-a854b4cb" class="line-wrap">
+                          <div class="check-wrap"><img src="https://uploads-ssl.webflow.com/6106180d31d33717a80a43d1/61061a7ebda194f9bb46de4a_Check.svg" loading="lazy" alt=""></div>
+                          <div class="line-dash-vertical"></div>
+                        </div>
+                        <div id="w-node-_57ca792e-f1fa-da1a-7351-2ec1f799f076-a854b4cb" class="step-title-wrapper">
+                          <h5 class="large-title">Energia elétrica</h5>
+                          <p class="text-detail">Motor elétrico.</p>
+                        </div>
+                      </div>
+                      <div class="step-content">
+                        <div id="w-node-_57ca792e-f1fa-da1a-7351-2ec1f799f07c-a854b4cb" class="line-wrap">
+                          <div class="check-wrap"><img src="https://uploads-ssl.webflow.com/6106180d31d33717a80a43d1/61061a7ebda194f9bb46de4a_Check.svg" loading="lazy" alt=""></div>
+                          <div class="line-dash-vertical"></div>
+                        </div>
+                        <div id="w-node-_57ca792e-f1fa-da1a-7351-2ec1f799f080-a854b4cb" class="step-title-wrapper">
+                          <h5 class="large-title">Energia mecânica</h5>
+                          <p class="text-detail">Bomba ou compressor.</p>
+                        </div>
+                      </div>
+                      <div class="step-content">
+                        <div id="w-node-_57ca792e-f1fa-da1a-7351-2ec1f799f086-a854b4cb" class="line-wrap">
+                          <div class="check-wrap"><img src="https://uploads-ssl.webflow.com/6106180d31d33717a80a43d1/61061a7ebda194f9bb46de4a_Check.svg" loading="lazy" alt=""></div>
+                          <div class="line-dash-vertical"></div>
+                        </div>
+                        <div id="w-node-_57ca792e-f1fa-da1a-7351-2ec1f799f08a-a854b4cb" class="step-title-wrapper">
+                          <h5 class="large-title">Energia de pressão</h5>
+                          <p class="text-detail">Fluido pressurizado.</p>
+                        </div>
+                      </div>
+                      <div class="step-content">
+                        <div id="w-node-_57ca792e-f1fa-da1a-7351-2ec1f799f0e0-a854b4cb" class="line-wrap">
+                          <div class="check-wrap"><img src="https://uploads-ssl.webflow.com/6106180d31d33717a80a43d1/61061a7ebda194f9bb46de4a_Check.svg" loading="lazy" alt=""></div>
+                        </div>
+                        <div id="w-node-_57ca792e-f1fa-da1a-7351-2ec1f799f0e3-a854b4cb" class="step-title-wrapper">
+                          <h5 class="large-title">Energia mecânica novamente</h5>
+                          <p class="text-detail">Movimento no atuador.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>No caso da pneumática, esse processo envolve a compressão do ar, gerando aquecimento e perdas energéticas durante a expansão. Já na hidráulica, a transmissão da energia ocorre de forma mais uniforme, proporcionando maior rigidez e controle do movimento (Filho; Santos, 2018).</p>
+                  <p>Essas diferenças explicam por que a hidráulica é preferida para aplicações que exigem precisão e força, enquanto a pneumática é amplamente utilizada em operações rápidas e repetitivas.</p>
+                  <h2 class="margin-top-2em"><strong>Perdas e resistências nos sistemas fluido-mecânicos</strong></h2>
+                  <p>Nenhum sistema fluido-mecânico opera sem perdas. Essas perdas estão associadas principalmente ao atrito, a vazamentos e a restrições ao escoamento. </p>
+                  <p>Para White (2018) e Netto e Fernández (2017), em sistemas hidráulicos, as perdas mais comuns estão relacionadas a:</p>
+                </div>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="w-richtext">
+                      <ul role="list" class="list-3">
+                        <li>Atrito do fluido nas tubulações.</li>
+                        <li>Vazamentos internos em bombas e válvulas.</li>
+                        <li>Aquecimento do óleo.</li>
+                        <li>Resistências em filtros, curvas e conexões.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="oi-content">
+                    <p class="texto-destaque espaco-1">Clique nas setas.</p>
+                    <div data-delay="4000" data-animation="slide" class="slider-caixa-texto w-slider" data-hide="1" data-autoplay="false" data-easing="ease" style="opacity:0" data-hide-arrows="false" data-disable-swipe="false" data-w-id="f74099e1-e1f2-e6d0-f4ff-e9443e9f4b9c" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+                      <div class="w-slider-mask">
+                        <div class="w-slide">
+                          <div class="slider-content-lista">
+                            <div class="slider-numeros">
+                              <div class="text-block">01</div>
+                            </div>
+                            <div class="slider-div-text-info">
+                              <div class="w-richtext">
+                                <p>Atrito do fluido nas tubulações.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w-slide">
+                          <div class="slider-content-lista">
+                            <div class="slider-numeros">
+                              <div class="text-block">02</div>
+                            </div>
+                            <div class="slider-div-text-info">
+                              <div class="w-richtext">
+                                <p>Vazamentos internos em bombas e válvulas.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w-slide">
+                          <div class="slider-content-lista">
+                            <div class="slider-numeros">
+                              <div class="text-block">03</div>
+                            </div>
+                            <div class="slider-div-text-info">
+                              <div class="w-richtext">
+                                <p>Aquecimento do óleo.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w-slide">
+                          <div class="slider-content-lista">
+                            <div class="slider-numeros">
+                              <div class="text-block">04</div>
+                            </div>
+                            <div class="slider-div-text-info">
+                              <div class="w-richtext">
+                                <p>Resistências em filtros, curvas e conexões.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slider-button-v1 left w-slider-arrow-left">
+                        <div class="w-icon-slider-left"></div>
+                      </div>
+                      <div class="slider-button-v1 right w-slider-arrow-right">
+                        <div class="w-icon-slider-right"></div>
+                      </div>
+                      <div class="slide-nav off w-slider-nav w-slider-nav-invert"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Já Fialho (2011) e Prudente (2015) definem que, para perdas em sistemas pneumáticos, destacam-se:</p>
+                </div>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="w-richtext">
+                      <ul role="list" class="list-4">
+                        <li>Vazamentos externos de ar comprimido.</li>
+                        <li>Perdas associadas à compressibilidade do ar.</li>
+                        <li>Quedas de pressão ao longo da rede.</li>
+                        <li>Presença de umidade e partículas sólidas.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="oi-content">
+                    <p class="texto-destaque espaco-1">Clique nas setas.</p>
+                    <div data-delay="4000" data-animation="slide" class="slider-caixa-texto w-slider" data-hide="1" data-autoplay="false" data-easing="ease" style="opacity:0" data-hide-arrows="false" data-disable-swipe="false" data-w-id="935bb7cb-8449-c8f5-db9f-cc07e31a0c7a" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+                      <div class="w-slider-mask">
+                        <div class="w-slide">
+                          <div class="slider-content-lista">
+                            <div class="slider-numeros">
+                              <div class="text-block">01</div>
+                            </div>
+                            <div class="slider-div-text-info">
+                              <div class="w-richtext">
+                                <p>Vazamentos externos de ar comprimido.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w-slide">
+                          <div class="slider-content-lista">
+                            <div class="slider-numeros">
+                              <div class="text-block">02</div>
+                            </div>
+                            <div class="slider-div-text-info">
+                              <div class="w-richtext">
+                                <p>Perdas associadas à compressibilidade do ar.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w-slide">
+                          <div class="slider-content-lista">
+                            <div class="slider-numeros">
+                              <div class="text-block">03</div>
+                            </div>
+                            <div class="slider-div-text-info">
+                              <div class="w-richtext">
+                                <p>Quedas de pressão ao longo da rede.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w-slide">
+                          <div class="slider-content-lista">
+                            <div class="slider-numeros">
+                              <div class="text-block">04</div>
+                            </div>
+                            <div class="slider-div-text-info">
+                              <div class="w-richtext">
+                                <p>Presença de umidade e partículas sólidas.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slider-button-v1 left w-slider-arrow-left">
+                        <div class="w-icon-slider-left"></div>
+                      </div>
+                      <div class="slider-button-v1 right w-slider-arrow-right">
+                        <div class="w-icon-slider-right"></div>
+                      </div>
+                      <div class="slide-nav off w-slider-nav w-slider-nav-invert"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Essas perdas impactam diretamente a eficiência energética e o desempenho dos sistemas pneumáticos, justificando a necessidade de um correto projeto das redes, do tratamento adequado do ar comprimido e da manutenção preventiva.</p>
+                  <p>Compreender essas perdas é essencial para projetar sistemas mais eficientes, reduzir custos operacionais e aumentar a vida útil dos componentes. Mas isso será discutido mais detalhadamente ao longo dos próximos conteúdos.</p>
+                </div>
+                <div class="elemento-multimedia">
+                  <div class="flex">
+                    <div class="author-image-element"><img src="images/icon-conexao.svg" loading="lazy" alt="" class="cover-image"></div>
+                    <div class="texto-box-destaque">
+                      <p class="heading">Conexão</p>
+                      <div class="rich-text w-richtext">
+                        <p>Para aprofundar esses conceitos, recomenda-se a leitura de White (2018), que aborda detalhadamente os princípios da mecânica dos fluidos aplicados a sistemas industriais, com ênfase nos efeitos da compressibilidade e das perdas de energia.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Compreendidos os princípios físicos que regem o funcionamento dos sistemas fluido-mecânicos, torna-se possível avançar para uma análise comparativa.</p>
+                  <p>No próximo tópico, serão comparados diretamente os sistemas hidráulicos e pneumáticos, destacando suas vantagens, limitações e critérios de escolha, de modo que você consiga identificar qual tecnologia é mais adequada para cada aplicação industrial.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-atividades">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="exercicio-whopper">
+                  <div class="objeto-interativo">
+                    <div class="texto-acessibilidade">
+                      <div class="label-titulo-section vermelho">para pensar</div>
+                      <div class="bullet-abc w-richtext">
+                        <p>Em sistemas pneumáticos utilizados na automação industrial, o fluido de trabalho empregado é:</p>
+                        <ol start="" role="list">
+                          <li>Água pressurizada.</li>
+                          <li>Óleo mineral.</li>
+                          <li>Fluido sintético.</li>
+                          <li>Ar comprimido.</li>
+                          <li>Gás refrigerante.</li>
+                        </ol>
+                        <p><strong>A alternativa D é a correta.</strong></p>
+                        <p><strong>Justificativa: </strong>A pneumática utiliza o ar comprimido como fluido de transmissão de energia.</p>
+                      </div>
+                    </div>
+                    <div aria-hidden="true" class="oi-content">
+                      <div class="label-titulo-section">para pensar</div>
+                      <div class="rich-text w-richtext">
+                        <p>Em sistemas pneumáticos utilizados na automação industrial, o fluido de trabalho empregado é:</p>
+                      </div>
+                      <div class="acoredeon">
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">a) Água pressurizada.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="33599852-e16e-43d3-0a21-7ad71e48f9ee" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">b) Óleo mineral.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="33599852-e16e-43d3-0a21-7ad71e48f9d6" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">c) Fluido sintético.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="33599852-e16e-43d3-0a21-7ad71e48f9e2" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">d) Ar comprimido.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades" data-w-id="33599852-e16e-43d3-0a21-7ad71e48f9c8" data-animation-type="lottie" data-src="documents/certo-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>Parabéns! A resposta está correta.</strong></p>
+                                  <p>Justificativa: A pneumática utiliza o ar comprimido como fluido de transmissão de energia.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">e) Gás refrigerante.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="33599852-e16e-43d3-0a21-7ad71e48f9fa" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><img src="images/circulo-unipar-02.svg" loading="lazy" alt="" height="650" class="bg-exercicios">
+        </section>
+        <section class="section">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="titulo-topico">
+                  <div class="div-titulo">
+                    <div data-w-id="1c76af93-c860-f39b-05df-87fab3ea87f3" style="opacity:0" class="label-titulo">Tópico 03</div>
+                    <h2 data-w-id="1c76af93-c860-f39b-05df-87fab3ea87f5" style="opacity:0" class="heading-titulo">Comparação entre sistemas hidráulicos e pneumáticos<br></h2>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Estudante, agora que você já compreendeu os conceitos fundamentais da potência fluida e os princípios físicos que governam o comportamento dos fluidos sob pressão, chegou o momento de responder a uma pergunta prática e muito comum no ambiente industrial: quando utilizar um sistema hidráulico e quando optar por um sistema pneumático?</p>
+                </div>
+                <div class="colunas-img-content-2c">
+                  <div class="card-box-left"><img src="images/a1-img4.jpg" loading="lazy" sizes="100vw" srcset="images/a1-img4-p-500.jpg 500w, images/a1-img4-p-800.jpg 800w, images/a1-img4.jpg 1000w" alt="" class="card-imagem-ilustrativa">
+                    <div class="img-placeholder-colunas">
+                      <div class="legenda-2c-2">@magnific</div>
+                    </div>
+                  </div>
+                  <div class="card-box-text">
+                    <div class="texto-padrao-2">
+                      <p>Embora ambos utilizem fluidos como meio de transmissão de energia, os sistemas hidráulicos e pneumáticos apresentam diferenças significativas em termos de comportamento, desempenho, custo e aplicação. A escolha correta entre essas tecnologias influencia diretamente a eficiência, a segurança e a confiabilidade de um sistema industrial.<br></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="margin-top-4em w-richtext">
+                  <h2><strong>Diferenças fundamentais entre hidráulica e pneumática</strong></h2>
+                  <p>A principal diferença entre os dois sistemas está no tipo de fluido utilizado e, consequentemente, no seu comportamento físico.</p>
+                  <p>Nos sistemas hidráulicos, utiliza-se um fluido praticamente incompressível, geralmente óleo hidráulico. Isso permite a transmissão direta da energia, com alta rigidez e grande capacidade de geração de força.</p>
+                  <p>Já nos sistemas pneumáticos, o fluido utilizado é o ar comprimido, que é compressível. Essa característica confere maior elasticidade ao sistema, possibilitando movimentos rápidos, porém com menor precisão quando comparados à hidráulica.</p>
+                  <p>Autores como Filho e Santos (2018) e Fialho (2011) destacam que essas diferenças tornam cada tecnologia mais adequada a determinados tipos de aplicação.</p>
+                  <h2 class="margin-top-2em"><strong>Comparação de desempenho e características operacionais</strong></h2>
+                  <p>Do ponto de vista operacional, é possível comparar os dois sistemas considerando alguns critérios fundamentais:</p>
+                </div>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="w-richtext">
+                      <p><strong>Força:</strong></p>
+                      <ul role="list" class="list-8">
+                        <li>Sistemas hidráulicos podem gerar forças muito elevadas, sendo indicados para prensas, equipamentos móveis e máquinas de grande porte.</li>
+                        <li>Sistemas pneumáticos, por operarem com pressões mais baixas, são indicados para cargas leves e médias.</li>
+                      </ul>
+                      <p><strong>Velocidade:</strong></p>
+                      <ul role="list" class="list-7">
+                        <li>A pneumática se destaca pela rapidez de resposta e pela facilidade de realizar movimentos repetitivos em curtos intervalos de tempo.</li>
+                        <li>A hidráulica, embora mais lenta em alguns casos, oferece maior controle do movimento.</li>
+                      </ul>
+                      <p><strong>Precisão e controle:</strong></p>
+                      <ul role="list" class="list-6">
+                        <li>Devido à incompressibilidade do óleo, os sistemas hidráulicos apresentam maior precisão de posicionamento e estabilidade.</li>
+                        <li>Já os sistemas pneumáticos apresentam menor precisão, especialmente em baixas velocidades.</li>
+                      </ul>
+                      <p><strong>Custo e manutenção:</strong></p>
+                      <ul role="list" class="list-5">
+                        <li>Sistemas pneumáticos possuem menor custo inicial e manutenção mais simples.</li>
+                        <li>Sistemas hidráulicos exigem maior investimento e cuidados adicionais com vedação, contaminação e temperatura do fluido.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="oi-content">
+                    <p class="texto-destaque">Clique nas abas.</p>
+                    <div data-hide="1" class="bloco-oi">
+                      <div data-duration-in="300" data-duration-out="100" data-current="Tab 1" data-easing="ease" class="w-tabs">
+                        <div data-w-id="e634a8c2-2c9a-7c71-44a2-04f26d75de95" style="opacity:0" class="tab-menu-horizontal w-tab-menu">
+                          <a data-w-tab="Tab 1" class="tab-link-tabs w-inline-block w-tab-link w--current">
+                            <div>Força</div>
+                          </a>
+                          <a data-w-tab="Tab 2" class="tab-link-tabs w-inline-block w-tab-link">
+                            <div>Velocidade</div>
+                          </a>
+                          <a data-w-tab="Tab 3" class="tab-link-tabs w-inline-block w-tab-link">
+                            <div>Precisão e controle</div>
+                          </a>
+                          <a data-w-tab="Tab 4" class="tab-link-tabs w-inline-block w-tab-link">
+                            <div>Custo e manutenção</div>
+                          </a>
+                        </div>
+                        <div data-w-id="e634a8c2-2c9a-7c71-44a2-04f26d75dea2" style="opacity:0" class="tab-container w-tab-content">
+                          <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
+                            <div class="w-richtext">
+                              <ul role="list">
+                                <li>Sistemas hidráulicos podem gerar forças muito elevadas, sendo indicados para prensas, equipamentos móveis e máquinas de grande porte.</li>
+                                <li>Sistemas pneumáticos, por operarem com pressões mais baixas, são indicados para cargas leves e médias.</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div data-w-tab="Tab 2" class="w-tab-pane">
+                            <div class="w-richtext">
+                              <ul role="list">
+                                <li>A pneumática se destaca pela rapidez de resposta e pela facilidade de realizar movimentos repetitivos em curtos intervalos de tempo.</li>
+                                <li>A hidráulica, embora mais lenta em alguns casos, oferece maior controle do movimento.</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div data-w-tab="Tab 3" class="w-tab-pane">
+                            <div class="w-richtext">
+                              <ul role="list">
+                                <li>Devido à incompressibilidade do óleo, os sistemas hidráulicos apresentam maior precisão de posicionamento e estabilidade.</li>
+                                <li>Já os sistemas pneumáticos apresentam menor precisão, especialmente em baixas velocidades.</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div data-w-tab="Tab 4" class="w-tab-pane">
+                            <div class="w-richtext">
+                              <ul role="list">
+                                <li>Sistemas pneumáticos possuem menor custo inicial e manutenção mais simples.</li>
+                                <li>Sistemas hidráulicos exigem maior investimento e cuidados adicionais com vedação, contaminação e temperatura do fluido.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Outro fator importante na escolha da tecnologia está relacionado à segurança e ao ambiente de operação.</p>
+                  <p>A pneumática é amplamente utilizada em ambientes onde a limpeza e a segurança são essenciais, como indústrias alimentícias, farmacêuticas e eletrônicas, pois o ar comprimido não contamina o ambiente em caso de vazamento (Filho; Santos, 2018).</p>
+                  <p>A hidráulica, por utilizar óleo, requer maior atenção quanto a vazamentos e descarte de fluidos, porém oferece maior confiabilidade em aplicações críticas e de alta carga (Netto; Fernández, 2017).</p>
+                  <h2 class="margin-top-2em"><strong>Estudos práticos de aplicação industrial</strong></h2>
+                  <p>Para compreender objetivamente a escolha entre sistemas hidráulicos e pneumáticos, é útil observar situações práticas recorrentes na indústria, nas quais os critérios técnicos estudados se manifestam claramente.</p>
+                  <p>Em operações que exigem altas forças e controle preciso, como prensas para conformação metálica, a utilização de sistemas hidráulicos é a solução mais adequada. A incompressibilidade do óleo permite a transmissão eficiente da energia, garantindo estabilidade e manutenção da força durante todo o ciclo de trabalho, conforme destacado por Filho e Santos (2018) e Netto e Fernández (2017).</p>
+                  <p>Já em linhas de montagem automatizadas, onde predominam movimentos rápidos, repetitivos e com cargas leves, os sistemas pneumáticos apresentam vantagens significativas. A simplicidade construtiva, a rapidez de resposta e o baixo custo de manutenção tornam a pneumática amplamente utilizada nesses processos, como apontam Fialho (2011) e Prudente (2015).</p>
+                  <p>Em máquinas pesadas e equipamentos móveis, como escavadeiras e guindastes, a hidráulica novamente se destaca por sua robustez e elevada capacidade de geração de força em espaços reduzidos, sendo a tecnologia predominante nesse tipo de aplicação (Lima, 2022; Souza, 2011).</p>
+                  <p>Por fim, em ambientes que exigem alto nível de limpeza e segurança, como as indústrias alimentícia e farmacêutica, os sistemas pneumáticos são preferidos, pois o ar comprimido não contamina o produto em caso de vazamento, além de facilitar os processos de higienização (Rollins, 2004).</p>
+                  <p>Esses exemplos reforçam que a escolha entre hidráulica e pneumática depende diretamente das exigências da aplicação, não havendo uma tecnologia superior em todos os cenários.</p>
+                  <h2 class="margin-top-2em"><strong>Síntese comparativa</strong></h2>
+                  <p>O infográfico a seguir apresenta um comparativo resumido entre os sistemas hidráulicos e pneumáticos, auxiliando na tomada de decisão em projetos industriais.</p>
+                </div>
+                <div class="figura">
+                  <div><img src="images/a1-info012x.webp" width="1041" height="Auto" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" alt="" srcset="images/a1-info012x-p-500.webp 500w, images/a1-info012x-p-800.webp 800w, images/a1-info012x-p-1080.webp 1080w, images/a1-info012x-p-1600.webp 1600w, images/a1-info012x.webp 4090w" class="hero-image-figura"></div>
+                </div>
+                <div class="margin-top-4em w-richtext">
+                  <p>Essa comparação reforça que não existe um sistema melhor em todos os aspectos, mas sim tecnologias adequadas a diferentes necessidades.</p>
+                  <h2 class="margin-top-2em"><strong>É isso aí!</strong></h2>
+                  <p>Ao longo desta primeira aula, você percorreu os fundamentos essenciais para compreender os sistemas hidráulicos e pneumáticos. Viu que esses sistemas vão muito além de simplesmente gerar movimento: eles envolvem conceitos físicos, escolhas técnicas, critérios de aplicação e decisões estratégicas que impactam diretamente o desempenho industrial.</p>
+                  <p>Compreender onde esses sistemas são aplicados, como funcionam do ponto de vista físico e quais são suas principais diferenças é o primeiro passo para avançar no estudo de componentes, circuitos e métodos de automação.</p>
+                  <p>Nos próximos conteúdos, estudante, você irá aprofundar esses conhecimentos, explorando as características do ar comprimido, as leis dos gases e os processos envolvidos na geração e no tratamento do ar.</p>
+                  <p>Até lá e bons estudos!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-atividades">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="exercicio-whopper">
+                  <div class="objeto-interativo">
+                    <div class="texto-acessibilidade">
+                      <div class="label-titulo-section vermelho">para pensar</div>
+                      <div class="bullet-abc w-richtext">
+                        <p>Qual das situações a seguir justifica mais adequadamente o uso de um sistema hidráulico?</p>
+                        <ol start="" role="list">
+                          <li>Aplicações que exigem grandes forças.</li>
+                          <li>Ambientes que exigem elevada limpeza.</li>
+                          <li>Movimentos rápidos com baixa carga.</li>
+                          <li>Sistemas de baixo custo e simples manutenção.</li>
+                          <li>Processos com alta repetitividade.</li>
+                        </ol>
+                        <p><strong>A alternativa A é a correta.</strong></p>
+                        <p><strong>Justificativa: </strong>A hidráulica é indicada quando há necessidade de geração de grandes forças e maior precisão.</p>
+                      </div>
+                    </div>
+                    <div aria-hidden="true" class="oi-content">
+                      <div class="label-titulo-section">para pensar</div>
+                      <div class="rich-text w-richtext">
+                        <p>Qual das situações a seguir justifica mais adequadamente o uso de um sistema hidráulico?</p>
+                      </div>
+                      <div class="acoredeon">
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">a) Aplicações que exigem grandes forças.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades" data-w-id="e7257e20-5c31-609c-3795-fe292bfa84d3" data-animation-type="lottie" data-src="documents/certo-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>Parabéns! A resposta está correta.</strong></p>
+                                  <p>Justificativa: A hidráulica é indicada quando há necessidade de geração de grandes forças e maior precisão.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">b) Ambientes que exigem elevada limpeza.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="e7257e20-5c31-609c-3795-fe292bfa84e1" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">c) Movimentos rápidos com baixa carga.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="e7257e20-5c31-609c-3795-fe292bfa84ed" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">d) Sistemas de baixo custo e simples manutenção.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="e7257e20-5c31-609c-3795-fe292bfa84f9" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">e) Processos com alta repetitividade.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="e7257e20-5c31-609c-3795-fe292bfa8505" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><img src="images/circulo-unipar-02.svg" loading="lazy" alt="" height="650" class="bg-exercicios">
+        </section>
+      </div>
+      <div class="video-aula-conteudo">
+        <section>
+          <div data-hide="1" class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="label-titulo-section vermelho">videoaula</div>
+                <div class="w-richtext">
+                  <p>Sua próxima etapa é assistir à videoaula, onde você poderá ver os conceitos em ação e ampliar sua compreensão. Essa é uma ótima oportunidade para reforçar o aprendizado.</p>
+                  <p>‍</p>
+                </div>
+                <p class="texto-destaque">Assista a videoaula</p>
+                <div class="video-aula-div">
+                  <div style="padding-top:56.27659574468085%" class="video-aula w-video w-embed"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1181654413%3Fapp_id%3D122963&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fvimeo.com%2F1181654413&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2144072347-e4d48021143227d0596cbd859dc69f16849ea1c5ebd82a05de01f05407b0e295-d_1280%3Fregion%3Dus&type=text%2Fhtml&schema=vimeo" width="940" height="529" scrolling="no" allowfullscreen="" title="0910 - Aula 1 - Sistemas Hidráulicos e Pneumáticos"></iframe></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="referencias-bibliograficas text-color-white">
+        <section data-w-id="dc02f462-fad6-7074-3f26-4f016be9afad" class="section">
+          <div class="padding-inner padding-4em">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="label-titulo-section">Referências </div>
+                <div class="text-color-white w-richtext">
+                  <p>DAINES, J. R.; DAINES, M. J. <strong>Fluid Power</strong>: Hydraulics and Pneumatics. 3. ed. Tinley Park: Goodheart-Willcox, 2018.</p>
+                  <p>FIALHO, A. B. <strong>Automação pneumática</strong>: Dimensionamento e análise de circuitos. 7. ed. São Paulo: Érica, 2011.</p>
+                  <p>FILHO, E. S. D. S.; SANTOS, B. K. <strong>Sistemas hidráulicos e pneumáticos</strong>. Porto Alegre: Sagah, 2018.</p>
+                  <p>GODOI, P. J. P. M.; ASSUNCAO, G. S. C. <strong>Mecânica dos fluidos</strong>. Porto Alegre: Sagah, 2019.</p>
+                  <p>HERRERA, H. H. <em>et al</em>. Energy Savings Measures in Compressed Air Systems. <strong>International Journal of Energy Economics and Policy</strong>, Mersin, v. 10, n. 3, p. 414-422, maio 2020.</p>
+                  <p>LIMA, E. P. C. <strong>Mecânica das bombas</strong>: hidráulica, bombas centrífugas, alternativas e rotativas. 3. ed. Rio de Janeiro: Interciência, 2022.</p>
+                  <p>NETTO, J. M. A.; FERNÁNDEZ, M. F. <strong>Manual de hidráulica</strong>. 9. ed. São Paulo: Blucher, 2017.</p>
+                  <p>PRUDENTE, F. <strong>Automação industrial pneumática</strong>: Teoria e aplicações. Rio de Janeiro: LTC, 2015.</p>
+                  <p>ROLLINS, J. P. <strong>Manual de ar comprimido e gases</strong>. 1. ed. São Paulo: Pearson, 2004.</p>
+                  <p>SOUZA, Z. <strong>Projeto de máquinas de fluxo</strong>: tomo 2 - bombas hidráulicas com rotores radiais e axiais. Rio de Janeiro: Interciência, 2011.</p>
+                  <p>WHITE, F. M. <strong>Mecânica dos fluidos</strong>. Tradução de Gelson Maia Santos. 8. ed. Porto Alegre: AMGH, 2018.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div data-hide="1" class="rodape-final">
+        <div class="container">
+          <div class="w-layout-blockcontainer w-container">
+            <div class="w-richtext">
+              <h6><strong>Parabéns!</strong></h6>
+              <p>Você acaba de concluir uma etapa importante da sua jornada. Agora é hora de seguir em frente!</p>
+            </div>
+          </div>
+        </div>
+        <div class="design-b42">
+          <div>©Unipar - Todos direitos reservados | Design by </div>
+          <a href="https://www.b42.com.br" target="_blank" class="b42-link w-inline-block"><img src="images/branco.svg" loading="lazy" width="43" alt="" class="logo-b42"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=69e633bc7a5bc75aa854b4c6" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  
+  <script src="../_BARRA-ACESSIBILIDADE-LOCAL/b42-accessibility.min.js" data-print-css="unipar" data-dark-css="unipar" data-contrast-css="unipar"></script>
+  
+  <!-- scripts player podcast -->
+  <script src="https://s3.amazonaws.com/assets.b42.com.br/player/mediaelement-and-player.min.js"></script>
+  <script src="https://s3.amazonaws.com/assets.b42.com.br/player/plugins/speed/speed.min.js"></script>
+  <script src="https://s3.amazonaws.com/assets.b42.com.br/player/plugins/speed/speed-i18n.js"></script>
+  <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function () {
+    var mediaElements = document.querySelectorAll('.audio-complementar audio'), i, total = mediaElements.length;
+    for (i = 0; i < total; i++) {
+      new MediaElementPlayer(mediaElements[i], {
+        pluginPath: './mediaelement',
+        features: ['playpause', 'current', 'progress', 'duration', 'speed', 'skipback', 'jumpforward', 'tracks','markers', 'volume', 'chromecast', 'ads', 'vast', 'contextmenu'],
+        startLanguage: 'pt'
+      });
+    }
+  });
+</script>
+  <!-- scripts quiz -->
+  <script>
+    document.addEventListener('quiz-completed', function (e) {
+        ScormProcessSetValue("cmi.core.lesson_status", "completed");
+    });
+</script>
+  <!-- scripts balao palavra -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <!-- código dos boxes  -->
+  <script src="https://go.eadstock.com.br/a/lib?p=go.min.js"></script>
+</body>
+</html>

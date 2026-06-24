@@ -1,0 +1,1295 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Jun 24 2026 14:30:54 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="69e633bc7a5bc75aa854b4cf" data-wf-site="69e633bc7a5bc75aa854b4c6">
+<head>
+  <meta charset="utf-8">
+  <title>Aula 04</title>
+  <meta content="Aula 04" property="og:title">
+  <meta content="Aula 04" name="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/sistemas-hidraulicos-pneumaticos.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Exo:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Bebas Neue:300,400,500,600,700","Inter:300,400,500,600,700","Inter:300,400,500,600,700","Source Code Pro:300,400,500,600,700"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <script src="js/scormfunctions.js" type="text/javascript"></script>
+  <script src="js/scormvalidate.js" type="text/javascript"></script>
+  <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+  <!-- scripts player podcast -->
+  <link rel="stylesheet" href="https://s3.amazonaws.com/assets.b42.com.br/player/mediaelementplayer.css">
+  <link rel="stylesheet" href="https://s3.amazonaws.com/assets.b42.com.br/player/plugins/speed/speed.min.css">
+  <!-- scripts player audiobook -->
+  <link rel="stylesheet" href="https://assets.eadstock.com.br/go/static/libs/b42-audio-player/css/b42-audio-player.min.css">
+  <style>
+.hide, .hide.w-button {
+  display: none;
+}
+/*acessibilidade*/ 
+.texto-acessibilidade {
+  position:absolute;
+  left:0px;
+  top:-500px;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+/* esconder itens*/
+.w-webflow-badge {
+  display: none !important;
+}
+/* player-media elemente transparente */
+.mejs__container, .mejs__controls:not([style*='display: none']){
+  background: transparent !important;
+}
+/* quebra dos links */
+.span-hyphen, a {
+overflow-wrap: break-word;
+}
+/* espaçamento no box do webgo*/
+  .link-content {
+    padding-bottom: 10px;
+}
+</style>
+  <script>
+window.addEventListener('load', () => {
+    doStart(false);
+});
+</script>
+</head>
+<body>
+  <div class="global-styles w-embed">
+    <style>
+/* Snippet gets rid of top margin on first element in any rich text*/
+.w-richtext>:first-child {
+	margin-top: 0;
+}
+/* Snippet gets rid of bottom margin on last element in any rich text*/
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0;
+}
+/* Snippet prevents all click and hover interaction with an element */
+.clickable-off {
+	pointer-events: none;
+}
+/* Snippet enables all click and hover interaction with an element */
+.clickable-on{
+  pointer-events: auto;
+}
+/* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+/*Hide focus outline for main content element*/
+main:focus-visible {
+	outline: -webkit-focus-ring-color auto 0px;
+}
+/* Make sure containers never lose their center alignment*/
+.container-medium, .container-small, .container-large {
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+/*Reset buttons, and links styles*/
+a {
+	text-decoration: inherit;
+	font-size: inherit;
+}
+/*Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+/*Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/*estilo de tabela*/  
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid #ffffff; /*cor das bordas*/
+    border-collapse: collapse;
+}
+th, td {
+    padding: 14px;
+    text-align: left;
+}
+table tr:nth-child(even) {
+    background-color: #fff8f9; /*cor 1*/
+}
+table tr:nth-child(odd) {
+   background-color: #fce0e5; /*cor 2*/
+}
+table th {
+    background-color: #4c0a01; /*cor do background da tabela*/
+    color: #ffffff; /*cor do título da tabela*/
+}
+/*player responsivo*/ 
+.b42-video-player{
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+/*quebrar links*/ 
+.span-hyphen, a {
+overflow-wrap: break-word;
+}
+/*scroll bar estilizada 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  padding-right: 3px;
+	padding-right: 3px;
+  }
+::-webkit-scrollbar-button {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #f9b233;
+  border: 0px none #f9b233;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f9b233;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+  padding-right: 3px;
+	padding-right: 3px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+*/
+.link-content {
+	margin-top: 40px;
+  margin-bottom: 20px;
+}
+</style>
+  </div>
+  <div id="content" class="page-wrap">
+    <div class="main">
+      <div data-w-id="8794424f-6621-5531-26ab-6a26db72902e" class="home">
+        <div class="container">
+          <div class="home-whopper">
+            <div class="home-content"><img src="images/logo-unipar-red.svg" loading="lazy" width="100" alt="" class="logo-unipar">
+              <div class="tag">Aula</div>
+              <h1 class="titulo-aula">Tratamento e redes de distribuição</h1>
+            </div>
+            <div data-w-id="8f13a32a-a1c6-3f8d-0360-f9ab6e4ac72a" class="element-home"><img src="images/a4-capa-edit.jpg" loading="lazy" width="400" sizes="(max-width: 479px) 100vw, 400px" alt="" srcset="images/a4-capa-edit-p-500.jpg 500w, images/a4-capa-edit-p-800.jpg 800w, images/a4-capa-edit-p-1080.jpg 1080w, images/a4-capa-edit.jpg 1524w" class="image-label-element"></div><img src="images/bg-element-03.svg" loading="lazy" width="150" data-w-id="7746d760-0a1a-1815-139d-75f207b09ae4" alt="" class="icone-home-01"><img src="images/bg-element-02.svg" loading="lazy" width="150" alt="" class="icone-home-02">
+          </div>
+        </div>
+      </div>
+      <div class="conteudo">
+        <section class="section-topicos">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="container-topicos">
+                <p> Nesta aula, os seguintes tópicos serão explorados:</p>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="_2-colunas-icones">
+                      <div class="_2-colunas">
+                        <div class="column-4">
+                          <div class="_2-colunas-icone-bg text-color-white">
+                            <div class="numero-icone-2-colunas"></div>
+                            <div class="numero-2c">1</div>
+                          </div>
+                        </div>
+                        <div class="column-text">
+                          <div class="titulo-colunas-icon">Tópico</div>
+                          <div class="w-richtext">
+                            <p>Secagem, purificação e condicionamento do ar (FRL, secadores, filtros)</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="_2-colunas">
+                        <div class="column-4">
+                          <div class="_2-colunas-icone-bg text-color-white">
+                            <div class="numero-icone-2-colunas"></div>
+                            <div class="numero-2c">2</div>
+                          </div>
+                        </div>
+                        <div class="column-text">
+                          <div class="titulo-colunas-icon">Tópico</div>
+                          <div class="w-richtext">
+                            <p>Elementos e acessórios das linhas de distribuição</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="_2-colunas">
+                        <div class="column-4">
+                          <div class="_2-colunas-icone-bg text-color-white">
+                            <div class="numero-icone-2-colunas"></div>
+                            <div class="numero-2c">3</div>
+                          </div>
+                        </div>
+                        <div class="column-text">
+                          <div class="titulo-colunas-icon">Tópico</div>
+                          <div class="w-richtext">
+                            <p>Projeto e dimensionamento de redes pneumáticas</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="oi-content">
+                    <div class="grid-topicos">
+                      <div data-w-id="41852052-dd9c-a2f9-4cf8-96b92eeeb906" class="card-component">
+                        <div class="card-front-content">
+                          <p>tópico</p>
+                          <div class="text-block-21">1</div>
+                        </div>
+                        <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="card-scroll">
+                          <p>Tópico 1: Secagem, purificação e condicionamento do ar (FRL, secadores, filtros)</p>
+                        </div>
+                      </div>
+                      <div data-w-id="43ff7f3a-a416-443e-d0b5-f0a6dad9abc6" class="card-component">
+                        <div class="card-front-content">
+                          <p>tópico</p>
+                          <div class="text-block-21">2</div>
+                        </div>
+                        <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="card-scroll">
+                          <p>Tópico 2: Elementos e acessórios das linhas de distribuição</p>
+                        </div>
+                      </div>
+                      <div data-w-id="a01b4af2-0d6c-1a1b-c084-9cd2b53a2911" class="card-component">
+                        <div class="card-front-content">
+                          <p>tópico</p>
+                          <div class="text-block-21">3</div>
+                        </div>
+                        <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="card-scroll">
+                          <p>Tópico 3: Projeto e dimensionamento de redes pneumáticas</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="divisor-whopper">
+          <div class="divisor"><img src="images/unipar-escrito-borda.svg" loading="lazy" width="950" alt="" class="unipar-logo-scroll-strock"></div>
+          <div class="divisor"><img src="images/unipar-escrito.svg" loading="lazy" width="950" alt="" class="unipar-logo-scroll-fill"></div>
+        </div>
+        <section class="section">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="titulo-topico">
+                  <div class="div-titulo">
+                    <div data-w-id="676ab6c6-5a37-8cc3-0844-add35f959c4c" style="opacity:0" class="label-titulo">Tópico 01</div>
+                    <h2 data-w-id="1844cb2a-8994-b285-eb89-90e9ebe3fec3" style="opacity:0" class="heading-titulo">Secagem, purificação e condicionamento do ar (FRL, secadores, filtros)<br></h2>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Estudante, nas aulas anteriores, você aprendeu como o ar comprimido é gerado e dimensionado. No entanto, gerar ar comprimido não é suficiente para garantir um sistema pneumático confiável. O ar precisa ser tratado, pois o ar atmosférico aspirado pelo compressor contém contaminantes que podem comprometer seriamente o funcionamento dos equipamentos.</p>
+                  <p>Na prática industrial, boa parte das falhas em sistemas pneumáticos não está relacionada ao atuador ou à válvula, mas sim à qualidade do ar comprimido.</p>
+                  <h2>Por que tratar o ar comprimido?</h2>
+                  <p>De acordo com Filho e Santos (2018), o ar comprimido contém, basicamente, três tipos de contaminantes:</p>
+                </div>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="w-richtext">
+                      <ul role="list">
+                        <li>Partículas sólidas (poeira, ferrugem, resíduos de tubulação).</li>
+                        <li>Óleo (proveniente do compressor).</li>
+                        <li>Umidade (vapor d’água que se condensa após o resfriamento).</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="oi-content">
+                    <p class="texto-destaque">Clique nas cartas.</p>
+                    <div class="oi-flip-cards">
+                      <div data-w-id="a30f5ca2-50c3-7a9c-9395-afa48058990d" class="card text-color-white">
+                        <div class="card_unidade">
+                          <div class="card_frente">
+                            <div class="numero-card">
+                              <div class="numero-flip-card">1</div>
+                            </div>
+                          </div>
+                          <div class="card_atras">
+                            <p class="card_texto"><strong>Partículas sólidas (poeira, ferrugem, resíduos de tubulação).</strong></p>
+                          </div><img src="https://uploads-ssl.webflow.com/644921fb295921149c4a6cc0/644921fb295921ab8b4a6ce1_icon-click-2.svg" width="28" alt="" class="img-click">
+                        </div>
+                      </div>
+                      <div data-w-id="a30f5ca2-50c3-7a9c-9395-afa48058991b" class="card text-color-white">
+                        <div class="card_unidade">
+                          <div class="card_frente">
+                            <div class="numero-card">
+                              <div class="numero-flip-card">2</div>
+                            </div>
+                          </div>
+                          <div class="card_atras">
+                            <p class="card_texto"><strong class="bold-text-2">Óleo (proveniente do compressor).</strong></p>
+                          </div><img src="https://uploads-ssl.webflow.com/644921fb295921149c4a6cc0/644921fb295921ab8b4a6ce1_icon-click-2.svg" width="28" alt="" class="img-click">
+                        </div>
+                      </div>
+                      <div data-w-id="a30f5ca2-50c3-7a9c-9395-afa480589929" class="card text-color-white">
+                        <div class="card_unidade">
+                          <div class="card_frente">
+                            <div class="numero-card">
+                              <div class="numero-flip-card">3</div>
+                            </div>
+                          </div>
+                          <div class="card_atras">
+                            <p class="card_texto"><strong class="bold-text-2">Umidade (vapor d’água que se condensa após o resfriamento).</strong></p>
+                          </div><img src="https://uploads-ssl.webflow.com/644921fb295921149c4a6cc0/644921fb295921ab8b4a6ce1_icon-click-2.svg" width="28" alt="" class="img-click">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>E mesmo após a compressão, é impossível eliminar totalmente a umidade do ar. Por isso, considera-se ar seco aquele que possui um nível de umidade residual compatível com a aplicação, sem causar danos aos equipamentos.</p>
+                  <p>Dessa forma, vale a pena investir em tratamento do ar? Na maioria dos casos, o custo do tratamento é rapidamente compensado pela redução de falhas, manutenção e paradas de máquina (Rollins, 2004).</p>
+                  <h2>Secagem do ar comprimido</h2>
+                  <p>A secagem do ar tem como objetivo reduzir o teor de umidade, evitando condensação na rede e nos componentes pneumáticos. Os principais métodos utilizados na indústria são:</p>
+                </div>
+                <ul role="list" class="list">
+                  <li class="list-item">
+                    <p class="paragraph-4">Secagem por refrigeração.</p>
+                  </li>
+                  <li class="list-item">
+                    <p>Secagem por absorção.</p>
+                  </li>
+                  <li class="list-item">
+                    <p>Secagem por adsorção.</p>
+                  </li>
+                </ul>
+                <div class="figura">
+                  <div class="legenda-figura">Figura 1 - Secador por refrigeração (a), absorção (b) e adsorção (c).</div>
+                  <div class="grid-3-imagem"><img src="images/a4-fig01.jpg" width="1041" height="Auto" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" alt="Descrição da imagem: Três diagramas de secagem de ar comprimido. (a) Sistema com pré-resfriador, resfriador principal e separador de condensado. (b) Coluna com pastilhas dessecantes removendo umidade. (c) Sistema de dupla torre com fluxo alternado. Cores azul, cinza e bege, estilo técnico." srcset="images/a4-fig01-p-500.jpg 500w, images/a4-fig01-p-800.jpg 800w, images/a4-fig01-p-1080.jpg 1080w, images/a4-fig01-p-1600.jpg 1600w, images/a4-fig01-p-2000.jpg 2000w, images/a4-fig01.jpg 2440w" class="hero-image-figura"><img src="images/a4-fig02.jpg" width="1041" height="Auto" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" alt="Descrição da imagem: Três diagramas de secagem de ar comprimido. (a) Sistema com pré-resfriador, resfriador principal e separador de condensado. (b) Coluna com pastilhas dessecantes removendo umidade. (c) Sistema de dupla torre com fluxo alternado. Cores azul, cinza e bege, estilo técnico." srcset="images/a4-fig02-p-500.jpg 500w, images/a4-fig02-p-800.jpg 800w, images/a4-fig02-p-1080.jpg 1080w, images/a4-fig02-p-1600.jpg 1600w, images/a4-fig02.jpg 1636w" class="hero-image-figura"><img src="images/a4-fig03.jpg" width="1041" height="Auto" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" alt="Descrição da imagem: Três diagramas de secagem de ar comprimido. (a) Sistema com pré-resfriador, resfriador principal e separador de condensado. (b) Coluna com pastilhas dessecantes removendo umidade. (c) Sistema de dupla torre com fluxo alternado. Cores azul, cinza e bege, estilo técnico." srcset="images/a4-fig03-p-500.jpg 500w, images/a4-fig03-p-800.jpg 800w, images/a4-fig03-p-1080.jpg 1080w, images/a4-fig03-p-1600.jpg 1600w, images/a4-fig03.jpg 1890w" class="hero-image-figura">
+                    <div class="legenda-figura">(a)</div>
+                    <div class="legenda-figura">(b)</div>
+                    <div class="legenda-figura">(c)</div>
+                  </div>
+                  <div class="legenda-figura">Fonte: Dorneles e Mugge (2008).</div>
+                </div>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="w-richtext">
+                      <p><strong>Secagem por refrigeração</strong></p>
+                      <p>De acordo com Rollins (2004), é o método mais utilizado em aplicações industriais gerais. O princípio consiste em resfriar o ar comprimido até uma temperatura suficientemente baixa, provocando a condensação da umidade.</p>
+                      <p>Durante esse processo:</p>
+                      <ul role="list">
+                        <li>O ar passa por um pré-resfriador.</li>
+                        <li>Entra no resfriador principal, em contato com um circuito de refrigeração.</li>
+                        <li>O condensado formado é separado e eliminado por drenos.</li>
+                      </ul>
+                      <p>A temperatura típica do ar seco após o processo fica entre 0,65 °C e 3,2 °C, evitando a formação de gelo na rede.</p>
+                      <p><strong>Secagem por absorção</strong></p>
+                      <p>Outra forma de secagem, segundo Rollin (2004), é a secagem por absorção, que utiliza uma substância higroscópica capaz de reagir quimicamente com o vapor d’água.</p>
+                      <p>Características importantes:</p>
+                      <ul role="list">
+                        <li>É um processo químico.</li>
+                        <li>O material absorvente é consumido ao longo do tempo.</li>
+                        <li>Exige reposição periódica da substância.</li>
+                      </ul>
+                      <p>As substâncias mais utilizadas incluem:</p>
+                      <ul role="list">
+                        <li>Cloreto de cálcio.</li>
+                        <li>Cloreto de lítio.</li>
+                        <li><em>Dry-o-Lite</em>.</li>
+                      </ul>
+                      <p><strong>Secagem por adsorção</strong></p>
+                      <p>Rollins (2004) também define a secagem por adsorção, onde o vapor d’água é retido na superfície de materiais sólidos adsortivos, devido a forças físicas de atração molecular.</p>
+                      <p>Materiais mais comuns:</p>
+                      <ul role="list">
+                        <li>Sílica gel.</li>
+                        <li>Alumina ativada.</li>
+                        <li><em>Sorbead</em>.</li>
+                      </ul>
+                      <p>Esse método é indicado quando se exige ar extremamente seco, como em instrumentação, indústria eletrônica e processos especiais.</p>
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="oi-content">
+                    <p class="texto-destaque">Clique em “+” e confira as informações.</p>
+                    <div class="acoredeon">
+                      <div class="acordeon-box acc-v2">
+                        <div class="acordeoni-item">
+                          <div class="plus-wrap">
+                            <div class="plus-l-2"></div>
+                            <div class="plus---2"></div>
+                          </div>
+                          <div class="accordeon-titulo-v2"><strong>Secagem por refrigeração</strong></div>
+                        </div>
+                        <div class="acordeon-conteudo">
+                          <div class="content-accordeon acc-content-v2">
+                            <div class="w-richtext">
+                              <p>De acordo com Rollins (2004), é o método mais utilizado em aplicações industriais gerais. O princípio consiste em resfriar o ar comprimido até uma temperatura suficientemente baixa, provocando a condensação da umidade.</p>
+                              <p>Durante esse processo:</p>
+                              <ul role="list">
+                                <li>O ar passa por um pré-resfriador.</li>
+                                <li>Entra no resfriador principal, em contato com um circuito de refrigeração.</li>
+                                <li>O condensado formado é separado e eliminado por drenos.</li>
+                              </ul>
+                              <p>A temperatura típica do ar seco após o processo fica entre 0,65 °C e 3,2 °C, evitando a formação de gelo na rede.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="acordeon-box acc-v2">
+                        <div class="acordeoni-item">
+                          <div class="plus-wrap">
+                            <div class="plus-l-2"></div>
+                            <div class="plus---2"></div>
+                          </div>
+                          <div class="accordeon-titulo-v2"><strong>Secagem por absorção</strong></div>
+                        </div>
+                        <div class="acordeon-conteudo">
+                          <div class="content-accordeon acc-content-v2">
+                            <div class="w-richtext">
+                              <p>Outra forma de secagem, segundo Rollin (2004), é a secagem por absorção, que utiliza uma substância higroscópica capaz de reagir quimicamente com o vapor d’água.</p>
+                              <p>Características importantes:</p>
+                              <ul role="list">
+                                <li>É um processo químico.</li>
+                                <li>O material absorvente é consumido ao longo do tempo.</li>
+                                <li>Exige reposição periódica da substância.</li>
+                              </ul>
+                              <p>As substâncias mais utilizadas incluem:</p>
+                              <ul role="list">
+                                <li>Cloreto de cálcio.</li>
+                                <li>Cloreto de lítio.</li>
+                                <li><em>Dry-o-Lite</em>.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="acordeon-box acc-v2">
+                        <div class="acordeoni-item">
+                          <div class="plus-wrap">
+                            <div class="plus-l-2"></div>
+                            <div class="plus---2"></div>
+                          </div>
+                          <div class="accordeon-titulo-v2"><strong>Secagem por adsorção</strong></div>
+                        </div>
+                        <div class="acordeon-conteudo">
+                          <div class="content-accordeon acc-content-v2">
+                            <div class="w-richtext">
+                              <p>Rollins (2004) também define a secagem por adsorção, onde o vapor d’água é retido na superfície de materiais sólidos adsortivos, devido a forças físicas de atração molecular.</p>
+                              <p>Materiais mais comuns:</p>
+                              <ul role="list">
+                                <li>Sílica gel.</li>
+                                <li>Alumina ativada.</li>
+                                <li><em>Sorbead</em>.</li>
+                              </ul>
+                              <p>Esse método é indicado quando se exige ar extremamente seco, como em instrumentação, indústria eletrônica e processos especiais.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <h2>Condicionamento do ar comprimido – Unidade FRL</h2>
+                  <p>Após a secagem, o ar comprimido passa pelo condicionamento final, normalmente realizado próximo ao ponto de consumo, por meio da unidade FRL (Filtro, Regulador e Lubrificador), também conhecida como Lubrefil (Prudente, 2015).</p>
+                </div>
+                <div class="figura">
+                  <div class="legenda-figura">Figura 2 - Conjunto Lubrefil (FRL)</div>
+                  <div><img src="images/a4-fig04.jpg" width="1041" height="Auto" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" alt="Descrição da imagem: Esquema de um conjunto de tratamento de ar com três estágios. À esquerda (1), filtro com partículas; ao centro (2), regulador com manômetro; à direita (3), lubrificador com óleo. Setas vermelhas indicam fluxo. Tons em preto, branco e vermelho, estilo técnico." srcset="images/a4-fig04-p-500.jpg 500w, images/a4-fig04-p-800.jpg 800w, images/a4-fig04-p-1080.jpg 1080w, images/a4-fig04-p-1600.jpg 1600w, images/a4-fig04-p-2000.jpg 2000w, images/a4-fig04.jpg 2440w" class="hero-image-figura"></div>
+                  <div class="legenda-figura">Fonte: adaptada de Prudente (2015).</div>
+                </div>
+                <div class="w-richtext">
+                  <p>Pela Figura 02 é possível definir que essa unidade tem a função de:</p>
+                </div>
+                <ul role="list" class="list">
+                  <li class="list-item">
+                    <p class="paragraph-4">Remover impurezas remanescentes (Filtro - 1).</p>
+                  </li>
+                  <li class="list-item">
+                    <p>Ajustar a pressão de trabalho (Regulador de pressão - 2).</p>
+                  </li>
+                  <li class="list-item">
+                    <p>Introduzir óleo lubrificante, quando necessário (Lubrificador - 3).</p>
+                  </li>
+                </ul>
+                <div class="w-richtext">
+                  <h3>Filtro</h3>
+                  <p>O filtro remove:</p>
+                </div>
+                <div class="_2-colunas-icones">
+                  <div class="_2-colunas">
+                    <div class="column-4">
+                      <div class="_2-colunas-icone-bg"><img src="images/filtro-de-ar.gif" loading="lazy" alt="" class="imagem-icone-2-colunas"></div>
+                    </div>
+                    <div class="column-text">
+                      <div class="titulo-colunas-icon">Partículas sólidas.</div>
+                    </div>
+                  </div>
+                  <div class="_2-colunas">
+                    <div class="column-4">
+                      <div class="_2-colunas-icone-bg"><img src="images/filtro-de-ar.gif" loading="lazy" alt="" class="imagem-icone-2-colunas"></div>
+                    </div>
+                    <div class="column-text">
+                      <div class="titulo-colunas-icon">Gotículas de água.</div>
+                    </div>
+                  </div>
+                  <div class="_2-colunas">
+                    <div class="column-4">
+                      <div class="_2-colunas-icone-bg"><img src="images/filtro-de-ar.gif" loading="lazy" alt="" class="imagem-icone-2-colunas"></div>
+                    </div>
+                    <div class="column-text">
+                      <div class="titulo-colunas-icon">Resíduos de óleo.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Em aplicações mais exigentes, filtros especiais podem atingir níveis de remoção de até 99,98% dos contaminantes.</p>
+                  <h3>Regulador de pressão</h3>
+                  <p>O regulador mantém a pressão de saída constante, mesmo com variações de consumo.</p>
+                  <p>Suas funções principais são:</p>
+                  <ul role="list">
+                    <li><span class="span-marcador box-dark">Compensar variações de vazão.</span></li>
+                    <li><span class="span-marcador box-dark">Proteger os componentes pneumáticos.</span></li>
+                    <li><span class="span-marcador box-dark">Funcionar como elemento de segurança.</span></li>
+                  </ul>
+                  <h3>Lubrificador</h3>
+                  <p>O lubrificador introduz uma pequena e controlada quantidade de óleo no fluxo de ar, reduzindo atrito e desgaste.</p>
+                  <p>Nem todo sistema pneumático exige lubrificação. Quando utilizada, deve-se empregar óleo específico para pneumática, compatível com vedações de borracha nitrílica – NBR (Prudente, 2015).</p>
+                </div>
+              </div>
+              <div data-hide="1" class="img-ilustrativa">
+                <div class="div-ilustrativa"><img src="images/a4-img1.jpg" sizes="(max-width: 2000px) 100vw, 2000px" srcset="images/a4-img1-p-500.jpg 500w, images/a4-img1-p-800.jpg 800w, images/a4-img1-p-1080.jpg 1080w, images/a4-img1-p-1600.jpg 1600w, images/a4-img1.jpg 2000w" alt="" class="card-imagem-ilustrativa">
+                  <div class="img-placeholder-colunas">
+                    <div class="legenda-2c">magnific.com</div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-layout-blockcontainer w-container">
+                <div class="w-richtext">
+                  <p>Então, estudante, neste tópico, você compreendeu que o tratamento do ar comprimido envolve secagem, purificação e condicionamento, etapas fundamentais para garantir confiabilidade, eficiência e vida útil aos sistemas pneumáticos.</p>
+                  <p>No próximo tópico, estudaremos os elementos e acessórios das linhas de distribuição, entendendo como o ar tratado é transportado até os pontos de consumo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-atividades">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="exercicio-whopper">
+                  <div class="objeto-interativo">
+                    <div class="texto-acessibilidade">
+                      <div class="label-titulo-section vermelho">para pensar</div>
+                      <div class="bullet-abc w-richtext">
+                        <p>Em um sistema pneumático industrial, mesmo após a compressão do ar, observa-se a ocorrência de falhas em válvulas, desgaste prematuro de atuadores e presença de água nas tubulações. A análise do sistema indica que o ar aspirado pelo compressor não recebe tratamento adequado antes de ser distribuído aos pontos de consumo.</p>
+                        <p>Com base nos conceitos de secagem, purificação e condicionamento do ar comprimido, assinale a alternativa correta.</p>
+                        <ol start="" role="list">
+                          <li>O tratamento do ar comprimido é dispensável, pois o processo de compressão elimina a umidade e as impurezas presentes no ar atmosférico.</li>
+                          <li>O uso da unidade FRL permite remover impurezas, regular a pressão de trabalho e, quando necessário, lubrificar o ar comprimido próximo ao ponto de consumo.</li>
+                          <li>A secagem do ar tem como objetivo principal aumentar a pressão de trabalho do sistema, não influenciando a presença de umidade na rede.</li>
+                          <li>A secagem por absorção e por adsorção são processos físicos equivalentes e utilizam os mesmos materiais no tratamento do ar comprimido.</li>
+                          <li>O lubrificador deve ser utilizado em todos os sistemas pneumáticos, independentemente do tipo de aplicação ou das recomendações do fabricante.</li>
+                        </ol>
+                        <p><strong>A alternativa B é a correta.</strong></p>
+                        <p><strong>Justificativa</strong>: A unidade FRL (Filtro, Regulador e Lubrificador) realiza o condicionamento final do ar comprimido, removendo impurezas remanescentes, ajustando a pressão de trabalho e introduzindo óleo lubrificante quando necessário. Esses cuidados são fundamentais para garantir o bom funcionamento, a durabilidade e a confiabilidade dos componentes pneumáticos.</p>
+                      </div>
+                    </div>
+                    <div aria-hidden="true" class="oi-content">
+                      <div class="label-titulo-section">para pensar</div>
+                      <div class="bullet-abc w-richtext">
+                        <p>Em um sistema pneumático industrial, mesmo após a compressão do ar, observa-se a ocorrência de falhas em válvulas, desgaste prematuro de atuadores e presença de água nas tubulações. A análise do sistema indica que o ar aspirado pelo compressor não recebe tratamento adequado antes de ser distribuído aos pontos de consumo.</p>
+                        <p>Com base nos conceitos de secagem, purificação e condicionamento do ar comprimido, assinale a alternativa correta.</p>
+                      </div>
+                      <div class="acoredeon">
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">a) O tratamento do ar comprimido é dispensável, pois o processo de compressão elimina a umidade e as impurezas presentes no ar atmosférico.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="7152ef4c-c769-d5ae-93db-4626151aba7c" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-w-id="e9166c2f-f03d-308a-50da-393f1ea8f91f" class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">b) O uso da unidade FRL permite remover impurezas, regular a pressão de trabalho e, quando necessário, lubrificar o ar comprimido próximo ao ponto de consumo.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades" data-w-id="3dc68a47-1ffe-d980-6925-6fd6a8800789" data-animation-type="lottie" data-src="documents/certo-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>Parabéns! A resposta está correta.</strong></p>
+                                  <p><strong>Justificativa</strong>: A unidade FRL (Filtro, Regulador e Lubrificador) realiza o condicionamento final do ar comprimido, removendo impurezas remanescentes, ajustando a pressão de trabalho e introduzindo óleo lubrificante quando necessário. Esses cuidados são fundamentais para garantir o bom funcionamento, a durabilidade e a confiabilidade dos componentes pneumáticos.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">c) A secagem do ar tem como objetivo principal aumentar a pressão de trabalho do sistema, não influenciando a presença de umidade na rede.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="40926d1e-30d0-9cac-26e2-cc54f696fc52" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">d) A secagem por absorção e por adsorção são processos físicos equivalentes e utilizam os mesmos materiais no tratamento do ar comprimido.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="232acfb3-bdb2-bd6d-42ca-eceb2efef5b2" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">e) O lubrificador deve ser utilizado em todos os sistemas pneumáticos, independentemente do tipo de aplicação ou das recomendações do fabricante.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="a5ec9d50-8ecf-0ea4-64e9-393cdc3b9123" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><img src="images/circulo-unipar-02.svg" loading="lazy" alt="" height="650" class="bg-exercicios">
+        </section>
+        <section class="section">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="titulo-topico">
+                  <div class="div-titulo">
+                    <div data-w-id="5097477c-2ee3-16d3-432a-1687b286578f" style="opacity:0" class="label-titulo">Tópico 02</div>
+                    <h2 data-w-id="5097477c-2ee3-16d3-432a-1687b2865791" style="opacity:0" class="heading-titulo">Elementos e acessórios das linhas de distribuição<br></h2>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Estudante, depois que o ar comprimido é gerado e tratado adequadamente, surge um novo desafio: garantir que esse ar chegue ao ponto de uso com a mesma qualidade. É exatamente essa a função da rede de distribuição pneumática. Ela não é apenas um conjunto de tubos, mas um sistema projetado para preservar pressão, vazão e limpeza do ar ao longo de todo o percurso.</p>
+                  <p>Na prática industrial, muitos problemas atribuídos a compressores ou atuadores têm, na verdade, origem em redes de distribuição mal planejadas.</p>
+                  <h2>A rede como parte do sistema pneumático</h2>
+                  <p>A rede de distribuição deve ser pensada como parte integrante do sistema pneumático, e não como um elemento secundário. É nela que ocorrem perdas de carga, variações de pressão e, muitas vezes, a reintrodução de contaminantes no ar já tratado. Um bom projeto de rede contribui diretamente para a eficiência energética, enquanto uma rede inadequada aumenta o consumo e reduz a confiabilidade do processo.</p>
+                  <p>Parando para pensar, se dois pontos de consumo recebem ar do mesmo compressor, por que um funciona perfeitamente e o outro apresenta falhas frequentes? A resposta, muitas vezes, está no caminho que o ar percorre.</p>
+                  <h2>Rede de distribuição</h2>
+                  <p>A Figura 3 apresenta uma visão integrada de uma rede de distribuição pneumática industrial, destacando desde a aspiração do ar até sua entrega aos pontos de uso (Prudente, 2015). Nela, é possível identificar componentes fundamentais, como compressor, reservatório, secador, filtros, reguladores, tubulações principais, derivações, purgadores e unidades de preparação local (FRL).</p>
+                  <p>Essa representação ajuda a compreender que a rede não se resume às tubulações, mas envolve um conjunto de elementos interligados, cada um com função específica no controle da qualidade, da pressão e da confiabilidade do ar comprimido ao longo do sistema.</p>
+                </div>
+                <p class="texto-destaque">Clique na imagem para ampliar.</p>
+                <div class="figura">
+                  <div class="legenda-figura">Figura 3 - Rede de distribuição com linha fechada</div>
+                  <div>
+                    <a href="#" class="w-inline-block w-lightbox"><img src="images/a4-fig05.jpg" loading="lazy" sizes="100vw" srcset="images/a4-fig05-p-500.jpg 500w, images/a4-fig05-p-800.jpg 800w, images/a4-fig05-p-1080.jpg 1080w, images/a4-fig05-p-1600.jpg 1600w, images/a4-fig05-p-2000.jpg 2000w, images/a4-fig05-p-2600.jpg 2600w, images/a4-fig05.jpg 2608w" alt="Descrição da imagem: Diagrama complexo de um sistema de ar comprimido industrial. Mostra compressor, filtros, secador, reservatório e rede de distribuição com múltiplos pontos de uso. Tubulações conectam diversos dispositivos numerados. Predominam tons preto e branco, estilo técnico detalhado.">
+                      <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "_id": "6a0c55ed8e55ae4a95b78ab0",
+      "origFileName": "a4-fig05.jpg",
+      "fileName": "a4-fig05.jpg",
+      "fileSize": 935584,
+      "height": 2160,
+      "url": "https://cdn.prod.website-files.com/69e633bc7a5bc75aa854b4c6/6a0c55ed8e55ae4a95b78ab0_a4-fig05.jpg",
+      "width": 2608,
+      "type": "image"
+    }
+  ],
+  "group": ""
+}</script>
+                    </a>
+                  </div>
+                  <div class="legenda-figura">Fonte: adaptada de Prudente (2015).</div>
+                </div>
+                <div class="w-richtext">
+                  <h3>Tubulações pneumáticas</h3>
+                  <p>Para Fialho (2011), as tubulações constituem o trajeto principal do ar comprimido. Seu dimensionamento deve considerar não apenas a pressão de trabalho, mas também a vazão demandada, o comprimento da rede e possíveis ampliações futuras.</p>
+                  <p>Historicamente, redes pneumáticas eram construídas em aço carbono ou aço galvanizado. Embora robustos, esses materiais estão sujeitos à corrosão interna, que gera partículas sólidas e compromete a qualidade do ar (Prudente, 2015). </p>
+                  <p>Em instalações mais recentes, o uso de tubulações de alumínio ou polímeros técnicos tem se tornado comum, pois esses materiais apresentam menor rugosidade interna, facilidade de montagem e menor risco de contaminação (Filho; Santos, 2018).</p>
+                  <h3>Conexões e acessórios</h3>
+                  <p>Além das tubulações, a rede pneumática depende de conexões e acessórios para sua montagem e funcionamento. Cotovelos, tês, reduções, válvulas de bloqueio e engates rápidos são elementos indispensáveis, porém devem ser utilizados com critério (Fialho, 2011).</p>
+                  <p>Cada conexão adicionada à rede provoca uma perda de carga local. Isoladamente, essa perda pode parecer pequena, mas o efeito acumulado de múltiplas conexões pode resultar em quedas significativas de pressão no ponto de consumo. Por isso, projetos eficientes buscam trajetos mais simples e evitam mudanças desnecessárias de direção.</p>
+                </div>
+              </div>
+              <div data-hide="1" class="img-ilustrativa">
+                <div class="div-ilustrativa"><img src="images/a4-img2-edit.jpg" sizes="(max-width: 2440px) 100vw, 2440px" srcset="images/a4-img2-edit-p-500.jpg 500w, images/a4-img2-edit-p-800.jpg 800w, images/a4-img2-edit-p-1080.jpg 1080w, images/a4-img2-edit-p-1600.jpg 1600w, images/a4-img2-edit-p-2000.jpg 2000w, images/a4-img2-edit.jpg 2440w" alt="" class="card-imagem-ilustrativa">
+                  <div class="img-placeholder-colunas">
+                    <div class="legenda-2c">envato.com</div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-layout-blockcontainer w-container">
+                <div class="w-richtext">
+                  <h3>Curvas, derivações e comportamento do fluxo</h3>
+                  <p>Sempre que o ar comprimido muda de direção, ocorrem alterações no escoamento. Curvas muito fechadas aumentam a turbulência e elevam as perdas de carga, exigindo maior esforço do compressor para manter a pressão desejada.</p>
+                  <p>Por essa razão, recomenda-se o uso de curvas de raio longo e um planejamento cuidadoso das derivações para os pontos de consumo. Um layout bem distribuído reduz perdas energéticas e contribui para a estabilidade do sistema, especialmente em redes extensas (Prudente, 2015). </p>
+                  <h3>Drenagem e controle do condensado</h3>
+                  <p>Mesmo com ar tratado, é comum que pequenas quantidades de umidade se formem ao longo da rede, principalmente em trechos mais longos ou sujeitos a variações de temperatura (Fialho, 2011). Por isso, a rede deve ser projetada com leve inclinação e pontos baixos estrategicamente posicionados, onde o condensado possa ser removido por meio de purgadores.</p>
+                  <p>A falta de drenagem adequada é uma das principais causas de corrosão interna e falhas em válvulas e atuadores pneumáticos, reforçando a importância desse cuidado no projeto (Rollins, 2004).</p>
+                </div>
+                <div id="objeto-interativo" class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="w-richtext">
+                      <p><strong>Pop-up 1: Compressor</strong></p>
+                      <p>Responsável por aspirar o ar atmosférico e elevá-lo à pressão necessária para uso industrial. É o ponto inicial do sistema pneumático.</p>
+                      <p><strong>Pop-up 2: Filtro primário</strong></p>
+                      <p>Remove partículas sólidas e impurezas maiores logo após a compressão, protegendo os componentes seguintes do sistema.</p>
+                      <p><strong>Pop-up 3: Dreno automático</strong></p>
+                      <p>Elimina automaticamente o condensado formado durante a compressão e o resfriamento do ar, evitando acúmulo de água na rede.</p>
+                      <p><strong>Pop-up 4: Reservatório de ar principal</strong></p>
+                      <p>Armazena o ar comprimido, estabiliza a pressão do sistema e auxilia na separação de umidade e impurezas por decantação.</p>
+                      <p><strong>Pop-up 5: Pré-filtro (secador)</strong></p>
+                      <p>Protege o secador removendo partículas sólidas e parte da umidade antes do processo de secagem do ar.</p>
+                      <p><strong>Pop-up 6: Secador</strong></p>
+                      <p>Reduz o teor de umidade do ar comprimido, evitando condensação na rede e falhas em válvulas e atuadores.</p>
+                      <p><strong>Pop-up 7: Pós-filtro (secador)</strong></p>
+                      <p>Remove resíduos remanescentes após a secagem, garantindo maior qualidade do ar distribuído aos pontos de consumo.</p>
+                      <p><strong>Pop-up 8: Sistema de drenagem</strong></p>
+                      <p>Conjunto de tubulações e dispositivos responsáveis por conduzir e descartar o condensado gerado no sistema.</p>
+                      <p><strong>Pop-up 9: Separador de água e óleo</strong></p>
+                      <p>Responsável por separar óleo e água do condensado antes do descarte, atendendo requisitos ambientais.</p>
+                      <p><strong>Pop-up 10: Linha tronco principal</strong></p>
+                      <p>Tubulação principal da rede de distribuição, responsável por transportar o ar comprimido ao longo da instalação.</p>
+                      <p><strong>Pop-up 11: Linha principal em anel (rede fechada)</strong></p>
+                      <p>Configuração que permite alimentação do ar por mais de um caminho, garantindo maior uniformidade de pressão e confiabilidade.</p>
+                      <p><strong>Pop-up 12: Linha de derivação</strong></p>
+                      <p>Conduz o ar comprimido da linha principal até os pontos específicos de consumo.</p>
+                      <p><strong>Pop-up 13: Reservatório de ar local</strong></p>
+                      <p>Armazena ar próximo ao ponto de uso, atendendo demandas elevadas ou intermitentes sem sobrecarregar a rede principal.</p>
+                      <p><strong>Pop-up 14: Processo do usuário (demanda elevada e intermitente de ar comprimido)</strong></p>
+                      <p>Equipamentos ou máquinas pneumáticas que utilizam o ar comprimido para realizar trabalho mecânico ou automação.</p>
+                    </div>
+                  </div>
+                  <div class="oi-content">
+                    <div class="w-embed w-iframe">
+                      <div style="width: 100%;">
+                        <div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;">
+                          <iframe frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="genially/index.html" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all">
+                          </iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Neste tópico, você viu que a rede de distribuição não é apenas um meio de transporte, mas um elemento decisivo para o funcionamento eficiente do sistema pneumático. Tubulações, conexões, curvas e dispositivos de drenagem devem ser escolhidos e posicionados com critério, garantindo que o ar comprimido chegue ao ponto de uso com a pressão e a qualidade necessárias.</p>
+                  <p>No próximo tópico, aprofundaremos esses conceitos ao estudar o projeto e o dimensionamento de redes pneumáticas, integrando critérios técnicos, layout e eficiência energética.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-atividades">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="exercicio-whopper">
+                  <div class="objeto-interativo">
+                    <div class="texto-acessibilidade">
+                      <div class="label-titulo-section vermelho">para pensar</div>
+                      <div class="bullet-abc w-richtext">
+                        <p>Em uma planta industrial, dois pontos de consumo pneumático são alimentados pelo mesmo compressor e operam com equipamentos semelhantes. No entanto, observa-se que um dos pontos apresenta funcionamento estável, enquanto o outro sofre quedas frequentes de pressão, acionamentos irregulares de atuadores e presença de umidade nos componentes, mesmo com o ar sendo corretamente tratado na central de compressão.</p>
+                        <p>Considerando os conceitos relacionados às redes de distribuição pneumática, assinale a alternativa que melhor explica essa situação.</p>
+                        <ol start="" role="list">
+                          <li>O problema está exclusivamente relacionado à potência do compressor, sendo a rede de distribuição um elemento secundário no sistema pneumático.</li>
+                          <li>As falhas ocorrem devido à ausência de lubrificação nos atuadores, não havendo relação com o trajeto percorrido pelo ar comprimido.</li>
+                          <li>A presença de conexões, curvas e acessórios não influencia o comportamento do fluxo de ar comprimido ao longo da rede.</li>
+                          <li>Uma rede de distribuição mal projetada pode gerar perdas de carga, variações de pressão e acúmulo de condensado, comprometendo o desempenho em pontos específicos do sistema.</li>
+                          <li>O tratamento do ar elimina totalmente a umidade, tornando desnecessários cuidados com drenagem e inclinação das tubulações.</li>
+                        </ol>
+                        <p><strong>A alternativa D é a correta.</strong></p>
+                        <p><strong>Justificativa</strong>: A rede de distribuição é parte integrante do sistema pneumático e exerce influência direta sobre o desempenho dos pontos de consumo. Perdas de carga acumuladas, excesso de conexões, mudanças bruscas de direção e ausência de drenagem adequada podem causar quedas de pressão e reintrodução de umidade no sistema, mesmo quando o ar é corretamente tratado na central de compressão.</p>
+                      </div>
+                    </div>
+                    <div aria-hidden="true" class="oi-content">
+                      <div class="label-titulo-section">para pensar</div>
+                      <div class="rich-text w-richtext">
+                        <p>Em uma planta industrial, dois pontos de consumo pneumático são alimentados pelo mesmo compressor e operam com equipamentos semelhantes. No entanto, observa-se que um dos pontos apresenta funcionamento estável, enquanto o outro sofre quedas frequentes de pressão, acionamentos irregulares de atuadores e presença de umidade nos componentes, mesmo com o ar sendo corretamente tratado na central de compressão.</p>
+                        <p>Considerando os conceitos relacionados às redes de distribuição pneumática, assinale a alternativa que melhor explica essa situação.</p>
+                      </div>
+                      <div class="acoredeon">
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">a) O problema está exclusivamente relacionado à potência do compressor, sendo a rede de distribuição um elemento secundário no sistema pneumático.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="33599852-e16e-43d3-0a21-7ad71e48f9d6" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">b) As falhas ocorrem devido à ausência de lubrificação nos atuadores, não havendo relação com o trajeto percorrido pelo ar comprimido.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="33599852-e16e-43d3-0a21-7ad71e48f9e2" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">c) A presença de conexões, curvas e acessórios não influencia o comportamento do fluxo de ar comprimido ao longo da rede.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="33599852-e16e-43d3-0a21-7ad71e48f9ee" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">d) Uma rede de distribuição mal projetada pode gerar perdas de carga, variações de pressão e acúmulo de condensado, comprometendo o desempenho em pontos específicos do sistema.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades" data-w-id="33599852-e16e-43d3-0a21-7ad71e48f9c8" data-animation-type="lottie" data-src="documents/certo-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>Parabéns! A resposta está correta.</strong></p>
+                                  <p><strong>Justificativa</strong>: A rede de distribuição é parte integrante do sistema pneumático e exerce influência direta sobre o desempenho dos pontos de consumo. Perdas de carga acumuladas, excesso de conexões, mudanças bruscas de direção e ausência de drenagem adequada podem causar quedas de pressão e reintrodução de umidade no sistema, mesmo quando o ar é corretamente tratado na central de compressão.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">e) O tratamento do ar elimina totalmente a umidade, tornando desnecessários cuidados com drenagem e inclinação das tubulações.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="33599852-e16e-43d3-0a21-7ad71e48f9fa" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><img src="images/circulo-unipar-02.svg" loading="lazy" alt="" height="650" class="bg-exercicios">
+        </section>
+        <section class="section">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="titulo-topico">
+                  <div class="div-titulo">
+                    <div data-w-id="1c76af93-c860-f39b-05df-87fab3ea87f3" style="opacity:0" class="label-titulo">Tópico 03</div>
+                    <h2 data-w-id="1c76af93-c860-f39b-05df-87fab3ea87f5" style="opacity:0" class="heading-titulo">Projeto e dimensionamento de redes pneumáticas<br></h2>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Estudante, depois de compreender os elementos que compõem uma rede pneumática, chegou o momento de integrar tudo isso em uma etapa decisiva: o projeto e o dimensionamento da rede de distribuição. É aqui que decisões técnicas influenciam diretamente a eficiência energética, a estabilidade da pressão e a confiabilidade do sistema ao longo do tempo.</p>
+                  <p>Uma rede pneumática bem projetada não é resultado de improviso. Ela exige análise do consumo, planejamento do layout e consideração cuidadosa das perdas de carga.</p>
+                  <h2>Projeto da linha (Layout)</h2>
+                  <p>Segundo Prudente (2015), o projeto da rede pneumática define como o ar comprimido circula desde a central de compressão até os pontos de consumo.</p>
+                  <p>Esse projeto deve ser construído em desenho isométrico ou escala, permitindo a obtenção do comprimento das tubulações nos diversos trechos, e a partir dele é possível definir o menor percurso da tubulação, acarretando em menores perdas de carga.</p>
+                </div>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="w-richtext">
+                      <p><strong>Rede aberta</strong></p>
+                      <p>A rede aberta é a forma mais simples de distribuição de ar comprimido. Nessa configuração, o ar percorre a tubulação em um único sentido, alimentando os pontos de consumo ao longo do trajeto. É indicada para sistemas de pequeno porte, quando o consumo de ar não ultrapassa cerca de 100 m³/h ou quando é necessário atender pontos muito isolados (Fialho, 2011).</p>
+                      <p>Sua principal limitação está no aumento da queda de pressão com a distância em relação ao reservatório. Além disso, a manutenção torna-se mais crítica, pois não é possível seccionar a rede sem interromper o fornecimento de ar, podendo exigir a parada total do sistema (Fialho, 2011).</p>
+                      <p><strong>Rede fechada</strong></p>
+                      <p>A rede fechada, ou rede em anel, forma um circuito contínuo de distribuição, permitindo que o ar chegue aos pontos de consumo por mais de um caminho. Essa característica proporciona maior uniformidade de pressão, mesmo quando há variações na demanda ao longo da rede (Fialho, 2011).</p>
+                      <p>Outra vantagem importante é a possibilidade de instalar válvulas de seccionamento, facilitando manutenções e futuras ampliações sem desligar todo o sistema. Por isso, a rede fechada é considerada uma solução mais eficiente que a rede aberta, sendo amplamente utilizada em instalações industriais de médio porte (Prudente, 2015).</p>
+                      <p><strong>Rede entrelaçada</strong></p>
+                      <p>A rede entrelaçada consiste na interligação de vários anéis de distribuição, formando uma malha mais complexa. Essa configuração é indicada para indústrias de grande porte, com alto consumo de ar e necessidade de elevada confiabilidade no fornecimento (Fialho, 2011).</p>
+                      <p>Apesar de oferecer excelente estabilidade de pressão, a rede entrelaçada apresenta maior custo de implantação e exige cuidados adicionais com drenagem, pois a complexidade do layout pode dificultar a separação de umidade. Assim, sua aplicação é justificada quando os ganhos operacionais superam os custos adicionais (Prudente, 2015).<strong> </strong></p>
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="oi-content">
+                    <p class="texto-destaque">Clique em “+” e confira as informações.</p>
+                    <div class="oi-accordion-v1">
+                      <div data-delay="0" data-hover="false" class="accordion-item w-dropdown">
+                        <div class="faq-item-toggle w-dropdown-toggle">
+                          <div class="accordioon-title-wrapper">
+                            <div class="accordion-title"><strong>Rede aberta</strong></div>
+                            <div class="accordion-icon-circle"><img loading="lazy" src="https://uploads-ssl.webflow.com/61d5486e6f7c7a4688a23609/61d54a7a34d78a4b147c6219_Plus%20Icon.svg" alt="" class="faq-icon"></div>
+                          </div>
+                        </div>
+                        <nav class="faq-content-wrap w-dropdown-list">
+                          <div class="faq-content">
+                            <div class="rich-text-box w-richtext">
+                              <p>A rede aberta é a forma mais simples de distribuição de ar comprimido. <span class="span-marcador box-dark">Nessa configuração, o ar percorre a tubulação em um único sentido, alimentando os pontos de consumo ao longo do trajeto. É indicada para sistemas de pequeno porte, quando o consumo de ar não ultrapassa cerca de 100 m³/h ou quando é necessário atender pontos muito isolados</span> (Fialho, 2011).</p>
+                              <p>Sua principal limitação está no aumento da queda de pressão com a distância em relação ao reservatório. Além disso, a manutenção torna-se mais crítica, pois não é possível seccionar a rede sem interromper o fornecimento de ar, podendo exigir a parada total do sistema (Fialho, 2011).</p>
+                            </div>
+                          </div>
+                        </nav>
+                      </div>
+                      <div data-delay="0" data-hover="false" class="accordion-item w-dropdown">
+                        <div class="faq-item-toggle w-dropdown-toggle">
+                          <div class="accordioon-title-wrapper">
+                            <div class="accordion-title"><strong>Rede fechada</strong></div>
+                            <div class="accordion-icon-circle"><img loading="lazy" src="https://uploads-ssl.webflow.com/61d5486e6f7c7a4688a23609/61d54a7a34d78a4b147c6219_Plus%20Icon.svg" alt="" class="faq-icon"></div>
+                          </div>
+                        </div>
+                        <nav class="faq-content-wrap w-dropdown-list">
+                          <div class="faq-content">
+                            <div class="rich-text-box w-richtext">
+                              <p>A rede fechada, ou rede em anel, forma um circuito contínuo de distribuição, permitindo que o ar chegue aos pontos de consumo por mais de um caminho. <span class="span-marcador box-dark">Essa característica proporciona maior uniformidade de pressão, mesmo quando há variações na demanda ao longo da rede </span>(Fialho, 2011).</p>
+                              <p>Outra vantagem importante é a possibilidade de instalar válvulas de seccionamento, facilitando manutenções e futuras ampliações sem desligar todo o sistema. Por isso, a rede fechada é considerada uma solução mais eficiente que a rede aberta, sendo amplamente utilizada em instalações industriais de médio porte (Prudente, 2015).</p>
+                            </div>
+                          </div>
+                        </nav>
+                      </div>
+                      <div data-delay="0" data-hover="false" class="accordion-item w-dropdown">
+                        <div class="faq-item-toggle w-dropdown-toggle">
+                          <div class="accordioon-title-wrapper">
+                            <div class="accordion-title"><strong>Rede entrelaçada</strong></div>
+                            <div class="accordion-icon-circle"><img loading="lazy" src="https://uploads-ssl.webflow.com/61d5486e6f7c7a4688a23609/61d54a7a34d78a4b147c6219_Plus%20Icon.svg" alt="" class="faq-icon"></div>
+                          </div>
+                        </div>
+                        <nav class="faq-content-wrap w-dropdown-list">
+                          <div class="faq-content">
+                            <div class="rich-text-box w-richtext">
+                              <p>A rede entrelaçada consiste na interligação de vários anéis de distribuição, formando uma malha mais complexa. Essa configuração é indicada para indústrias de grande porte, com alto consumo de ar e necessidade de elevada confiabilidade no fornecimento (Fialho, 2011).</p>
+                              <p>Apesar de oferecer excelente estabilidade de pressão, a rede entrelaçada apresenta maior custo de implantação e exige cuidados adicionais com drenagem, pois a complexidade do layout pode dificultar a separação de umidade. Assim, sua aplicação é justificada quando os ganhos operacionais superam os custos adicionais (Prudente, 2015).<strong> </strong></p>
+                            </div>
+                          </div>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="figura">
+                  <div class="legenda-figura">Figura 4 - Rede aberta (a), fechada (b) e entrelaçada (c)</div>
+                  <div class="grid-3-imagem"><img src="images/a4-fig06.jpg" width="1041" height="Auto" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" alt="Descrição da imagem: Três esquemas de redes de distribuição de ar. (a) linha simples ramificada, (b) circuito fechado em anel, (c) malha interligada. Setas indicam o fluxo de ar e hastes verticais representam pontos de uso. Tons em preto e branco, estilo técnico." srcset="images/a4-fig06-p-500.jpg 500w, images/a4-fig06-p-800.jpg 800w, images/a4-fig06-p-1080.jpg 1080w, images/a4-fig06-p-1600.jpg 1600w, images/a4-fig06-p-2000.jpg 2000w, images/a4-fig06.jpg 2440w" class="hero-image-figura"><img src="images/a4-fig07.jpg" width="1041" height="Auto" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" alt="Descrição da imagem: Três esquemas de redes de distribuição de ar. (a) linha simples ramificada, (b) circuito fechado em anel, (c) malha interligada. Setas indicam o fluxo de ar e hastes verticais representam pontos de uso. Tons em preto e branco, estilo técnico." srcset="images/a4-fig07-p-500.jpg 500w, images/a4-fig07-p-800.jpg 800w, images/a4-fig07-p-1080.jpg 1080w, images/a4-fig07-p-1600.jpg 1600w, images/a4-fig07-p-2000.jpg 2000w, images/a4-fig07.jpg 2440w" class="hero-image-figura"><img src="images/a4-fig08.jpg" width="1041" height="Auto" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" alt="Descrição da imagem: Três esquemas de redes de distribuição de ar. (a) linha simples ramificada, (b) circuito fechado em anel, (c) malha interligada. Setas indicam o fluxo de ar e hastes verticais representam pontos de uso. Tons em preto e branco, estilo técnico." srcset="images/a4-fig08-p-500.jpg 500w, images/a4-fig08-p-800.jpg 800w, images/a4-fig08-p-1080.jpg 1080w, images/a4-fig08-p-1600.jpg 1600w, images/a4-fig08-p-2000.jpg 2000w, images/a4-fig08.jpg 2440w" class="hero-image-figura">
+                    <div class="legenda-figura">(a)</div>
+                    <div class="legenda-figura">(b)</div>
+                    <div class="legenda-figura">(c)</div>
+                  </div>
+                  <div class="legenda-figura">Fonte: adaptada de Prudente (2015).</div>
+                </div>
+                <div class="w-richtext">
+                  <h2>Dimensionamento de uma linha de distribuição</h2>
+                  <p>Ao realizar o dimensionamento do diâmetro mínimo da tubulação da linha, deve-se considerar o volume de ar corrente necessário (vazão), comprimento total da linha tronco, queda de pressão admissível (máx 0,3 kgf/cm²), número de pontos de estrangulamento e pressão de regime (Fialho, 2011).</p>
+                  <h3>Dimensionamento da vazão e demanda de ar comprimido</h3>
+                  <p>O dimensionamento da linha de distribuição começa pela determinação da demanda total de ar comprimido do sistema. Essa demanda é obtida a partir da soma dos consumos individuais de todos os equipamentos pneumáticos conectados à rede, considerando suas condições reais de operação e a simultaneidade de uso.</p>
+                  <p>Os valores de consumo de cada equipamento podem ser encontrados nos manuais técnicos dos fabricantes e, após somados, devem ser ajustados por fatores de correção. Na prática industrial, é recomendável prever margens adicionais relacionadas a vazamentos inevitáveis, ampliações futuras da planta e possíveis imprecisões de cálculo. Segundo Fialho (2011) e Prudente (2015), uma prática comum consiste em adotar um acréscimo global que pode chegar a aproximadamente 30% sobre a vazão calculada, garantindo maior segurança operacional ao sistema.</p>
+                  <p>Com a vazão total definida, torna-se possível avançar para o dimensionamento das tubulações da rede.</p>
+                  <h3>Dimensionamento do diâmetro da tubulação</h3>
+                  <p>O diâmetro da tubulação deve ser definido de forma a garantir o fornecimento do volume de ar necessário, mantendo a queda de pressão dentro de limites aceitáveis. Tubulações subdimensionadas aumentam as perdas de carga e o consumo energético, enquanto tubulações superdimensionadas elevam o custo de implantação sem ganhos significativos de desempenho.</p>
+                  <p>De acordo com Fialho (2011), o diâmetro interno da tubulação pode ser determinado por meio da seguinte expressão empírica:</p>
+                  <p><strong>$$ d = 10 \cdot \sqrt[5]{\frac{1,663785 \cdot 10^{-3} \cdot Q^{1,85} \cdot L_t}{\Delta P \cdot P}} $$</strong></p>
+                  <p>onde 𝑑 é o diâmetro interno da tubulação (mm), 𝑄 é a vazão de ar requerida pelo sistema (m³/h), <em>L<sub>t</sub></em> é o comprimento total da linha tronco (m), considerando trechos retos e comprimentos equivalentes de acessórios, Δ𝑃 é a queda de pressão admissível (kgf/cm²) e 𝑃 é a pressão de regime da rede (kgf/cm²).</p>
+                  <p>O comprimento total da linha deve incluir não apenas os trechos retilíneos, mas também os comprimentos equivalentes (singularidades) de válvulas, curvas, tês e demais acessórios, uma vez que esses elementos contribuem significativamente para as perdas de carga do sistema (Filho; Santos, 2018).</p>
+                  <h3>Seleção do diâmetro comercial e critérios práticos</h3>
+                  <p>O diâmetro obtido pelo cálculo corresponde ao diâmetro interno mínimo da tubulação. A partir desse valor, deve-se selecionar o diâmetro comercial do tubo, utilizando tabelas padronizadas, como as de tubos de aço preto ou galvanizado (por exemplo, ASTM Schedule 40).</p>
+                  <p>A equação apresentada pode ser aplicada tanto para o dimensionamento da linha principal quanto das linhas secundárias, desde que se respeitem as condições específicas de vazão e comprimento de cada trecho. </p>
+                  <p>Para um estudo completo do dimensionamento de redes pneumáticas, incluindo tabelas de perda de carga, critérios de seleção de diâmetros e exemplos práticos de cálculo, a obra de Fialho (2011) constitui uma referência fundamental.</p>
+                </div>
+                <div class="elemento-multimedia">
+                  <div class="flex">
+                    <div class="author-image-element"><img src="images/icon-conexao.svg" loading="lazy" alt="" class="cover-image"></div>
+                    <div class="texto-box-destaque">
+                      <p class="heading">Conexão</p>
+                      <div class="w-embed">
+                        <div class="link-content" data-permalink="i0z" href="https://go.eadstock.com.br/i0z"></div>
+                        <p>
+                          <a class="btn-link button" href="https://go.eadstock.com.br/i0z" target="_blank">
+                            ACESSAR
+                          </a>
+                        </p>
+                        <div class="link-qrcode">
+                          <div class="row-qr">
+                            <div class="col-qr">
+                              <a href="https://go.eadstock.com.br/i0z" target="_blank">
+                                <img class="qrcode" src="" data-permalink="i0z">
+                              </a>
+                            </div>
+                            <div class="col-qr qrcode-helper"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Neste tópico, você compreendeu que o projeto e o dimensionamento de redes pneumáticas envolvem análise de consumo, definição de diâmetros, escolha do layout e cuidados com drenagem e perdas de carga. Esses aspectos determinam se o ar comprimido chegará aos pontos de consumo com a pressão, a vazão e a qualidade adequadas.</p>
+                  <p>Com isso, você conclui este conteúdo, consolidando uma visão completa do caminho do ar comprimido: da geração ao uso final.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-atividades">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="exercicio-whopper">
+                  <div class="objeto-interativo">
+                    <div class="texto-acessibilidade">
+                      <div class="label-titulo-section vermelho">para pensar</div>
+                      <div class="bullet-abc w-richtext">
+                        <p>Durante o projeto de uma rede de distribuição de ar comprimido para uma planta industrial, o engenheiro responsável observou quedas significativas de pressão nos pontos de consumo mais distantes do reservatório, além de dificuldades para realizar manutenções sem interromper todo o sistema. Ao analisar o layout, verificou-se que a rede foi projetada com um único trajeto de alimentação, sem válvulas de seccionamento.</p>
+                        <p>Com base nos conceitos de projeto da linha e tipos de redes pneumáticas, assinale a alternativa correta.</p>
+                        <ol start="" role="list">
+                          <li>A rede adotada caracteriza-se como rede fechada, sendo indicada para sistemas de pequeno porte e pontos de consumo isolados.</li>
+                          <li>O problema apresentado está relacionado exclusivamente ao diâmetro da tubulação, não tendo relação com o tipo de rede escolhida.</li>
+                          <li>A utilização de uma rede fechada poderia reduzir as quedas de pressão e permitir intervenções de manutenção por meio de válvulas de seccionamento.</li>
+                          <li>Redes abertas apresentam maior uniformidade de pressão e facilitam manutenções, sendo mais indicadas para instalações industriais de médio porte.</li>
+                          <li>Redes entrelaçadas são sempre a melhor opção, independentemente do porte da instalação e do custo de implantação.</li>
+                        </ol>
+                        <p><strong>A alternativa C é a correta.</strong></p>
+                        <p><strong>Justificativa</strong>: A rede descrita caracteriza-se como rede aberta, que apresenta maior queda de pressão com o aumento da distância e dificuldade de manutenção, pois não permite o seccionamento sem interromper o fornecimento de ar. A adoção de uma rede fechada (em anel) proporciona maior uniformidade de pressão e possibilita a instalação de válvulas de seccionamento, facilitando manutenções e ampliações do sistema.</p>
+                      </div>
+                    </div>
+                    <div aria-hidden="true" class="oi-content">
+                      <div class="label-titulo-section">para pensar</div>
+                      <div class="rich-text w-richtext">
+                        <p>Durante o projeto de uma rede de distribuição de ar comprimido para uma planta industrial, o engenheiro responsável observou quedas significativas de pressão nos pontos de consumo mais distantes do reservatório, além de dificuldades para realizar manutenções sem interromper todo o sistema. Ao analisar o layout, verificou-se que a rede foi projetada com um único trajeto de alimentação, sem válvulas de seccionamento.</p>
+                        <p>Com base nos conceitos de projeto da linha e tipos de redes pneumáticas, assinale a alternativa correta.</p>
+                      </div>
+                      <div class="acoredeon">
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">a) A rede adotada caracteriza-se como rede fechada, sendo indicada para sistemas de pequeno porte e pontos de consumo isolados.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="e7257e20-5c31-609c-3795-fe292bfa84e1" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">b) O problema apresentado está relacionado exclusivamente ao diâmetro da tubulação, não tendo relação com o tipo de rede escolhida.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="e7257e20-5c31-609c-3795-fe292bfa84ed" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">c) A utilização de uma rede fechada poderia reduzir as quedas de pressão e permitir intervenções de manutenção por meio de válvulas de seccionamento.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades" data-w-id="e7257e20-5c31-609c-3795-fe292bfa84d3" data-animation-type="lottie" data-src="documents/certo-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>Parabéns! A resposta está correta.</strong></p>
+                                  <p><strong>Justificativa</strong>: A rede descrita caracteriza-se como rede aberta, que apresenta maior queda de pressão com o aumento da distância e dificuldade de manutenção, pois não permite o seccionamento sem interromper o fornecimento de ar. A adoção de uma rede fechada (em anel) proporciona maior uniformidade de pressão e possibilita a instalação de válvulas de seccionamento, facilitando manutenções e ampliações do sistema.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">d) Redes abertas apresentam maior uniformidade de pressão e facilitam manutenções, sendo mais indicadas para instalações industriais de médio porte.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="e7257e20-5c31-609c-3795-fe292bfa84f9" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">e) Redes entrelaçadas são sempre a melhor opção, independentemente do porte da instalação e do custo de implantação.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="e7257e20-5c31-609c-3795-fe292bfa8505" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><img src="images/circulo-unipar-02.svg" loading="lazy" alt="" height="650" class="bg-exercicios">
+        </section>
+      </div>
+      <div class="video-aula-conteudo">
+        <section>
+          <div data-hide="1" class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="label-titulo-section vermelho">videoaula</div>
+                <div class="w-richtext">
+                  <p>Sua próxima etapa é assistir à videoaula, onde você poderá ver os conceitos em ação e ampliar sua compreensão. Essa é uma ótima oportunidade para reforçar o aprendizado.</p>
+                  <p>‍</p>
+                </div>
+                <p class="texto-destaque">Assista a videoaula</p>
+                <div class="video-aula-div">
+                  <div style="padding-top:56.27659574468085%" class="video-aula w-video w-embed"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1181654497%3Fapp_id%3D122963&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fvimeo.com%2F1181654497&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2144072454-e589dfefb6fe7ab91063a002c45783a5c834f07043c27313a1091661c1497f33-d_1280%3Fregion%3Dus&type=text%2Fhtml&schema=vimeo" width="940" height="529" scrolling="no" allowfullscreen="" title="0910 - Aula 4 - Sistemas Hidráulicos e Pneumáticos"></iframe></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="referencias-bibliograficas text-color-white">
+        <section data-w-id="dc02f462-fad6-7074-3f26-4f016be9afad" class="section">
+          <div class="padding-inner padding-4em">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="label-titulo-section">Referências </div>
+                <div class="text-color-white w-richtext">
+                  <p>DORNELES, V.; MUGGE, T. <strong>Pneumática Básica</strong>. Rio Grande do Sul: SENAI, 2008.</p>
+                  <p>FIALHO, A. B. <strong>Automação Pneumática</strong>: projetos, dimensionamento e análise de circuitos. 7. ed. São Paulo: Érica, 2011.</p>
+                  <p>FILHO, E. S. D. S.; SANTOS, B. K. <strong>Sistemas hidráulicos e pneumáticos</strong>. Porto Alegre: Sagah, 2018.</p>
+                  <p>PRUDENTE, F. <strong>Automação industrial pneumática</strong>: teoria e aplicações. Rio de Janeiro: LTC, 2015.</p>
+                  <p>ROLLINS, J. P. <strong>Manual de ar comprimido e gases</strong>. 1. ed. São Paulo: Pearson, 2004.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div data-hide="1" class="rodape-final">
+        <div class="container">
+          <div class="w-layout-blockcontainer w-container">
+            <div class="w-richtext">
+              <h6><strong>Parabéns!</strong></h6>
+              <p>Você acaba de concluir uma etapa importante da sua jornada. Agora é hora de seguir em frente!</p>
+            </div>
+          </div>
+        </div>
+        <div class="design-b42">
+          <div>©Unipar - Todos direitos reservados | Design by </div>
+          <a href="https://www.b42.com.br" target="_blank" class="b42-link w-inline-block"><img src="images/branco.svg" loading="lazy" width="43" alt="" class="logo-b42"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=69e633bc7a5bc75aa854b4c6" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <script src="https://assets.eadstock.com.br/go/static/libs/b42-accessibility/b42-accessibility.min.js" data-print-css="unipar" data-dark-css="unipar" data-contrast-css="unipar"></script>
+  <!-- scripts player podcast -->
+  <script src="https://s3.amazonaws.com/assets.b42.com.br/player/mediaelement-and-player.min.js"></script>
+  <script src="https://s3.amazonaws.com/assets.b42.com.br/player/plugins/speed/speed.min.js"></script>
+  <script src="https://s3.amazonaws.com/assets.b42.com.br/player/plugins/speed/speed-i18n.js"></script>
+  <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function () {
+    var mediaElements = document.querySelectorAll('.audio-complementar audio'), i, total = mediaElements.length;
+    for (i = 0; i < total; i++) {
+      new MediaElementPlayer(mediaElements[i], {
+        pluginPath: './mediaelement',
+        features: ['playpause', 'current', 'progress', 'duration', 'speed', 'skipback', 'jumpforward', 'tracks','markers', 'volume', 'chromecast', 'ads', 'vast', 'contextmenu'],
+        startLanguage: 'pt'
+      });
+    }
+  });
+</script>
+  <!-- scripts quiz -->
+  <script>
+    document.addEventListener('quiz-completed', function (e) {
+        ScormProcessSetValue("cmi.core.lesson_status", "completed");
+    });
+</script>
+  <!-- scripts balao palavra -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <!-- código dos boxes  -->
+  <script src="https://go.eadstock.com.br/a/lib?p=go.min.js"></script>
+</body>
+</html>

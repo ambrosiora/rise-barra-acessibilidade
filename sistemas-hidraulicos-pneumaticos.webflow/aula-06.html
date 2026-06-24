@@ -1,0 +1,1601 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Jun 24 2026 14:30:54 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="69e633bc7a5bc75aa854b4d1" data-wf-site="69e633bc7a5bc75aa854b4c6">
+<head>
+  <meta charset="utf-8">
+  <title>Aula 06</title>
+  <meta content="Aula 06" property="og:title">
+  <meta content="Aula 06" name="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/sistemas-hidraulicos-pneumaticos.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Exo:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Bebas Neue:300,400,500,600,700","Inter:300,400,500,600,700","Inter:300,400,500,600,700","Source Code Pro:300,400,500,600,700"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <script src="js/scormfunctions.js" type="text/javascript"></script>
+  <script src="js/scormvalidate.js" type="text/javascript"></script>
+  <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+  <!-- scripts player podcast -->
+  <link rel="stylesheet" href="https://s3.amazonaws.com/assets.b42.com.br/player/mediaelementplayer.css">
+  <link rel="stylesheet" href="https://s3.amazonaws.com/assets.b42.com.br/player/plugins/speed/speed.min.css">
+  <!-- scripts player audiobook -->
+  <link rel="stylesheet" href="https://assets.eadstock.com.br/go/static/libs/b42-audio-player/css/b42-audio-player.min.css">
+  <style>
+.hide, .hide.w-button {
+  display: none;
+}
+/*acessibilidade*/ 
+.texto-acessibilidade {
+  position:absolute;
+  left:0px;
+  top:-500px;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+/* esconder itens*/
+.w-webflow-badge {
+  display: none !important;
+}
+/* player-media elemente transparente */
+.mejs__container, .mejs__controls:not([style*='display: none']){
+  background: transparent !important;
+}
+/* quebra dos links */
+.span-hyphen, a {
+overflow-wrap: break-word;
+}
+/* espaçamento no box do webgo*/
+  .link-content {
+    padding-bottom: 10px;
+}
+</style>
+  <script>
+window.addEventListener('load', () => {
+    doStart(false);
+});
+</script>
+</head>
+<body>
+  <div class="global-styles w-embed">
+    <style>
+/* Snippet gets rid of top margin on first element in any rich text*/
+.w-richtext>:first-child {
+	margin-top: 0;
+}
+/* Snippet gets rid of bottom margin on last element in any rich text*/
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0;
+}
+/* Snippet prevents all click and hover interaction with an element */
+.clickable-off {
+	pointer-events: none;
+}
+/* Snippet enables all click and hover interaction with an element */
+.clickable-on{
+  pointer-events: auto;
+}
+/* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+/*Hide focus outline for main content element*/
+main:focus-visible {
+	outline: -webkit-focus-ring-color auto 0px;
+}
+/* Make sure containers never lose their center alignment*/
+.container-medium, .container-small, .container-large {
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+/*Reset buttons, and links styles*/
+a {
+	text-decoration: inherit;
+	font-size: inherit;
+}
+/*Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+/*Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/*estilo de tabela*/  
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid #ffffff; /*cor das bordas*/
+    border-collapse: collapse;
+}
+th, td {
+    padding: 14px;
+    text-align: left;
+}
+table tr:nth-child(even) {
+    background-color: #fff8f9; /*cor 1*/
+}
+table tr:nth-child(odd) {
+   background-color: #fce0e5; /*cor 2*/
+}
+table th {
+    background-color: #4c0a01; /*cor do background da tabela*/
+    color: #ffffff; /*cor do título da tabela*/
+}
+/*player responsivo*/ 
+.b42-video-player{
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+/*quebrar links*/ 
+.span-hyphen, a {
+overflow-wrap: break-word;
+}
+/*scroll bar estilizada 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  padding-right: 3px;
+	padding-right: 3px;
+  }
+::-webkit-scrollbar-button {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #f9b233;
+  border: 0px none #f9b233;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f9b233;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+  padding-right: 3px;
+	padding-right: 3px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+*/
+.link-content {
+	margin-top: 40px;
+  margin-bottom: 20px;
+}
+</style>
+  </div>
+  <div id="content" class="page-wrap">
+    <div class="main">
+      <div data-w-id="8794424f-6621-5531-26ab-6a26db72902e" class="home">
+        <div class="container">
+          <div class="home-whopper">
+            <div class="home-content"><img src="images/logo-unipar-red.svg" loading="lazy" width="100" alt="" class="logo-unipar">
+              <div class="tag">Aula</div>
+              <h1 class="titulo-aula">Válvulas hidráulicas e pneumáticas</h1>
+            </div>
+            <div data-w-id="8f13a32a-a1c6-3f8d-0360-f9ab6e4ac72a" class="element-home"><img src="images/a6-capa-edit.jpg" loading="lazy" width="400" sizes="(max-width: 479px) 100vw, 400px" alt="" srcset="images/a6-capa-edit-p-500.jpg 500w, images/a6-capa-edit-p-800.jpg 800w, images/a6-capa-edit-p-1080.jpg 1080w, images/a6-capa-edit.jpg 1395w" class="image-label-element"></div><img src="images/bg-element-03.svg" loading="lazy" width="150" data-w-id="7746d760-0a1a-1815-139d-75f207b09ae4" alt="" class="icone-home-01"><img src="images/bg-element-02.svg" loading="lazy" width="150" alt="" class="icone-home-02">
+          </div>
+        </div>
+      </div>
+      <div class="conteudo">
+        <section class="section-topicos">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="container-topicos">
+                <p> Nesta aula, os seguintes tópicos serão explorados:</p>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="_2-colunas-icones">
+                      <div class="_2-colunas">
+                        <div class="column-4">
+                          <div class="_2-colunas-icone-bg text-color-white">
+                            <div class="numero-icone-2-colunas"></div>
+                            <div class="numero-2c">1</div>
+                          </div>
+                        </div>
+                        <div class="column-text">
+                          <div class="titulo-colunas-icon">Tópico</div>
+                          <div class="w-richtext">
+                            <p>Tipos de válvulas: direcionais, reguladoras e de bloqueio</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="_2-colunas">
+                        <div class="column-4">
+                          <div class="_2-colunas-icone-bg text-color-white">
+                            <div class="numero-icone-2-colunas"></div>
+                            <div class="numero-2c">2</div>
+                          </div>
+                        </div>
+                        <div class="column-text">
+                          <div class="titulo-colunas-icon">Tópico</div>
+                          <div class="w-richtext">
+                            <p>Simbologia, acionamentos e características construtivas</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="_2-colunas">
+                        <div class="column-4">
+                          <div class="_2-colunas-icone-bg text-color-white">
+                            <div class="numero-icone-2-colunas"></div>
+                            <div class="numero-2c">3</div>
+                          </div>
+                        </div>
+                        <div class="column-text">
+                          <div class="titulo-colunas-icon">Tópico</div>
+                          <div class="w-richtext">
+                            <p>Critérios de seleção e dimensionamento</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="oi-content">
+                    <div class="grid-topicos">
+                      <div data-w-id="41852052-dd9c-a2f9-4cf8-96b92eeeb906" class="card-component">
+                        <div class="card-front-content">
+                          <p>tópico</p>
+                          <div class="text-block-21">1</div>
+                        </div>
+                        <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="card-scroll">
+                          <p>Tópico 1: Tipos de válvulas: direcionais, reguladoras e de bloqueio</p>
+                        </div>
+                      </div>
+                      <div data-w-id="43ff7f3a-a416-443e-d0b5-f0a6dad9abc6" class="card-component">
+                        <div class="card-front-content">
+                          <p>tópico</p>
+                          <div class="text-block-21">2</div>
+                        </div>
+                        <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="card-scroll">
+                          <p>Tópico 2: Simbologia, acionamentos e características construtivas</p>
+                        </div>
+                      </div>
+                      <div data-w-id="a01b4af2-0d6c-1a1b-c084-9cd2b53a2911" class="card-component">
+                        <div class="card-front-content">
+                          <p>tópico</p>
+                          <div class="text-block-21">3</div>
+                        </div>
+                        <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="card-scroll">
+                          <p>Tópico 3: Critérios de seleção e dimensionamento</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="divisor-whopper">
+          <div class="divisor"><img src="images/unipar-escrito-borda.svg" loading="lazy" width="950" alt="" class="unipar-logo-scroll-strock"></div>
+          <div class="divisor"><img src="images/unipar-escrito.svg" loading="lazy" width="950" alt="" class="unipar-logo-scroll-fill"></div>
+        </div>
+        <section class="section">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="titulo-topico">
+                  <div class="div-titulo">
+                    <div data-w-id="676ab6c6-5a37-8cc3-0844-add35f959c4c" style="opacity:0" class="label-titulo">Tópico 01</div>
+                    <h2 data-w-id="1844cb2a-8994-b285-eb89-90e9ebe3fec3" style="opacity:0" class="heading-titulo">Tipos de válvulas: direcionais, reguladoras e de bloqueio<br></h2>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Olá, estudante! Na aula anterior, a gente fechou com uma ideia bem direta: o atuador é o “músculo”, mas as válvulas são o “sistema nervoso” que manda no movimento. </p>
+                  <p>Agora eu te pergunto: de que adianta ter um cilindro bem dimensionado, se o ar (ou o óleo) não chega com direção, pressão e vazão adequadas? É aí que as válvulas entram.</p>
+                  <p>De acordo com Filho e Santos (2018), as válvulas são componentes de comando e controle que determinam para onde o fluido vai, a intensidade (pressão) e a “quantidade por tempo” (vazão). Em pneumática, isso fica ainda mais evidente, porque o ar é compressível, portanto, qualquer restrição muda o tempo de ciclo, força efetiva e consumo (Rollins, 2004; White, 2018).</p>
+                  <p>Para iniciarmos, vamos organizar as válvulas em direcionais e reguladoras.</p>
+                  <h2>Válvulas direcionais</h2>
+                  <p>As válvulas direcionais (ou distribuidoras) têm uma missão simples: conectar e desconectar caminhos.</p>
+                  <p>Pense em um cilindro de dupla ação. Para ele avançar, você precisa pressurizar uma câmara e exaurir a outra; para ele retornar, você inverte. Quem faz essa troca de vias é a válvula direcional.</p>
+                  <p>A nomenclatura mais comum dessas válvulas aparece como vias/posições:</p>
+                </div>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="w-richtext">
+                      <ul role="list">
+                        <li>2/2: duas vias, duas posições (abre/fecha).</li>
+                        <li>3/2: três vias, duas posições (muito usada em simples efeito e sinais pneumáticos).</li>
+                        <li>5/2: cinco vias, duas posições (clássica para cilindro de dupla ação pneumático).</li>
+                        <li>4/3: quatro vias, três posições (muito comum em hidráulica para controle com posição central).</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="oi-content">
+                    <p class="texto-destaque">Clique nas cartas.</p>
+                    <div class="oi-flip-cards">
+                      <div data-w-id="bf24e8e3-4c2a-7ec7-df61-800c45d326be" class="card text-color-white">
+                        <div class="card_unidade">
+                          <div class="card_frente">
+                            <p class="texto-flipcard-frente">2/2</p>
+                          </div>
+                          <div class="card_atras">
+                            <p class="card_texto">Duas vias, duas posições (abre/fecha).</p>
+                          </div><img src="images/icon-click-2.svg" width="28" alt="" class="img-click">
+                        </div>
+                      </div>
+                      <div data-w-id="bf24e8e3-4c2a-7ec7-df61-800c45d326cc" class="card text-color-white">
+                        <div class="card_unidade">
+                          <div class="card_frente">
+                            <p class="texto-flipcard-frente">3/2</p>
+                          </div>
+                          <div class="card_atras">
+                            <p class="card_texto">Três vias, duas posições (muito usada em simples efeito e sinais pneumáticos).</p>
+                          </div><img src="images/icon-click-2.svg" width="28" alt="" class="img-click">
+                        </div>
+                      </div>
+                      <div data-w-id="bf24e8e3-4c2a-7ec7-df61-800c45d326da" class="card text-color-white">
+                        <div class="card_unidade">
+                          <div class="card_frente">
+                            <p class="texto-flipcard-frente">5/2</p>
+                          </div>
+                          <div class="card_atras">
+                            <p class="card_texto">Cinco vias, duas posições (clássica para cilindro de dupla ação pneumático).</p>
+                          </div><img src="images/icon-click-2.svg" width="28" alt="" class="img-click">
+                        </div>
+                      </div>
+                      <div data-w-id="a2e45f48-3fde-aec2-ff2c-aa562d6cb824" class="card text-color-white">
+                        <div class="card_unidade">
+                          <div class="card_frente">
+                            <p class="texto-flipcard-frente">4/3</p>
+                          </div>
+                          <div class="card_atras">
+                            <p class="card_texto">Quatro vias, três posições (muito comum em hidráulica para controle com posição central).</p>
+                          </div><img src="images/icon-click-2.svg" width="28" alt="" class="img-click">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <h3>Válvula direcional ON/OFF e proporcional</h3>
+                  <p>As válvulas de controle direcional podem ser de dois tipos:</p>
+                </div>
+                <div class="_2-colunas-icones">
+                  <div class="_2-colunas">
+                    <div class="column-4">
+                      <div class="_2-colunas-icone-bg text-color-white">
+                        <div class="numero-icone-2-colunas"></div>
+                        <div class="numero-2c">1</div>
+                      </div>
+                    </div>
+                    <div class="column-text">
+                      <div class="w-richtext">
+                        <p><strong>ON/OFF</strong>: ou comuta, ou não comuta. É o “liga/desliga” do trajeto.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_2-colunas">
+                    <div class="column-4">
+                      <div class="_2-colunas-icone-bg text-color-white">
+                        <div class="numero-icone-2-colunas"></div>
+                        <div class="numero-2c">2</div>
+                      </div>
+                    </div>
+                    <div class="column-text">
+                      <div class="w-richtext">
+                        <p><strong>Proporcional</strong>: às vezes chamadas de analógicas, ou seja, com grau de abertura e fechamento variável, permitindo regulagem da pressão e vazão. Em aplicações de controle fino (principalmente hidráulica), isso permite ajustar vazão e pressão de modo contínuo.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Na prática, a proporcional é mais cara e exige controle mais cuidadoso, mas brilha quando você precisa de suavidade, controle e repetibilidade em cargas variáveis (Prudente, 2015).</p>
+                  <h2>Válvulas reguladoras</h2>
+                  <p>Aqui é onde muita gente confunde as coisas, então vamos com calma: reguladoras podem atuar sobre pressão ou sobre vazão. Com base nisso, seu efeito no sistema muda.</p>
+                  <h3>Reguladoras de pressão</h3>
+                </div>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="w-richtext">
+                      <p>Reguladora/redutora de pressão (muito vista em FRL na pneumática): mantém uma pressão de saída ajustada para proteger componentes e estabilizar o processo.</p>
+                      <p>Válvula de alívio (limitadora): abre quando a pressão ultrapassa um valor, protegendo o sistema (muito típica em hidráulica).</p>
+                      <p>Válvula de sequência: só libera o fluxo para um ramo quando a pressão atinge um patamar, útil para “ordem de operação”.</p>
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="oi-content">
+                    <p class="texto-destaque">Clique em “+” e confira as informações.</p>
+                    <div class="oi-accordion-v1">
+                      <div data-delay="0" data-hover="false" class="accordion-item w-dropdown">
+                        <div class="faq-item-toggle w-dropdown-toggle">
+                          <div class="accordioon-title-wrapper">
+                            <div class="accordion-title">Reguladora/redutora de pressão (muito vista em FRL na pneumática)</div>
+                            <div class="accordion-icon-circle"><img loading="lazy" src="https://uploads-ssl.webflow.com/61d5486e6f7c7a4688a23609/61d54a7a34d78a4b147c6219_Plus%20Icon.svg" alt="" class="faq-icon"></div>
+                          </div>
+                        </div>
+                        <nav class="faq-content-wrap w-dropdown-list">
+                          <div class="faq-content">
+                            <div class="rich-text-box w-richtext">
+                              <p>Mantém uma pressão de saída ajustada para proteger componentes e estabilizar o processo.</p>
+                            </div>
+                          </div>
+                        </nav>
+                      </div>
+                      <div data-delay="0" data-hover="false" class="accordion-item w-dropdown">
+                        <div class="faq-item-toggle w-dropdown-toggle">
+                          <div class="accordioon-title-wrapper">
+                            <div class="accordion-title">Válvula de alívio (limitadora)</div>
+                            <div class="accordion-icon-circle"><img loading="lazy" src="https://uploads-ssl.webflow.com/61d5486e6f7c7a4688a23609/61d54a7a34d78a4b147c6219_Plus%20Icon.svg" alt="" class="faq-icon"></div>
+                          </div>
+                        </div>
+                        <nav class="faq-content-wrap w-dropdown-list">
+                          <div class="faq-content">
+                            <div class="rich-text-box w-richtext">
+                              <p>Abre quando a pressão ultrapassa um valor, protegendo o sistema (muito típica em hidráulica).</p>
+                            </div>
+                          </div>
+                        </nav>
+                      </div>
+                      <div data-delay="0" data-hover="false" class="accordion-item w-dropdown">
+                        <div class="faq-item-toggle w-dropdown-toggle">
+                          <div class="accordioon-title-wrapper">
+                            <div class="accordion-title">Válvula de sequência</div>
+                            <div class="accordion-icon-circle"><img loading="lazy" src="https://uploads-ssl.webflow.com/61d5486e6f7c7a4688a23609/61d54a7a34d78a4b147c6219_Plus%20Icon.svg" alt="" class="faq-icon"></div>
+                          </div>
+                        </div>
+                        <nav class="faq-content-wrap w-dropdown-list">
+                          <div class="faq-content">
+                            <div class="rich-text-box w-richtext">
+                              <p>Só libera o fluxo para um ramo quando a pressão atinge um patamar, útil para “ordem de operação”.</p>
+                            </div>
+                          </div>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Filho e Santos (2018) destacam que controlar pressão é controlar a capacidade de força no atuador. White (2018) ajuda a amarrar a lógica física: pressão é energia por unidade de volume, então controlar pressão é controlar potencial de trabalho.</p>
+                  <h3>Reguladoras de vazão (controle de velocidade)</h3>
+                  <p>Aqui entram as válvulas mais importantes na prática, pois são elas que definem velocidade e tempo de ciclo.</p>
+                  <p>Exemplos comuns:</p>
+                </div>
+                <ul role="list" class="list">
+                  <li class="list-item">
+                    <p class="paragraph-4">Reguladora de fluxo (estranguladora): restringe passagem → muda vazão → muda velocidade.</p>
+                  </li>
+                  <li class="list-item">
+                    <p>Reguladora unidirecional: controla em um sentido e libera no outro (muito usada para “<em>meter-out</em>” no cilindro pneumático).</p>
+                  </li>
+                  <li class="list-item">
+                    <p>Válvula de escape rápido: acelera o movimento, permitindo exaustão mais direta (reduz “engarrafamento” no retorno do ar).</p>
+                  </li>
+                </ul>
+                <div class="w-richtext">
+                  <p>O circuito pneumático da Figura 1 demonstra a aplicação dessas válvulas, além de outros elementos estudados até o momento.</p>
+                </div>
+                <div class="figura">
+                  <div class="legenda-figura">Figura 1 - Exemplo de circuito pneumático</div>
+                  <div><img src="images/a6-fig1.png" width="1041" height="Auto" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" alt="Descrição da figura 1: Diagrama técnico de sistema pneumático com dois esquemas: à esquerda, circuito real com filtro, regulador, manômetro, lubrificador, válvulas, tubulações e cilindro; à direita, símbolos do circuito. Linhas pretas sobre fundo claro, aspecto técnico e instrutivo." srcset="images/a6-fig1-p-500.png 500w, images/a6-fig1-p-800.png 800w, images/a6-fig1-p-1080.png 1080w, images/a6-fig1-p-1600.png 1600w, images/a6-fig1-p-2000.png 2000w, images/a6-fig1-p-2600.png 2600w, images/a6-fig1.png 3120w" class="hero-image-figura"></div>
+                  <div class="legenda-figura">Fonte: adaptada de Prudente (2015).</div>
+                </div>
+                <div class="w-richtext">
+                  <p>Só que agora vem a parte que muda seu jogo: como representar tudo isso num diagrama que qualquer profissional consiga ler do mesmo jeito? É exatamente isso que a gente resolve no próximo tópico, com simbologia e acionamentos.</p>
+                  <p>Vamos lá?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-atividades">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="exercicio-whopper">
+                  <div class="objeto-interativo">
+                    <div class="texto-acessibilidade">
+                      <div class="label-titulo-section vermelho">para pensar</div>
+                      <div class="bullet-abc w-richtext">
+                        <p>Em uma linha de embalagem, um cilindro pneumático de dupla ação precisa avançar e retornar alternadamente. O técnico decidiu usar uma válvula direcional “clássica” para inverter qual câmara recebe pressão e qual câmara exaure, realizando o comando do avanço e do recuo.</p>
+                        <p>Assinale a alternativa que indica a válvula direcional mais típica para esse comando em pneumática.</p>
+                        <ol start="" role="list">
+                          <li>Válvula 2/2 (duas vias, duas posições).</li>
+                          <li>Válvula 3/2 (três vias, duas posições).</li>
+                          <li>Válvula 5/2 (cinco vias, duas posições).</li>
+                          <li>Válvula 4/3 (quatro vias, três posições).</li>
+                          <li>Válvula de escape rápido.</li>
+                        </ol>
+                        <p><strong>A alternativa C é a correta.</strong></p>
+                        <p><strong>Justificativa</strong>: Em cilindros de dupla ação, o comando exige alimentar uma câmara e exaurir a outra, invertendo as conexões para retorno. A válvula 5/2 é a configuração mais comum em pneumática para essa função, pois oferece as vias necessárias para alimentação e exaustão em duas posições de comutação.</p>
+                      </div>
+                    </div>
+                    <div aria-hidden="true" class="oi-content">
+                      <div class="label-titulo-section">para pensar</div>
+                      <div class="bullet-abc w-richtext">
+                        <p>Em uma linha de embalagem, um cilindro pneumático de dupla ação precisa avançar e retornar alternadamente. O técnico decidiu usar uma válvula direcional “clássica” para inverter qual câmara recebe pressão e qual câmara exaure, realizando o comando do avanço e do recuo.</p>
+                        <p>Assinale a alternativa que indica a válvula direcional mais típica para esse comando em pneumática.</p>
+                      </div>
+                      <div class="acoredeon">
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">a) Válvula 2/2 (duas vias, duas posições).</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="7152ef4c-c769-d5ae-93db-4626151aba7c" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">b) Válvula 3/2 (três vias, duas posições).</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="40926d1e-30d0-9cac-26e2-cc54f696fc52" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-w-id="e9166c2f-f03d-308a-50da-393f1ea8f91f" class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">c) Válvula 5/2 (cinco vias, duas posições).</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades" data-w-id="3dc68a47-1ffe-d980-6925-6fd6a8800789" data-animation-type="lottie" data-src="documents/certo-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>Parabéns! A resposta está correta.</strong></p>
+                                  <p><strong>Justificativa</strong>: Em cilindros de dupla ação, o comando exige alimentar uma câmara e exaurir a outra, invertendo as conexões para retorno. A válvula 5/2 é a configuração mais comum em pneumática para essa função, pois oferece as vias necessárias para alimentação e exaustão em duas posições de comutação.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">d) Válvula 4/3 (quatro vias, três posições).</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="232acfb3-bdb2-bd6d-42ca-eceb2efef5b2" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">e) Válvula de escape rápido.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="a5ec9d50-8ecf-0ea4-64e9-393cdc3b9123" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><img src="images/circulo-unipar-02.svg" loading="lazy" alt="" height="650" class="bg-exercicios">
+        </section>
+        <section class="section">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="titulo-topico">
+                  <div class="div-titulo">
+                    <div data-w-id="5097477c-2ee3-16d3-432a-1687b286578f" style="opacity:0" class="label-titulo">Tópico 02</div>
+                    <h2 data-w-id="5097477c-2ee3-16d3-432a-1687b2865791" style="opacity:0" class="heading-titulo">Simbologia, acionamentos e características construtivas<br></h2>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Estudante, se você já viu um circuito pneumático e pensou “parece um mapa do metrô”, você está no caminho certo, é um mapa mesmo, só que de energia fluida.</p>
+                  <p>A grande virada é entender que o diagrama não tenta desenhar a peça “bonita”, ele mostra a função. É por isso que a simbologia é normatizada, para evitar interpretação pessoal, erro de montagem e dor de cabeça na manutenção (Filho; Santos, 2018).</p>
+                  <h2>Norma ISO 1219</h2>
+                  <p>A ISO 1219 é referência mundial para símbolos gráficos e diagramas de circuitos em sistemas fluido-mecânicos e possui duas partes:</p>
+                </div>
+                <ul role="list" class="list">
+                  <li class="list-item">
+                    <p class="paragraph-4">ISO 1219-1: símbolos gráficos.</p>
+                  </li>
+                  <li class="list-item">
+                    <p>ISO 1219-2: regras para desenho do diagrama.</p>
+                  </li>
+                </ul>
+                <div class="w-richtext">
+                  <p>Pausa rápida: o estudante não aprende ISO 1219 para “passar na prova”. Aprenda para não errar na vida real, e isso tem impacto direto em segurança e custo.</p>
+                  <h2>Leitura de simbologia de válvula no diagrama</h2>
+                  <p>Cada válvula possui um número que representa as posições e outro de quantidade de vias. Cada posição de trabalho é representada simbolicamente por um retângulo. Já as vias são representadas simbolicamente por uma seta ou traço oblíquo, como ilustra a figura abaixo.</p>
+                </div>
+                <div class="figura">
+                  <div class="legenda-figura">Figura - Identificação de válvulas</div>
+                  <div><img src="images/a6-fig2.png" width="1041" height="Auto" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" alt="" srcset="images/a6-fig2-p-500.png 500w, images/a6-fig2-p-800.png 800w, images/a6-fig2-p-1080.png 1080w, images/a6-fig2-p-1600.png 1600w, images/a6-fig2-p-2000.png 2000w, images/a6-fig2.png 2954w" class="hero-image-figura"></div>
+                  <div class="legenda-figura">Fonte: o autor.</div>
+                </div>
+                <div class="box-destaque-basico">
+                  <div class="w-richtext">
+                    <p>É importante ainda reforçar que:</p>
+                    <ul role="list">
+                      <li>Setas/traços indicam conexão entre vias e suas direções na posição de trabalho.</li>
+                      <li>Bloqueios (linhas “fechadas”) indicando porta tampada naquela posição de trabalho.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>O segredo é sempre se perguntar: “nesta posição, por onde o fluido entra e por onde ele sai?”</p>
+                  <h3>Nomenclaturas de vias de válvulas</h3>
+                  <p>As vias das válvulas também possuem uma nomenclatura, que pode seguir duas normas diferentes, a ISO 1219, que já foi discutida anteriormente, e a DIN 24300 que é uma norma europeia. Para cada norma, a nomenclatura das vias muda, conforme o Quadro 2, sendo a ISO a mais usual. A Figura 2 também ilustra alguns exemplos de válvulas.</p>
+                </div>
+                <div class="tabela">
+                  <div class="legenda-figura">Quadro 2 - Nomenclaturas de vias de válvulas</div>
+                  <div class="tabela w-embed">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Orifício</th>
+                          <th>DIN 24300</th>
+                          <th>ISO 1219</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Alimentação</td>
+                          <td>P</td>
+                          <td>1</td>
+                        </tr>
+                        <tr>
+                          <td>Utilização</td>
+                          <td>A, B, C</td>
+                          <td>2, 4, 6</td>
+                        </tr>
+                        <tr>
+                          <td>Escape</td>
+                          <td>R, S, T ou EA, EB, EC</td>
+                          <td>3, 5, 7</td>
+                        </tr>
+                        <tr>
+                          <td>Pilotagem</td>
+                          <td>X, Y, Z</td>
+                          <td>10, 12, 14</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="legenda-figura">Fonte: o autor.</div>
+                </div>
+                <div class="figura">
+                  <div class="legenda-figura">Figura 2 - Exemplo de válvulas e suas nomenclaturas</div>
+                  <div><img src="images/a6-fig3.png" width="1041" height="Auto" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" alt="Descrição da figura 2: Conjunto de diagramas de válvulas pneumáticas (2/2, 3/2, 4/2, 5/2 e 5/3) com símbolos técnicos. Cada válvula mostra portas numeradas, setas e posições de fluxo. Fundo claro, traços pretos. Estilo didático e técnico, sem pessoas." srcset="images/a6-fig3-p-500.png 500w, images/a6-fig3-p-800.png 800w, images/a6-fig3-p-1080.png 1080w, images/a6-fig3-p-1600.png 1600w, images/a6-fig3-p-2000.png 2000w, images/a6-fig3-p-2600.png 2600w, images/a6-fig3.png 3610w" class="hero-image-figura"></div>
+                  <div class="legenda-figura">Fonte: adaptada de Prudente (2015).</div>
+                </div>
+                <div class="w-richtext">
+                  <h2>Acionamentos</h2>
+                  <p>Aqui, a simbologia fica muito legal, porque o desenho do acionamento conta a história do comando.</p>
+                </div>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="w-richtext">
+                      <p>Tipos mais comuns (Filho; Santos, 2018; Fialho, 2011):</p>
+                      <ul role="list">
+                        <li>Muscular (manual): botão, alavanca, pedal.</li>
+                        <li>Mecânico: rolete/fim de curso mecânico (clássico em sequências pneumáticas).</li>
+                        <li>Pneumático (pilotagem): um sinal de ar comanda a comutação.</li>
+                        <li>Elétrico (solenoide): bobina/solenoide comanda a comutação.</li>
+                      </ul>
+                      <p>E ainda tem o retorno, que define o “estado de repouso”:</p>
+                      <ul role="list">
+                        <li>Retorno por mola: voltou, acabou energia/sinal.</li>
+                        <li>Dupla pilotagem/duplo solenóide: “memória” (fica onde foi comutada).</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="oi-content">
+                    <p class="texto-destaque">Clique nas setas.</p>
+                    <div class="tabs-container">
+                      <div id="w-node-b1d0d6e1-7ee6-7c48-5bf1-de3aa4e12882-a854b4d1" class="feature-image-mask"><img src="images/a6-img3-edit.jpg" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="images/a6-img3-edit-p-500.jpg 500w, images/a6-img3-edit-p-800.jpg 800w, images/a6-img3-edit-p-1080.jpg 1080w, images/a6-img3-edit-p-1600.jpg 1600w, images/a6-img3-edit-p-2000.jpg 2000w, images/a6-img3-edit.jpg 2440w" alt="" class="feature-image"></div>
+                      <div id="w-node-b1d0d6e1-7ee6-7c48-5bf1-de3aa4e12884-a854b4d1" class="tabs-2c-img">
+                        <div class="w-embed">
+                          <style>
+.w-dropdown-toggle {
+  white-space:normal !important;
+}
+</style>
+                        </div>
+                        <div data-hover="" data-delay="0" class="tabs-item w-dropdown">
+                          <div class="tabs-item-toggle w-dropdown-toggle">
+                            <h3 class="tab-name">Tipos mais comuns (Filho; Santos, 2018; Fialho, 2011)</h3><img src="images/seta.svg" loading="lazy" width="30" height="30" alt="Arrow" class="tab-arrow">
+                          </div>
+                          <nav class="tab-content-wrap w-dropdown-list">
+                            <div class="tab-content">
+                              <div class="w-richtext">
+                                <ul role="list">
+                                  <li>Muscular (manual): botão, alavanca, pedal.</li>
+                                  <li>Mecânico: rolete/fim de curso mecânico (clássico em sequências pneumáticas).</li>
+                                  <li>Pneumático (pilotagem): um sinal de ar comanda a comutação.</li>
+                                  <li>Elétrico (solenoide): bobina/solenoide comanda a comutação.</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+                        </div>
+                        <div data-hover="" data-delay="0" class="tabs-item w-dropdown">
+                          <div class="tabs-item-toggle w-dropdown-toggle">
+                            <h3 class="tab-name">E ainda tem o retorno, que define o “estado de repouso”</h3><img src="images/seta.svg" loading="lazy" width="30" height="30" alt="Arrow" class="tab-arrow">
+                          </div>
+                          <nav class="tab-content-wrap w-dropdown-list">
+                            <div class="tab-content">
+                              <div class="w-richtext">
+                                <ul role="list">
+                                  <li>Retorno por mola: voltou, acabou energia/sinal.</li>
+                                  <li>Dupla pilotagem/duplo solenóide: “memória” (fica onde foi comutada).</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Pergunta prática: se faltar energia elétrica, você quer que o cilindro pare, retorne, avance ou fique travado? Essa resposta decide muita coisa na escolha da válvula.</p>
+                  <p>A Figura 3 ilustra a simbologia utilizada para definir os tipos de acionamentos mecânicos e manuais.</p>
+                </div>
+                <div class="figura">
+                  <div class="legenda-figura">Figura 3 - Tipos de acionamentos mecânicos e manuais</div>
+                  <div><img src="images/a6-fig4.png" width="1041" height="Auto" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" alt="Descrição da figura 3: Tabela de símbolos de acionamento pneumático. À esquerda, acionamentos manuais (geral, botão, alavanca, pedal e versões com retenção). À direita, acionamentos mecânicos (pino, rolete, rolete unidirecional e mola). Linhas pretas em fundo claro, estilo técnico." srcset="images/a6-fig4-p-500.png 500w, images/a6-fig4-p-800.png 800w, images/a6-fig4-p-1080.png 1080w, images/a6-fig4-p-1600.png 1600w, images/a6-fig4-p-2000.png 2000w, images/a6-fig4-p-2600.png 2600w, images/a6-fig4.png 3510w" class="hero-image-figura"></div>
+                  <div class="legenda-figura">Fonte: o autor.</div>
+                </div>
+                <div class="w-richtext">
+                  <p>Já a Figura 4 ilustra a simbologia utilizada para definir os tipos de acionamentos pneumáticos (por acréscimo de pressão) e elétricos (solenoide).</p>
+                </div>
+                <div class="figura">
+                  <div class="legenda-figura">Figura 4 - Tipos de acionamentos elétricos e pneumáticos</div>
+                  <div><img src="images/a6-fig5.png" width="644" height="Auto" sizes="(max-width: 767px) 100vw, 644px" alt="Descrição da figura 4: Diagrama comparativo de válvulas com acionamento pneumático (topo) e elétrico (base). Cada seção mostra duas válvulas 5/2 com portas numeradas, setas de fluxo e molas/solenóides. Fundo claro, traços pretos, estilo técnico e didático." srcset="images/a6-fig5-p-500.png 500w, images/a6-fig5-p-800.png 800w, images/a6-fig5-p-1080.png 1080w, images/a6-fig5-p-1600.png 1600w, images/a6-fig5.png 2578w" class="hero-image-figura"></div>
+                  <div class="legenda-figura">Fonte: o autor.</div>
+                </div>
+                <div class="w-richtext">
+                  <h2>Características construtivas</h2>
+                  <p>As principais construções de válvulas direcionais são:</p>
+                </div>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="w-richtext">
+                      <p><strong>Obturador:</strong> tende a ter melhor vedação, útil quando vazamento interno é crítico (retenções, bloqueios, algumas direcionais específicas), como ilustra a Figura 5a;</p>
+                      <p><strong>Carretel deslizante ou rotativo:</strong> costumam ter boa vazão e comutação adequada para aplicações gerais, mas pode ter pequenas fugas internas (em hidráulica isso importa bastante), como ilustra a Figura 5b.</p>
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="oi-content">
+                    <p class="texto-destaque espaco-1">Clique nas setas.</p>
+                    <div data-delay="4000" data-animation="slide" class="slider-caixa-texto w-slider" data-hide="1" data-autoplay="false" data-easing="ease" style="opacity:0" data-hide-arrows="false" data-disable-swipe="false" data-w-id="b491d8c6-8e35-df9c-e4a9-2d26a83e5e62" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+                      <div class="w-slider-mask">
+                        <div class="w-slide">
+                          <div class="slider-content-lista">
+                            <div class="slider-numeros">
+                              <div class="text-block">01</div>
+                            </div>
+                            <div class="slider-div-text-info">
+                              <div class="w-richtext">
+                                <p><strong>Obturador:</strong> tende a ter melhor vedação, útil quando vazamento interno é crítico (retenções, bloqueios, algumas direcionais específicas), como ilustra a Figura 5a;</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="w-slide">
+                          <div class="slider-content-lista">
+                            <div class="slider-numeros">
+                              <div class="text-block">02</div>
+                            </div>
+                            <div class="slider-div-text-info">
+                              <div class="w-richtext">
+                                <p><strong>Carretel deslizante ou rotativo:</strong> costumam ter boa vazão e comutação adequada para aplicações gerais, mas pode ter pequenas fugas internas (em hidráulica isso importa bastante), como ilustra a Figura 5b.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slider-button-v1 left w-slider-arrow-left">
+                        <div class="w-icon-slider-left"></div>
+                      </div>
+                      <div class="slider-button-v1 right w-slider-arrow-right">
+                        <div class="w-icon-slider-right"></div>
+                      </div>
+                      <div class="slide-nav off w-slider-nav w-slider-nav-invert"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="figura">
+                  <div class="legenda-figura">Figura 5 - Válvula tipo obturador (a) e carretel deslizante (b)</div>
+                  <div class="div-block-22"><img src="images/a6-fig6.png" width="1041" height="Auto" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" alt="Descrição da figura 5: Conjunto de diagramas técnicos de válvulas pneumáticas em corte e seus símbolos. À esquerda (a), mostram fluxo e acionamento com portas P, A e R. À direita (b), válvula mais complexa com múltiplas vias (A, B, P, R, Z, Y). Fundo claro, traços pretos, estilo didático." srcset="images/a6-fig6-p-500.png 500w, images/a6-fig6-p-800.png 800w, images/a6-fig6-p-1080.png 1080w, images/a6-fig6-p-1600.png 1600w, images/a6-fig6-p-2000.png 2000w, images/a6-fig6-p-2600.png 2600w, images/a6-fig6.png 2796w" class="hero-image-figura"><img src="images/a6-fig7.png" width="1041" height="Auto" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" alt="Descrição da figura 5: Conjunto de diagramas técnicos de válvulas pneumáticas em corte e seus símbolos. À esquerda (a), mostram fluxo e acionamento com portas P, A e R. À direita (b), válvula mais complexa com múltiplas vias (A, B, P, R, Z, Y). Fundo claro, traços pretos, estilo didático." srcset="images/a6-fig7-p-500.png 500w, images/a6-fig7-p-800.png 800w, images/a6-fig7-p-1080.png 1080w, images/a6-fig7-p-1600.png 1600w, images/a6-fig7-p-2000.png 2000w, images/a6-fig7-p-2600.png 2600w, images/a6-fig7.png 2796w" class="hero-image-figura">
+                    <div class="legenda-figura"><strong>(a)</strong></div>
+                    <div class="legenda-figura"><strong>(b)</strong></div>
+                  </div>
+                  <div class="legenda-figura">Fonte: adaptada de Prudente (2015).</div>
+                </div>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="box-m2">
+                      <div class="container-box-2c">
+                        <div id="w-node-ec17996b-aa00-4954-d84f-8fa2f78582f2-a854b4d1"><img src="images/icon-mao-massa.svg" loading="lazy" width="190" alt="" class="icone-box"><img src="images/bg-mao-massa.svg" loading="lazy" alt=""></div>
+                        <div class="rt-dark-2 w-richtext">
+                          <p>Na prática, olhe para o equipamento de pneumática, escolha três válvulas diferentes e faça a leitura da sua simbologia. Para cada uma, responda:</p>
+                          <p>Ela muda direção, pressão/vazão ou bloqueia?</p>
+                          <p>Ela está mais para comando (sinal) ou para potência (alimentar atuador)?</p>
+                          <p>Se ela falhar, o sistema fica seguro ou fica perigoso? Por quê?</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="oi-content">
+                    <p class="texto-destaque espaco-1">Clique no ícone.</p>
+                    <div class="accordeon">
+                      <div class="acordeon-box-2">
+                        <div data-w-id="ec17996b-aa00-4954-d84f-8fa2f78582fb" class="mao-na-massa boxes"><img src="images/icon-mao-massa.svg" loading="lazy" alt="" class="image-7"></div>
+                        <div class="acordeon-conteudo-2 boxes">
+                          <div class="content-accordeon-mao-na-massa boxes">
+                            <div class="titulo-mao-na-massa">
+                              <div id="w-node-ec17996b-aa00-4954-d84f-8fa2f7858300-a854b4d1">
+                                <div id="w-node-ec17996b-aa00-4954-d84f-8fa2f7858301-a854b4d1" class="text-block-26">prática de estudo</div>
+                                <p class="paragraph-3">mão na massa</p>
+                              </div><img src="images/icon-bg-mao-massa.svg" loading="lazy" width="150" id="w-node-ec17996b-aa00-4954-d84f-8fa2f7858305-a854b4d1" alt="" class="icon-mao-na-massa">
+                            </div>
+                            <div class="w-richtext">
+                              <p>Na prática, olhe para o equipamento de pneumática, escolha três válvulas diferentes e faça a leitura da sua simbologia. Para cada uma, responda:</p>
+                              <p>Ela muda direção, pressão/vazão ou bloqueia?</p>
+                              <p>Ela está mais para comando (sinal) ou para potência (alimentar atuador)?</p>
+                              <p>Se ela falhar, o sistema fica seguro ou fica perigoso? Por quê?</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <h3>Materiais, vedação e “sensibilidade a sujeira”</h3>
+                  <p>Aqui entra um aprendizado que Rollins (2004) reforça quando fala de ar comprimido: a qualidade do fluido importa.</p>
+                </div>
+                <ul role="list" class="list">
+                  <li class="list-item">
+                    <p class="paragraph-4">Pneumática: umidade e partículas no ar travam componentes pequenos e reduzem a vida útil.</p>
+                  </li>
+                  <li class="list-item">
+                    <p>Hidráulica: contaminação do óleo acelera o desgaste, gera travamentos e falhas de controle.</p>
+                  </li>
+                </ul>
+                <div class="w-richtext">
+                  <p>Isto é, simbologia e construção “conversam” com manutenção e confiabilidade.</p>
+                </div>
+                <div class="time-line-lista siga-regra">
+                  <div class="w-layout-grid process-grid"><img src="images/siga-regra-icon.svg" loading="lazy" width="612" id="w-node-d6899d50-d6d6-4366-f4e7-1fa8e9c7a6e9-a854b4d1" alt="" class="placeholder-image filter step-mobile siga-regra">
+                    <div>
+                      <div class="w-richtext">
+                        <p>Normas e segurança não são “extra”; são parte do projeto. A ISO 1219 padroniza símbolos e diagramas, reduzindo erro de interpretação em montagem/manutenção.</p>
+                        <p>Para requisitos gerais de segurança em sistemas de potência fluida, há normas específicas: ISO 4414 (pneumática) e ISO 4413 (hidráulica).</p>
+                        <p>Além disso, o livro de Prudente (2015) traz várias ilustrações que te ajudam a entender o funcionamento das válvulas, vale a pena conferir!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Estudante, agora você já consegue olhar para um símbolo e enxergar função, acionamento e retorno, em vez de “um desenho estranho”. Isso é o que permite dar o próximo passo com maturidade técnica: selecionar e dimensionar válvulas para o atuador entregar força e velocidade de verdade, não só “no papel”.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-atividades">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="exercicio-whopper">
+                  <div class="objeto-interativo">
+                    <div class="texto-acessibilidade">
+                      <div class="label-titulo-section vermelho">para pensar</div>
+                      <div class="w-richtext">
+                        <p>Em manutenção e montagem de circuitos, a leitura correta de símbolos evita erros, retrabalho e riscos operacionais.</p>
+                        <p>Considere as asserções:</p>
+                        <ul role="list">
+                          <li>‍<strong>I.</strong> A norma ISO 1219 é utilizada como referência para padronizar símbolos gráficos e diagramas em sistemas fluido-mecânicos.</li>
+                        </ul>
+                        <p><strong>PORQUE</strong></p>
+                        <ul role="list">
+                          <li>‍<strong>II.</strong> A ISO 1219 possui partes que organizam a padronização, sendo a ISO 1219-1 voltada a símbolos gráficos e a ISO 1219-2 voltada às regras de desenho de diagramas.</li>
+                        </ul>
+                      </div>
+                      <div class="bullet-abc w-richtext">
+                        <p>A respeito dessas asserções, assinale a opção correta.</p>
+                        <ol start="" role="list">
+                          <li>As duas proposições são verdadeiras, e a II justifica corretamente a I.</li>
+                          <li>  As duas proposições são verdadeiras, mas a II não justifica corretamente a I.</li>
+                          <li>A asserção I é verdadeira, mas a II é falsa.</li>
+                          <li>A asserção I é falsa, mas a II é verdadeira.</li>
+                          <li>As duas proposições são falsas.</li>
+                        </ol>
+                        <p><strong>A alternativa A é a correta.</strong></p>
+                        <p><strong>Justificativa</strong>: A ISO 1219 é referência de padronização e isso se sustenta diretamente pelo fato de ela estar estruturada em partes: uma dedicada aos símbolos e outra dedicada às regras de elaboração dos diagramas, garantindo comunicação técnica uniforme.</p>
+                      </div>
+                    </div>
+                    <div aria-hidden="true" class="oi-content">
+                      <div class="label-titulo-section">para pensar</div>
+                      <div class="rich-text w-richtext">
+                        <p>Em manutenção e montagem de circuitos, a leitura correta de símbolos evita erros, retrabalho e riscos operacionais.</p>
+                        <p>Considere as asserções:</p>
+                        <ul role="list">
+                          <li>‍<strong>I.</strong> A norma ISO 1219 é utilizada como referência para padronizar símbolos gráficos e diagramas em sistemas fluido-mecânicos.</li>
+                        </ul>
+                        <p><strong>PORQUE</strong></p>
+                        <ul role="list">
+                          <li>‍<strong>II.</strong> A ISO 1219 possui partes que organizam a padronização, sendo a ISO 1219-1 voltada a símbolos gráficos e a ISO 1219-2 voltada às regras de desenho de diagramas.</li>
+                        </ul>
+                        <p>A respeito dessas asserções, assinale a opção correta.</p>
+                      </div>
+                      <div class="acoredeon">
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">a) As duas proposições são verdadeiras, e a II justifica corretamente a I.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades" data-w-id="33599852-e16e-43d3-0a21-7ad71e48f9c8" data-animation-type="lottie" data-src="documents/certo-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>Parabéns! A resposta está correta.</strong></p>
+                                  <p><strong>Justificativa</strong>: A ISO 1219 é referência de padronização e isso se sustenta diretamente pelo fato de ela estar estruturada em partes: uma dedicada aos símbolos e outra dedicada às regras de elaboração dos diagramas, garantindo comunicação técnica uniforme.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">b) As duas proposições são verdadeiras, mas a II não justifica corretamente a I.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="33599852-e16e-43d3-0a21-7ad71e48f9d6" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">c) A asserção I é verdadeira, mas a II é falsa.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="33599852-e16e-43d3-0a21-7ad71e48f9e2" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">d) A asserção I é falsa, mas a II é verdadeira.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="33599852-e16e-43d3-0a21-7ad71e48f9ee" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">e) As duas proposições são falsas.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="33599852-e16e-43d3-0a21-7ad71e48f9fa" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><img src="images/circulo-unipar-02.svg" loading="lazy" alt="" height="650" class="bg-exercicios">
+        </section>
+        <section class="section">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="titulo-topico">
+                  <div class="div-titulo">
+                    <div data-w-id="1c76af93-c860-f39b-05df-87fab3ea87f3" style="opacity:0" class="label-titulo">Tópico 03</div>
+                    <h2 data-w-id="1c76af93-c860-f39b-05df-87fab3ea87f5" style="opacity:0" class="heading-titulo">Critérios de seleção e dimensionamento<br></h2>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Chegamos à parte que transforma teoria em projeto: selecionar válvula não é “pegar a que tem na prateleira”. É garantir que o atuador receba pressão suficiente, com vazão suficiente, com segurança e repetibilidade.</p>
+                  <p>Filho e Santos (2018) reforçam que erros de seleção aparecem rápido: cilindro fraco, movimento lento, instabilidade, aquecimento (na hidráulica), desperdício de energia e manutenção constante. E Rollins (2004) complementa em pneumática com perda de pressão e vazão que vira custo operacional.</p>
+                  <p>Vamos montar um roteiro simples e profissional.</p>
+                </div>
+                <div class="objeto-interativo">
+                  <div class="texto-acessibilidade">
+                    <div class="w-richtext">
+                      <p><strong>1. Primeiro passo: o que a válvula precisa “fazer” no circuito?</strong></p>
+                      <p>Antes de qualquer número, defina a função:</p>
+                      <ul role="list">
+                        <li><strong>Direcional</strong>: quantas vias/posições?</li>
+                        <li><strong>Reguladora</strong>: vou controlar pressão, vazão ou ambos?</li>
+                        <li><strong>Bloqueio/retenção</strong>: preciso segurar carga? Impedir retorno? Isolar manutenção?</li>
+                      </ul>
+                      <p><strong>2. Segundo passo: vazão necessária (velocidade)</strong></p>
+                      <p>Você já viu com White (2018) que pressão se relaciona com força, e vazão com velocidade. Então, para dimensionar a válvula, o raciocínio é:</p>
+                      <ul role="list">
+                        <li>O cilindro tem um volume por curso (área × curso).</li>
+                        <li>O ciclo exige um tempo (ou número de ciclos por minuto).</li>
+                        <li>Isso gera uma vazão média requerida.</li>
+                        <li>A válvula precisa passar essa vazão com queda de pressão aceitável.</li>
+                      </ul>
+                      <p>Em pneumática, catálogos normalmente trazem “vazão nominal” (L/min) em condições padrão e com queda de pressão definida. Já em hidráulica, os parâmetros dependem do fabricante.</p>
+                      <p>Pausa rápida: se a válvula for pequena demais, o sistema fica lento, esquenta (hidráulica), perde pressão no atuador e muitas vezes a manutenção “compensa” aumentando a pressão do compressor/bomba… e aí o custo explode.</p>
+                      <p><strong>3. Terceiro passo: queda de pressão</strong></p>
+                      <p>Toda válvula impõe uma restrição. Isso significa que a pressão antes da válvula (alimentação) precisa ser maior que a pressão que você quer no atuador. Além disso, quanto maior for a vazão, maior tende a ser a queda de pressão (Rollins, 2004).</p>
+                      <p>Por isso, seleção boa considera:</p>
+                      <ul role="list">
+                        <li>Pressão de trabalho do sistema.</li>
+                        <li>Pressão mínima no ponto de uso.</li>
+                        <li>Perdas em filtros, conexões, mangueiras e na própria válvula.</li>
+                      </ul>
+                      <p><strong>4. Como dimensionar a válvula distribuidora</strong></p>
+                      <p>Como você já viu anteriormente, o consumo de ar dos atuadores lineares de simples ação (𝑄), segundo Fialho (2011), é determinado pelas equações:</p>
+                      <p><strong>\[Q = \frac{A \cdot L \cdot n \cdot (P_2 + 1{,}013)}{1{,}013 \cdot 10^5}\]</strong></p>
+                      <p><strong>\[Q = \frac{A \cdot L \cdot (P_2 + 1{,}013)}{T \cdot 1{,}013 \cdot 10^5}\]</strong></p>
+                      <p>Já para cilindros de dupla ação, a única diferença é a área efetiva do pistão que é multiplicada por 2:</p>
+                      <p><strong>\[Q = \frac{2 \cdot A \cdot D \cdot L \cdot n \cdot (P_2 + 1{,}013)}{1{,}013 \cdot 10^6}\]</strong></p>
+                      <p><strong>\[Q = \frac{2 \cdot A \cdot D \cdot L \cdot (P_2 + 1{,}013)}{T \cdot 1{,}013 \cdot 10^6}\]</strong></p>
+                      <p>onde <strong>\(Q\)</strong> é o consumo de ar (L/s), <strong>\({A_p}\)</strong> é a área efetiva do pistão (mm²), <strong>\(L\)</strong> é o curso do pistão (mm), <strong>\({P_t}\;\) </strong>é a pressão de trabalho (bar), <strong>\({n_c}\)</strong> é o número de ciclos por segundo e <strong>\(T\)</strong> é o tempo para um único ciclo (s).</p>
+                      <p>De acordo com Prudente (2015), a pressão de saída de uma válvula é calculada por:</p>
+                      <p><strong>\[p_s = \frac{10 \cdot F_z}{0{,}785 \cdot 0{,}9 \cdot D^2}\]</strong></p>
+                      <p>Já a queda de pressão:</p>
+                      <p><strong>\[\Delta p = p_0 - p_s\]</strong></p>
+                      <p>onde <strong>\({p_s}\)</strong>, <strong>\({p_e}\)</strong> e é a pressão de saída, pressão de entrada e queda de pressão, respectivamente, (bar), <strong>\({F_a}\)</strong> é a força de avanço do atuador (N) e \(D\) é o diâmetro do pistão (mm).</p>
+                    </div>
+                  </div>
+                  <div aria-hidden="true" class="oi-content">
+                    <p class="texto-destaque">Clique nas setas.</p>
+                    <div class="oi-cascata">
+                      <div class="cascata-conteiner">
+                        <div class="castacata-content">
+                          <div class="cascata-icon-content"><img src="images/step.svg" loading="lazy" alt="" class="cascata-icon"><img src="images/bg-icon-01.svg" loading="lazy" alt=""></div>
+                          <div class="cascata-text-content text-main-color">
+                            <div class="w-richtext">
+                              <p><strong>1. Primeiro passo: o que a válvula precisa “fazer” no circuito?</strong></p>
+                              <p>Antes de qualquer número, defina a função:</p>
+                              <ul role="list">
+                                <li><strong>Direcional</strong>: quantas vias/posições?</li>
+                                <li><strong>Reguladora</strong>: vou controlar pressão, vazão ou ambos?</li>
+                                <li><strong>Bloqueio/retenção</strong>: preciso segurar carga? Impedir retorno? Isolar manutenção?</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cascata-icon-btn">
+                          <div class="icon-seta-embed w-embed"><svg width="420" height="420" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12 16L6 10H18L12 16Z" fill="currentColor"></path>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="cascata-conteiner">
+                          <div class="castacata-content">
+                            <div class="cascata-icon-content"><img src="images/bg-icon-01.svg" loading="lazy" alt=""><img src="images/step.svg" loading="lazy" alt="" class="cascata-icon"></div>
+                            <div class="cascata-text-content text-main-color">
+                              <div class="w-richtext">
+                                <p><strong>2. Segundo passo: vazão necessária (velocidade)</strong></p>
+                                <p>Você já viu com White (2018) que pressão se relaciona com força, e vazão com velocidade. Então, para dimensionar a válvula, o raciocínio é:</p>
+                                <ul role="list">
+                                  <li>O cilindro tem um volume por curso (área × curso).</li>
+                                  <li>O ciclo exige um tempo (ou número de ciclos por minuto).</li>
+                                  <li>Isso gera uma vazão média requerida.</li>
+                                  <li>A válvula precisa passar essa vazão com queda de pressão aceitável.</li>
+                                </ul>
+                                <p>Em pneumática, catálogos normalmente trazem “vazão nominal” (L/min) em condições padrão e com queda de pressão definida. Já em hidráulica, os parâmetros dependem do fabricante.</p>
+                                <p>Pausa rápida: se a válvula for pequena demais, o sistema fica lento, esquenta (hidráulica), perde pressão no atuador e muitas vezes a manutenção “compensa” aumentando a pressão do compressor/bomba… e aí o custo explode.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="cascata-icon-btn">
+                            <div class="icon-seta-embed w-embed"><svg width="420" height="420" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 16L6 10H18L12 16Z" fill="currentColor"></path>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="cascata-conteiner">
+                            <div class="castacata-content">
+                              <div class="cascata-icon-content"><img src="images/bg-icon-01.svg" loading="lazy" alt=""><img src="images/step.svg" loading="lazy" alt="" class="cascata-icon"></div>
+                              <div class="cascata-text-content text-main-color">
+                                <div class="w-richtext">
+                                  <p><strong>3. Terceiro passo: queda de pressão</strong></p>
+                                  <p>Toda válvula impõe uma restrição. Isso significa que a pressão antes da válvula (alimentação) precisa ser maior que a pressão que você quer no atuador. Além disso, quanto maior for a vazão, maior tende a ser a queda de pressão (Rollins, 2004).</p>
+                                  <p>Por isso, seleção boa considera:</p>
+                                  <ul role="list">
+                                    <li>Pressão de trabalho do sistema.</li>
+                                    <li>Pressão mínima no ponto de uso.</li>
+                                    <li>Perdas em filtros, conexões, mangueiras e na própria válvula.</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="cascata-icon-btn">
+                              <div class="icon-seta-embed w-embed"><svg width="420" height="420" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M12 16L6 10H18L12 16Z" fill="currentColor"></path>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="cascata-conteiner">
+                              <div class="castacata-content">
+                                <div class="cascata-icon-content"><img src="images/bg-icon-01.svg" loading="lazy" alt=""><img src="images/step.svg" loading="lazy" alt="" class="cascata-icon"></div>
+                                <div class="cascata-text-content text-main-color">
+                                  <div class="w-richtext">
+                                    <p><strong>4. Como dimensionar a válvula distribuidora</strong></p>
+                                    <p>Como você já viu anteriormente, o consumo de ar dos atuadores lineares de simples ação (𝑄), segundo Fialho (2011), é determinado pelas equações:</p>
+                                    <p><strong>\[Q = \frac{A \cdot L \cdot n \cdot (P_2 + 1{,}013)}{1{,}013 \cdot 10^5}\]</strong></p>
+                                    <p><strong>\[Q = \frac{A \cdot L \cdot (P_2 + 1{,}013)}{T \cdot 1{,}013 \cdot 10^5}\]</strong></p>
+                                    <p>Já para cilindros de dupla ação, a única diferença é a área efetiva do pistão que é multiplicada por 2:</p>
+                                    <p><strong>\[Q = \frac{2 \cdot A \cdot D \cdot L \cdot n \cdot (P_2 + 1{,}013)}{1{,}013 \cdot 10^6}\]</strong></p>
+                                    <p><strong>\[Q = \frac{2 \cdot A \cdot D \cdot L \cdot (P_2 + 1{,}013)}{T \cdot 1{,}013 \cdot 10^6}\]</strong></p>
+                                    <p>onde <strong>\(Q\)</strong> é o consumo de ar (L/s), <strong>\({A_p}\)</strong> é a área efetiva do pistão (mm²), <strong>\(L\)</strong> é o curso do pistão (mm), <strong>\({P_t}\;\) </strong>é a pressão de trabalho (bar), <strong>\({n_c}\)</strong> é o número de ciclos por segundo e <strong>\(T\)</strong> é o tempo para um único ciclo (s).</p>
+                                    <p>De acordo com Prudente (2015), a pressão de saída de uma válvula é calculada por:</p>
+                                    <p><strong>\[p_s = \frac{10 \cdot F_z}{0{,}785 \cdot 0{,}9 \cdot D^2}\]</strong></p>
+                                    <p>Já a queda de pressão:</p>
+                                    <p><strong>\[\Delta p = p_0 - p_s\]</strong></p>
+                                    <p>onde <strong>\({p_s}\)</strong>, <strong>\({p_e}\)</strong> e é a pressão de saída, pressão de entrada e queda de pressão, respectivamente, (bar), <strong>\({F_a}\)</strong> é a força de avanço do atuador (N) e \(D\) é o diâmetro do pistão (mm).</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Com essas informações, é possível verificar a queda de pressão pelo diagrama pressão x vazão (Figura 6) e verificar a pressão mínima de entrada da válvula.</p>
+                </div>
+                <div class="figura">
+                  <div class="legenda-figura">Figura 6 - Diagrama p/Q para baixa (a) e alta vazão (b)</div>
+                  <div><img src="images/a6-fig8.png" width="644" height="Auto" sizes="(max-width: 767px) 100vw, 644px" alt="Descrição da figura 6: Gráfico técnico de pressão (bar) versus vazão (l/min). Curvas numeradas de 1 a 10 mostram desempenho do sistema. Eixos com grade, linha diagonal de referência e destaque em faixa pontilhada. Predominam tons de cinza, estilo técnico e analítico." srcset="images/a6-fig8-p-500.png 500w, images/a6-fig8-p-800.png 800w, images/a6-fig8-p-1080.png 1080w, images/a6-fig8-p-1600.png 1600w, images/a6-fig8-p-2000.png 2000w, images/a6-fig8.png 2088w" class="hero-image-figura"></div>
+                  <div class="legenda-figura">Fonte: Prudente (2015).</div>
+                </div>
+                <div class="w-richtext">
+                  <p>Vejamos alguns exemplos?</p>
+                  <p>Um atuador precisa operar a uma pressão de 6,5 bar. Se a vazão necessária para operar o atuador é de 2000 L/min, qual será a pressão mínima que o ar deverá ser fornecido para a válvula?</p>
+                </div>
+                <div class="colunas-img-content-2c">
+                  <div class="card-box-left"><img src="images/a6-fig9-edit.jpg" loading="lazy" sizes="100vw" srcset="images/a6-fig9-edit-p-500.jpg 500w, images/a6-fig9-edit-p-800.jpg 800w, images/a6-fig9-edit-p-1080.jpg 1080w, images/a6-fig9-edit-p-1600.jpg 1600w, images/a6-fig9-edit-p-2000.jpg 2000w, images/a6-fig9-edit.jpg 2146w" alt="" class="card-imagem-ilustrativa">
+                    <div class="img-placeholder-colunas">
+                      <div class="legenda-2c-2">
+                        <div class="legenda-figura ajuste-01">Figura 7 - Diagrama p/Q para o exemplo 01<br>Fonte: Prudente (2015).</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-box-text">
+                    <div class="texto-padrao-2">
+                      <p>Pelo diagrama traçado da Figura 7, percebe-se que a pressão de entrada da válvula deve ser de 10 bar para que a saída seja de 6,5 bar. A queda de pressão pode ser calculada também, sendo:<br><strong>$$ \Delta p = p_e - p_s \rightarrow \Delta p = 10 - 6,5 $$</strong><br><strong>$$ \Delta p = 3,5 \text{ bar} $$</strong><br></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Verifique se uma válvula distribuidora é aplicável para comandar um cilindro de simples efeito que deve fornecer uma força de avanço de 1000 N em 70 ciclos por minuto. Os parâmetros principais são:</p>
+                </div>
+                <div class="_2-colunas-icones">
+                  <div class="_2-colunas">
+                    <div class="column-4">
+                      <div class="_2-colunas-icone-bg text-color-white">
+                        <div class="numero-icone-2-colunas"></div>
+                        <div class="numero-2c">1</div>
+                      </div>
+                    </div>
+                    <div class="column-text">
+                      <div class="w-richtext">
+                        <p>Diâmetro do cilindro – 50 mm.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_2-colunas">
+                    <div class="column-4">
+                      <div class="_2-colunas-icone-bg text-color-white">
+                        <div class="numero-icone-2-colunas"></div>
+                        <div class="numero-2c">2</div>
+                      </div>
+                    </div>
+                    <div class="column-text">
+                      <div class="w-richtext">
+                        <p>Diâmetro da haste – 20 mm.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_2-colunas">
+                    <div class="column-4">
+                      <div class="_2-colunas-icone-bg text-color-white">
+                        <div class="numero-icone-2-colunas"></div>
+                        <div class="numero-2c">3</div>
+                      </div>
+                    </div>
+                    <div class="column-text">
+                      <div class="w-richtext">
+                        <p>Curso da haste – 200 mm.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_2-colunas">
+                    <div class="column-4">
+                      <div class="_2-colunas-icone-bg text-color-white">
+                        <div class="numero-icone-2-colunas"></div>
+                        <div class="numero-2c">4</div>
+                      </div>
+                    </div>
+                    <div class="column-text">
+                      <div class="w-richtext">
+                        <p>Pressão de trabalho – 6 bar.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_2-colunas">
+                    <div class="column-4">
+                      <div class="_2-colunas-icone-bg text-color-white">
+                        <div class="numero-icone-2-colunas"></div>
+                        <div class="numero-2c">5</div>
+                      </div>
+                    </div>
+                    <div class="column-text">
+                      <div class="w-richtext">
+                        <p>Pressão de entrada da válvula – 8 bar.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_2-colunas">
+                    <div class="column-4">
+                      <div class="_2-colunas-icone-bg text-color-white">
+                        <div class="numero-icone-2-colunas"></div>
+                        <div class="numero-2c">5</div>
+                      </div>
+                    </div>
+                    <div class="column-text">
+                      <div class="w-richtext">
+                        <p>Consumo de ar – 255 L/min.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Primeiramente, será isolado o número de ciclos a partir da equação de consumo de ar no cilindro de simples efeito:</p>
+                  <p><strong>$$ Q = \frac{A_p \cdot L \cdot n_c \cdot (P_t + 1,013)}{1,013 \cdot 10^6} \rightarrow n_c = \frac{Q \cdot 1,013 \cdot 10^6}{A_p \cdot L \cdot (P_t + 1,013)} $$</strong></p>
+                  <p>Depois, calculado o número de ciclos (a vazão passada foi em L/s)</p>
+                  <p><strong>$$ A_p = \pi \cdot \frac{D^2}{4} \rightarrow n_c = \frac{(255 \text{ L/min}) \cdot 1,013 \cdot 10^6}{\left(\pi \cdot \frac{50^2}{4}\right) \cdot 200 \cdot (8 + 1,013)} $$</strong></p>
+                  <p><strong>$$ n_c \cong 73 \text{ ciclos/min} $$</strong></p>
+                  <p>Sim, a válvula cumpre com a quantidade necessária de ciclos.</p>
+                </div>
+              </div>
+              <div data-hide="1" class="img-ilustrativa">
+                <div class="div-ilustrativa"><img src="images/a6-img2.jpg" sizes="(max-width: 2000px) 100vw, 2000px" srcset="images/a6-img2-p-500.jpg 500w, images/a6-img2-p-800.jpg 800w, images/a6-img2-p-1080.jpg 1080w, images/a6-img2-p-1600.jpg 1600w, images/a6-img2.jpg 2000w" alt="" class="card-imagem-ilustrativa">
+                  <div class="img-placeholder-colunas">
+                    <div class="legenda-2c">magnific.com</div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-layout-blockcontainer w-container">
+                <div class="w-richtext">
+                  <p>Estudante, se você guardar uma ideia, você já sai na frente: atuador dimensionado + válvula mal escolhida = sistema ruim do mesmo jeito.</p>
+                  <p>Neste tópico, você aprendeu um roteiro profissional: definir função, estimar vazão, controlar queda de pressão e escolher características de acionamento/segurança.</p>
+                  <p>E aqui vem o gancho natural: agora que você sabe quais válvulas existem, como ler os símbolos e como selecionar, a próxima aula vai te colocar no jogo completo: circuitação pneumática (o começo da automação sequencial).</p>
+                  <p>Mas antes, veja o Podcast  a seguir para resumir o conteúdo:</p>
+                </div>
+                <div class="podcast-box">
+                  <div class="podcast-whopper">
+                    <div id="w-node-_9c7b6cac-69d7-a622-2b2c-110c49b6de71-a854b4d1">
+                      <div class="placeholder-podcast">
+                        <div class="div-block-11"><img src="images/podcast.gif" loading="lazy" width="333" alt="" class="img-networking-fig"></div><img src="images/logo-unipar-red.svg" loading="lazy" width="74" alt="" class="tag-unipar-box">
+                      </div>
+                    </div>
+                    <div id="w-node-_9c7b6cac-69d7-a622-2b2c-110c49b6de76-a854b4d1">
+                      <div class="tag-box-div">
+                        <div class="tag-box">Podcast</div>
+                      </div>
+                      <p class="heading-box">Escolha de válvulas e atuadores</p>
+                      <p class="text-box-elemento">Hoje vamos conversar sobre um tema essencial para quem trabalha ou pretende trabalhar com pneumática e hidráulica industrial.</p>
+                      <div class="audio-complementar">
+                        <div class="podcast-player">
+                          <div class="player-b42 sem-espaco w-embed">
+                            <div class="media-wrapper audio-player">
+                              <audio preload="none" controls="" style="max-width:100%; display: none;">
+                                <source src="audios/podcast_a6.mp3" type="audio/mp3">
+                              </audio>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-richtext">
+                  <p>Nos vemos na próxima aula, Até lá!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-atividades">
+          <div class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="exercicio-whopper">
+                  <div class="objeto-interativo">
+                    <div class="texto-acessibilidade">
+                      <div class="label-titulo-section vermelho">para pensar</div>
+                      <div class="w-richtext">
+                        <p>Um estudante foi convidado a apoiar o pré-projeto de um sistema pneumático e percebeu que <strong>selecionar válvula</strong> não é “pegar a que tem na prateleira”. Para evitar <strong>movimento lento</strong>, <strong>perda de pressão no atuador</strong> e aumento de custos, ele organizou um roteiro de seleção.</p>
+                        <p>Analise as afirmativas:</p>
+                        <ul role="list">
+                          <li>I. Definir primeiro o que a válvula deve fazer no circuito (direcionar, regular pressão/vazão ou bloquear/reter) orienta a escolha do tipo correto.</li>
+                          <li>II. Estimar a <strong>vazão necessária</strong> a partir do volume deslocado pelo cilindro e do tempo de ciclo ajuda a garantir a velocidade desejada.</li>
+                          <li>III. Considerar a <strong>queda de pressão</strong> na válvula e nas linhas é importante, pois restrições reduzem a pressão efetiva disponível no atuador e podem comprometer o desempenho.</li>
+                        </ul>
+                      </div>
+                      <div class="bullet-abc w-richtext">
+                        <p><strong>Assinale a alternativa correta.</strong></p>
+                        <ol start="" role="list">
+                          <li>Apenas I.</li>
+                          <li>Apenas II.</li>
+                          <li>Apenas III.</li>
+                          <li>Apenas I e II.</li>
+                          <li>I, II e III.</li>
+                        </ol>
+                        <p><strong>A alternativa E é a correta.</strong></p>
+                        <p><strong>Justificativa</strong>: O roteiro completo envolve: definir a <strong>função</strong>, estimar a <strong>vazão</strong> para atender à velocidade e verificar a <strong>queda de pressão</strong> para assegurar pressão suficiente no ponto de uso. Esses três pontos se conectam diretamente ao desempenho do atuador e ao custo operacional do sistema.</p>
+                      </div>
+                    </div>
+                    <div aria-hidden="true" class="oi-content">
+                      <div class="label-titulo-section">para pensar</div>
+                      <div class="rich-text w-richtext">
+                        <p>Um estudante foi convidado a apoiar o pré-projeto de um sistema pneumático e percebeu que <strong>selecionar válvula</strong> não é “pegar a que tem na prateleira”. Para evitar <strong>movimento lento</strong>, <strong>perda de pressão no atuador</strong> e aumento de custos, ele organizou um roteiro de seleção.</p>
+                        <p>Analise as afirmativas:</p>
+                        <ul role="list">
+                          <li>I. Definir primeiro o que a válvula deve fazer no circuito (direcionar, regular pressão/vazão ou bloquear/reter) orienta a escolha do tipo correto.</li>
+                          <li>II. Estimar a <strong>vazão necessária</strong> a partir do volume deslocado pelo cilindro e do tempo de ciclo ajuda a garantir a velocidade desejada.</li>
+                          <li>III. Considerar a <strong>queda de pressão</strong> na válvula e nas linhas é importante, pois restrições reduzem a pressão efetiva disponível no atuador e podem comprometer o desempenho.</li>
+                        </ul>
+                        <p><strong>Assinale a alternativa correta.</strong></p>
+                      </div>
+                      <div class="acoredeon">
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">a) Apenas I.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="e7257e20-5c31-609c-3795-fe292bfa84e1" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">b) Apenas II.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="e7257e20-5c31-609c-3795-fe292bfa84ed" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">c) Apenas III.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="e7257e20-5c31-609c-3795-fe292bfa84f9" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">d) Apenas I e II.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades errado" data-w-id="e7257e20-5c31-609c-3795-fe292bfa8505" data-animation-type="lottie" data-src="documents/errado-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>A resposta está incorreta. Tente novamente!</strong></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="acordeon-box acc-v2 bg-recap text-color-white borders-white">
+                          <div class="acordeoni-item">
+                            <div class="accordeon-titulo-v2 text-color-white padding">e) I, II e III.</div>
+                          </div>
+                          <div class="acordeon-conteudo recap-margin">
+                            <div class="content-accordeon acc-content-v2 text-color-white">
+                              <div class="alternativas">
+                                <div class="lottie-atividades" data-w-id="e7257e20-5c31-609c-3795-fe292bfa84d3" data-animation-type="lottie" data-src="documents/certo-branco.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3" data-duration="0" data-loading="eager"></div>
+                                <div class="w-richtext">
+                                  <p><strong>Parabéns! A resposta está correta.</strong></p>
+                                  <p><strong>Justificativa</strong>: O roteiro completo envolve: definir a <strong>função</strong>, estimar a <strong>vazão</strong> para atender à velocidade e verificar a <strong>queda de pressão</strong> para assegurar pressão suficiente no ponto de uso. Esses três pontos se conectam diretamente ao desempenho do atuador e ao custo operacional do sistema.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><img src="images/circulo-unipar-02.svg" loading="lazy" alt="" height="650" class="bg-exercicios">
+        </section>
+      </div>
+      <div class="video-aula-conteudo">
+        <section>
+          <div data-hide="1" class="padding-inner">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="label-titulo-section vermelho">videoaula</div>
+                <div class="w-richtext">
+                  <p>Sua próxima etapa é assistir à videoaula, onde você poderá ver os conceitos em ação e ampliar sua compreensão. Essa é uma ótima oportunidade para reforçar o aprendizado.</p>
+                  <p>‍</p>
+                </div>
+                <p class="texto-destaque">Assista a videoaula</p>
+                <div class="video-aula-div">
+                  <div style="padding-top:56.27659574468085%" class="video-aula w-video w-embed"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1181654549%3Fapp_id%3D122963&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fvimeo.com%2F1181654549&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2144072537-f4cef53ac48a756b51c4fe9d5048a8eae7875485507157f8828d61a03e06d274-d_1280%3Fregion%3Dus&type=text%2Fhtml&schema=vimeo" width="940" height="529" scrolling="no" allowfullscreen="" title="0910 - Aula 6 - Sistemas Hidráulicos e Pneumáticos"></iframe></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="referencias-bibliograficas text-color-white">
+        <section data-w-id="dc02f462-fad6-7074-3f26-4f016be9afad" class="section">
+          <div class="padding-inner padding-4em">
+            <div class="container">
+              <div class="w-layout-blockcontainer w-container">
+                <div class="label-titulo-section">Referências </div>
+                <div class="text-color-white w-richtext">
+                  <p>FIALHO, A. B. <strong>Automação Pneumática</strong>: projetos, dimensionamento e análise de circuitos. 7. ed. São Paulo: Érica, 2011.</p>
+                  <p>FILHO, E. S. D. S.; SANTOS, B. K. <strong>Sistemas hidráulicos e pneumáticos</strong>. Porto Alegre: Sagah, 2018.</p>
+                  <p>ISO – INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. <strong>ISO 1219-1:2012</strong>: fluid power systems and components — Graphical symbols and circuit diagrams — Part 1: Graphical symbols. Geneva: ISO, 2012.</p>
+                  <p>ISO – INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. <strong>ISO 1219-2:2012</strong>: fluid power systems and components — Graphical symbols and circuit diagrams — Part 2: Circuit diagrams. Geneva: ISO, 2012.</p>
+                  <p>PRUDENTE, F. <strong>Automação industrial pneumática</strong>: teoria e aplicações. Rio de Janeiro: LTC, 2015.</p>
+                  <p>ROLLINS, J. P. <strong>Manual de ar comprimido e gases</strong>. 1. ed. São Paulo: Pearson, 2004.</p>
+                  <p>WHITE, F. M. <strong>Mecânica dos fluidos</strong>. 8. ed. Porto Alegre: AMGH, 2018.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div data-hide="1" class="rodape-final">
+        <div class="container">
+          <div class="w-layout-blockcontainer w-container">
+            <div class="w-richtext">
+              <h6><strong>Parabéns!</strong></h6>
+              <p>Você acaba de concluir uma etapa importante da sua jornada. Agora é hora de seguir em frente!</p>
+            </div>
+          </div>
+        </div>
+        <div class="design-b42">
+          <div>©Unipar - Todos direitos reservados | Design by </div>
+          <a href="https://www.b42.com.br" target="_blank" class="b42-link w-inline-block"><img src="images/branco.svg" loading="lazy" width="43" alt="" class="logo-b42"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=69e633bc7a5bc75aa854b4c6" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <script src="https://assets.eadstock.com.br/go/static/libs/b42-accessibility/b42-accessibility.min.js" data-print-css="unipar" data-dark-css="unipar" data-contrast-css="unipar"></script>
+  <!-- scripts player podcast -->
+  <script src="https://s3.amazonaws.com/assets.b42.com.br/player/mediaelement-and-player.min.js"></script>
+  <script src="https://s3.amazonaws.com/assets.b42.com.br/player/plugins/speed/speed.min.js"></script>
+  <script src="https://s3.amazonaws.com/assets.b42.com.br/player/plugins/speed/speed-i18n.js"></script>
+  <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function () {
+    var mediaElements = document.querySelectorAll('.audio-complementar audio'), i, total = mediaElements.length;
+    for (i = 0; i < total; i++) {
+      new MediaElementPlayer(mediaElements[i], {
+        pluginPath: './mediaelement',
+        features: ['playpause', 'current', 'progress', 'duration', 'speed', 'skipback', 'jumpforward', 'tracks','markers', 'volume', 'chromecast', 'ads', 'vast', 'contextmenu'],
+        startLanguage: 'pt'
+      });
+    }
+  });
+</script>
+  <!-- scripts quiz -->
+  <script>
+    document.addEventListener('quiz-completed', function (e) {
+        ScormProcessSetValue("cmi.core.lesson_status", "completed");
+    });
+</script>
+  <!-- scripts balao palavra -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <!-- código dos boxes  -->
+  <script src="https://go.eadstock.com.br/a/lib?p=go.min.js"></script>
+</body>
+</html>
