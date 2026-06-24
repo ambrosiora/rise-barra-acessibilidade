@@ -30,8 +30,9 @@ sandbox sha: 42753f3391b109fa3788c525c22880445ab48325
 
          data-mode="rise"      -> adapta a barra para a SPA do Rise (injeta o <h1> de
                                   fallback internamente; nao precisa de codigo no client).
-         data-remove-pdf="true" -> remove o botao de gerar PDF/impressao. -->
-    <script src="../../_BARRA-ACESSIBILIDADE-LOCAL/b42-accessibility.min.js" data-mode="rise" data-remove-pdf="true" data-print-css="mundo-aprendiz" data-dark-css="mundo-aprendiz" data-contrast-css="mundo-aprendiz"></script>
+         data-remove-pdf="true" -> remove o botao de gerar PDF/impressao.
+         data-container="#app" -> SPA Rise monta conteudo em #app (nao #content). -->
+    <script src="../../_BARRA-ACESSIBILIDADE-LOCAL/b42-accessibility.min.js" data-mode="rise" data-remove-pdf="true" data-container="#app" data-applier="true" data-print-css="mundo-aprendiz" data-dark-css="mundo-aprendiz" data-contrast-css="mundo-aprendiz"></script>
 
   </body>
 </html>
