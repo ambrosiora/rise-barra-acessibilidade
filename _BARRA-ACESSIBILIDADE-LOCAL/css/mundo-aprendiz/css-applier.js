@@ -157,16 +157,19 @@
     return n && n.parentElement === list ? n : null;
   }
 
-  // Cor de fundo AUTORAL do bloco. O Rise pinta a .block-card com
-  // background:var(--color-background); cor propria => cartao do autor.
+  // Cor de fundo AUTORAL do bloco. Quem pinta o fundo e a .block-wrapper
+  // (NAO ha .block-card neste DOM): ela carrega --color-background inline
+  // (ex.: #bedfcb num cartao COLOR, #ffffff num bloco LIGHT). Sem wrapper,
+  // nao ha cor autoral confiavel — o proprio .noOutline herda outra var
+  // (--color-background da licao), entao retornamos "" para nao envenenar
+  // a comparacao de cor contigua.
   function cardColor(blockNode) {
-    if (!blockNode) return "";
-    var card =
-      (blockNode.querySelector && blockNode.querySelector(".block-card")) ||
-      blockNode;
+    if (!blockNode || !blockNode.querySelector) return "";
+    var wrap = blockNode.querySelector(".block-wrapper");
+    if (!wrap) return "";
     var v = "";
     try {
-      v = getComputedStyle(card).getPropertyValue("--color-background");
+      v = getComputedStyle(wrap).getPropertyValue("--color-background");
     } catch (e) {}
     return (v || "").trim().toLowerCase();
   }
@@ -181,19 +184,20 @@
     return true;
   }
 
-  function hasFrame(blockNode) {
-    return !!(
-      blockNode &&
-      blockNode.querySelector &&
-      blockNode.querySelector("iframe")
-    );
-  }
-
   // Marca o PAINEL do botao-dinamico (a partir do iframe que o contem):
-  // o cartao inteiro (blocos contiguos de mesma cor autoral) + o bloco-iframe
-  // imediatamente ANTES e DEPOIS (os SVGs que fazem a borda do topo/base).
-  function markBotaoPanel(frame, className) {
-    var block = blockNodeOf(frame);
+  // SO o cartao colorido em si = blocos contiguos de MESMA cor autoral
+  // (pilula + paragrafo + botao, todos bg--type-color #bedfcb).
+  //
+  // NAO estendemos para os blocos de borda SVG (bg--type-light) de proposito:
+  // eles devem seguir o dark normal (caminho A -> #2a2a2a) para que os
+  // triangulos verdes "flutuem" sobre o fundo escuro da pagina, igual ao
+  // comportamento desejado. Marca-los devolveria o fundo claro (#fff) do
+  // bloco, criando uma faixa branca atras dos triangulos.
+  // Marca o bloco dado + os blocos contiguos de MESMA cor autoral (dos dois
+  // lados) com className. Sem cor autoral, marca so o bloco. Compartilhado
+  // pelos cartoes "botao-dinamico" (entrada via iframe) e pelos cartoes
+  // detectados so pela cor (ex.: ATIVIDADES, sem .botao-dinamico-container).
+  function markContiguousColor(block, className) {
     if (!block) return;
     var start = block;
     var end = block;
@@ -210,11 +214,6 @@
         n = n.nextElementSibling;
       }
     }
-    // Estende para o SVG de borda (iframe) imediatamente antes/depois.
-    var before = start.previousElementSibling;
-    if (before && hasFrame(before)) start = before;
-    var after = end.nextElementSibling;
-    if (after && hasFrame(after)) end = after;
 
     var node = start;
     var guard = 0;
@@ -225,8 +224,98 @@
     }
   }
 
+  function markBotaoPanel(frame, className) {
+    markContiguousColor(blockNodeOf(frame), className);
+  }
+
   // iframes ja "fiados" (load listener) — evita registrar duas vezes.
   var wiredFrames = typeof WeakSet !== "undefined" ? new WeakSet() : null;
+
+  // Procura .botao-dinamico-container no doc E nos iframes ANINHADOS.
+  // ATENCAO (confirmado ao vivo): o sandbox.html do Rise NAO renderiza o bloco
+  // no proprio documento — a casca tem so [script, iframe] e o conteudo (com o
+  // .botao-dinamico-container) vive num iframe srcdoc ANINHADO (profundidade 2).
+  // Por isso a deteccao precisa descer recursivamente (nao basta o doc da casca).
+  function docHasBotao(doc, depth) {
+    if (!doc || depth < 0) return false;
+    try {
+      if (doc.querySelector(".botao-dinamico-container")) return true;
+    } catch (e) {}
+    var inner;
+    try {
+      inner = doc.querySelectorAll("iframe");
+    } catch (e) {
+      return false;
+    }
+    for (var i = 0; i < inner.length; i++) {
+      if (docHasBotao(frameDoc(inner[i]), depth - 1)) return true;
+    }
+    return false;
+  }
+
+  function frameHasBotao(frame) {
+    return docHasBotao(frameDoc(frame), 3);
+  }
+
+  // Liga os observers no iframe e em TODOS os aninhados, para re-rodar quando o
+  // conteudo do bloco for injetado/carregado (postMessage -> iframe srcdoc).
+  // Idempotente (wiredFrames + flag __dmObserved por documento).
+  function wireFrame(frame) {
+    if (wiredFrames && !wiredFrames.has(frame)) {
+      wiredFrames.add(frame);
+      frame.addEventListener("load", schedule);
+    }
+    var doc = frameDoc(frame);
+    if (
+      doc &&
+      !doc.__dmObserved &&
+      doc.body &&
+      typeof MutationObserver !== "undefined"
+    ) {
+      doc.__dmObserved = true;
+      try {
+        new MutationObserver(schedule).observe(doc.body, {
+          childList: true,
+          subtree: true,
+        });
+      } catch (e) {}
+    }
+    if (doc) {
+      var inner;
+      try {
+        inner = doc.querySelectorAll("iframe");
+      } catch (e) {
+        inner = [];
+      }
+      for (var i = 0; i < inner.length; i++) wireFrame(inner[i]);
+    }
+  }
+
+  // Alinha o color-scheme de um documento de iframe (mesma origem) ao destino,
+  // de forma DETERMINISTICA e idempotente. Faz por DOIS caminhos porque setar
+  // so o inline no <html> nem sempre forca o Chromium a REPINTAR o canvas ja
+  // pintado (era por isso que a borda do INTERACAO ficava com branco "preso"
+  // mesmo a regra tendo rodado; o ASSISTA, no topo, repintava por timing):
+  //   1) inline color-scheme no <html>;
+  //   2) um <style> proprio (:root{color-scheme}) no <head> — a insercao de
+  //      stylesheet dispara recalc/repaint, garantindo que o canvas atualize.
+  // Idempotente: reusa o mesmo <style> por id e so atualiza se o valor mudou.
+  function setDocScheme(doc, scheme) {
+    if (!doc || !doc.documentElement) return;
+    try {
+      doc.documentElement.style.setProperty("color-scheme", scheme);
+    } catch (e) {}
+    try {
+      var el = doc.getElementById("dm-applier-cs");
+      if (!el) {
+        el = doc.createElement("style");
+        el.id = "dm-applier-cs";
+        (doc.head || doc.documentElement).appendChild(el);
+      }
+      var css = ":root{color-scheme:" + scheme + "}";
+      if (el.textContent !== css) el.textContent = css;
+    } catch (e) {}
+  }
 
   /* =====================================================================
    * REGISTRO DE REGRAS  — adicione suas modificacoes aqui.
@@ -264,36 +353,86 @@
         for (var i = 0; i < frames.length; i++) {
           var frame = frames[i];
 
-          // Re-roda quando o iframe carrega.
-          if (wiredFrames && !wiredFrames.has(frame)) {
-            wiredFrames.add(frame);
-            frame.addEventListener("load", schedule);
-          }
+          // Observa load + DOM interno do iframe E dos aninhados (o conteudo
+          // chega tarde via postMessage -> srcdoc), para re-rodar quando vier.
+          wireFrame(frame);
 
-          var doc = frameDoc(frame);
-
-          // Re-roda quando o conteudo e injetado dentro do iframe.
-          if (
-            doc &&
-            !doc.__dmObserved &&
-            doc.body &&
-            typeof MutationObserver !== "undefined"
-          ) {
-            doc.__dmObserved = true;
-            try {
-              new MutationObserver(schedule).observe(doc.body, {
-                childList: true,
-                subtree: true,
-              });
-            } catch (e) {}
-          }
-
-          if (
-            doc &&
-            doc.querySelector &&
-            doc.querySelector(".botao-dinamico-container")
-          ) {
+          // Sinal = .botao-dinamico-container em QUALQUER profundidade (o Rise
+          // o renderiza num iframe srcdoc aninhado, nao no doc da casca). Marca
+          // o iframe de TOPO, que e o irmao de bloco em .blocks-lesson.
+          if (frameHasBotao(frame)) {
             markBotaoPanel(frame, "dm-keep-original");
+          }
+        }
+      },
+    },
+
+    {
+      // CARTOES COLORIDOS PELO AUTOR (generico — complementa keep-botao-panels).
+      // Sinal estavel: bloco bg--type-color com COR AUTORAL (--color-background
+      // != branco/transparente). Sao as "caixas de texto" que o autor pintou de
+      // proposito (ex.: ATIVIDADES) e que devem manter a cor no dark, igual ao
+      // claro. Nem todas tem .botao-dinamico-container no iframe, entao a
+      // deteccao por COR pega as que o sinal do iframe nao pega — sem ser
+      // "todo iframe". NAO toca bordas/divisores (bg--type-image/light) nem
+      // blocos ja escuros (bg--type-dark). Marca o grupo contiguo de mesma cor.
+      // Idempotente (pula blocos ja marcados; classList.add nao duplica).
+      name: "keep-color-cards",
+      run: function () {
+        var lessons = document.querySelectorAll(".blocks-lesson");
+        for (var l = 0; l < lessons.length; l++) {
+          var blocks = lessons[l].children;
+          for (var i = 0; i < blocks.length; i++) {
+            var b = blocks[i];
+            if (b.classList.contains("dm-keep-original")) continue;
+            var w = b.querySelector(".block-wrapper");
+            if (!w || !w.classList || !w.classList.contains("bg--type-color")) {
+              continue;
+            }
+            if (!isAuthorColor(cardColor(b))) continue;
+            markContiguousColor(b, "dm-keep-original");
+          }
+        }
+      },
+    },
+
+    {
+      // CANVAS DO IFRAME ANINHADO — alinhar color-scheme ao contexto.
+      // CONFIRMADO ao vivo: o conteudo do bloco vive num iframe srcdoc ANINHADO
+      // cujo color-scheme fica "normal". Quando o iframe EXTERNO esta em dark e
+      // o aninhado em normal, o Chromium pinta um BACKDROP OPACO CLARO (o
+      // "iframe branco" — ex.: CURIOSIDADE). A pilula nao sofre porque seu
+      // externo e "light" (preservado), batendo com o aninhado.
+      //
+      // Fix: setar o color-scheme do aninhado para casar com o destino:
+      //   - bloco preservado (.dm-keep-original) -> light  (fica transparente,
+      //     o fundo autoral do cartao aparece);
+      //   - demais -> dark  (canvas escuro, blenda no tema; nada de branco).
+      // Idempotente; roda apos keep-botao-panels (que ja aplicou as classes).
+      // Vale para os iframes de SVG (bordas/badges) — embeds HTML do autor.
+      name: "sync-iframe-canvas-scheme",
+      run: function () {
+        var frames = document.querySelectorAll(
+          "iframe[data-rise-frontend-sandbox]"
+        );
+        for (var i = 0; i < frames.length; i++) {
+          var f = frames[i];
+          var scheme =
+            f.closest && f.closest(".dm-keep-original") ? "light" : "dark";
+          var doc = frameDoc(f);
+          if (!doc) continue;
+          // (a) DOCUMENTO da casca (sandbox.html): ficava com color-scheme
+          // "normal" -> o Chromium podia pintar o canvas BRANCO quando o iframe
+          // externo e dark (cunhas brancas atras dos triangulos da borda, ex.:
+          // INTERACAO). Alinhar a casca, e nao so os aninhados, fecha a folga.
+          setDocScheme(doc, scheme);
+          // (b) iframes ANINHADOS (onde vive o conteudo/SVG do bloco) — idem.
+          var nested = doc.querySelectorAll("iframe");
+          for (var j = 0; j < nested.length; j++) {
+            try {
+              nested[j].style.setProperty("color-scheme", scheme);
+            } catch (e) {}
+            setDocScheme(frameDoc(nested[j]), scheme);
           }
         }
       },

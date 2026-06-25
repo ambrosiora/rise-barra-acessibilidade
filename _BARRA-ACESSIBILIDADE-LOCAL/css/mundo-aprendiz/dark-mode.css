@@ -200,6 +200,47 @@ body.dark-mode,
 }
 
 /* ============================================================
+   LEGIBILIDADE DE COMPONENTES (polish dark — botoes/nav/accordion/timeline)
+   Ajustes pontuais confirmados ao vivo no piloto. Genericos por classe do
+   Rise (reusaveis por cliente); cor via paleta/tokens, sem hex solto.
+   ------------------------------------------------------------
+   ROTULO DE BOTAO: o tema recolore todo <a> com --dm-link (#70cbfa), o que
+   deixa o texto dos pills teal azul-claro em vez de branco. Restauramos a
+   cor que o PROPRIO Rise definiu no botao (--color-button-text; #fff nos
+   preenchidos), caindo pra branco quando ausente. Vence .dark-mode a por
+   especificidade + !important. Cobre os ACESSAR fora dos cartoes preservados
+   (CURIOSIDADE, infografico, "acessar" de download) sem tocar variantes que
+   tenham texto escuro proprio.
+   ============================================================ */
+.dark-mode .blocks-button__button {
+  color: var(--color-button-text, var(--dm-white)) !important;
+}
+
+/* Navegacao de licao (HOME / anterior / proximo): pill teal cujo rotulo
+   tambem caia no --dm-link. Branco (o icone usa fill=currentColor e segue). */
+.dark-mode .lesson-nav-link__link,
+.dark-mode .lesson-nav__link-text {
+  color: var(--dm-white) !important;
+}
+
+/* Accordion: o icone +/- e um FontAwesome inline (path fill=currentColor),
+   mas o Rise pinta o color do icone escuro (rgba(0,0,0,.5)) -> some no escuro.
+   Forca branco (vale pro "+" e pro "-" depois de abrir). */
+.dark-mode .blocks-accordion .svg-inline--fa,
+.dark-mode .blocks-accordion .svg-inline--fa path {
+  color: var(--dm-white) !important;
+  fill: var(--dm-white) !important;
+}
+
+/* Timeline: a linha vertical que conecta os cards e o ::after de
+   .timeline__card-wrapper (0px largura x ~67px altura, desenhada por borda);
+   no escuro fica quase imperceptivel. Pinta com a cor de marca (--color-theme). */
+.dark-mode .block-timeline .timeline__card-wrapper::after {
+  border-color: var(--color-theme) !important;
+  background-color: var(--color-theme) !important;
+}
+
+/* ============================================================
    BLOCOS "REFLITA" — secao delimitada por duas imagens-marcador
    (reflita-img.png no topo, reflita-baixo.png embaixo). Padrao
    reutilizavel nos cursos do mesmo modelo.
@@ -243,20 +284,21 @@ body.dark-mode,
    estas regras ficam inertes (nenhum .dm-keep-original existe).
    ============================================================ */
 
-/* color-scheme:light reativa os tokens Arc/Mondrian claros dentro do
-   cartao (desfaz o caminho B so aqui dentro). !important vence o
-   color-scheme:dark herdado de "#app *" (que tem id na especificidade). */
+/* color-scheme:light reativa os tokens Arc/Mondrian claros dentro do cartao
+   (desfaz o caminho B so aqui dentro) E deixa o canvas/backdrop do iframe
+   claro. !important vence o color-scheme:dark herdado de "#app *". */
 .dark-mode .dm-keep-original,
 .dark-mode .dm-keep-original * {
   color-scheme: light !important;
 }
 
-/* Fundo do cartao = cor autoral do Rise. Mais especifico que o override do
-   caminho A (.dark-mode .bg--range-light), entao prevalece. Borda volta ao
-   autoral (sem a borda escura do tema). Cobre o no marcado sendo o proprio
-   .block-card OU um wrapper externo que o contem. */
-.dark-mode .dm-keep-original.block-card,
-.dark-mode .dm-keep-original .block-card {
+/* Fundo do cartao = cor autoral do Rise. CONFIRMADO ao vivo: quem pinta o
+   fundo neste DOM e a .block-wrapper (NAO existe .block-card aqui), que
+   carrega --color-background inline (ex.: #bedfcb no cartao COLOR, #ffffff
+   nos blocos de borda LIGHT). Seletor com 3 classes vence o caminho A
+   (.dark-mode .bg--range-light, 2 classes) + !important. */
+.dark-mode .dm-keep-original.block-wrapper,
+.dark-mode .dm-keep-original .block-wrapper {
   background-color: var(--color-background) !important;
   border-color: var(--color-border, transparent) !important;
 }
@@ -268,22 +310,32 @@ body.dark-mode,
   background: transparent !important;
 }
 
-/* Texto = cor de contraste que o Rise calculou para o modo claro. Vence os
-   overrides genericos de texto do tema (tiptap, listas, marcadores). */
-.dark-mode .dm-keep-original.block-card,
-.dark-mode .dm-keep-original .block-card,
+/* Texto = cor de contraste que o Rise calculou para o modo claro. Neste DOM
+   ela vive na .block-wrapper como --color-background-contrast (ex.: #000).
+   Vence os overrides genericos de texto do tema (tiptap, data-color-scope,
+   listas, marcadores) por especificidade (3 classes) + !important. */
+.dark-mode .dm-keep-original.block-wrapper,
+.dark-mode .dm-keep-original .block-wrapper,
 .dark-mode .dm-keep-original .rise-tiptap,
 .dark-mode .dm-keep-original .rise-tiptap *,
 .dark-mode .dm-keep-original .block-list,
 .dark-mode .dm-keep-original .block-list li,
 .dark-mode .dm-keep-original li::marker {
-  color: var(--color-text) !important;
+  color: var(--color-background-contrast, var(--color-text)) !important;
 }
 
 /* Links do cartao: cor de marca (legivel sobre o fundo claro autoral),
    no lugar do azul de link do tema escuro. */
 .dark-mode .dm-keep-original a {
-  color: var(--color-theme, var(--color-text)) !important;
+  color: var(--color-theme, var(--color-background-contrast)) !important;
+}
+
+/* Botao "ACESSAR": no claro e um pill teal com rotulo claro. O contraste #000
+   do cartao (herdado acima) deixaria o rotulo escuro/ilegivel sobre o teal,
+   entao forcamos branco SO no bloco de botao dentro do cartao preservado. */
+.dark-mode .dm-keep-original .blocks-button,
+.dark-mode .dm-keep-original .blocks-button * {
+  color: var(--dm-white) !important;
 }
 
 /* ============================================================
