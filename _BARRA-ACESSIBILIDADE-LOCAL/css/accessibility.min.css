@@ -979,6 +979,9 @@ input[type=range]#b42-rangeColorInput::-moz-range-thumb {
 
 .b42-container-collapse-font button {
     background-color: unset;
+    /* Espacamento proprio dos botoes A-/A0/A+: replica o default do navegador
+       (1px 6px) p/ nao depender do reset do host (ex.: Rise zera o padding). */
+    padding: 1px 6px;
 }
 
 .b42-container-collapse-font button:hover {
@@ -1240,6 +1243,19 @@ body[data-indtextcolors]:not(.b42-collapse-accessibility-tool) {
 body[data-indtextcolors]:not(.b42-collapse-accessibility-tool) * {
     color: inherit !important;
     transition: none !important
+}
+
+/* Rise (SPA): o conteudo vive em #app; .section-conteudo / body>...h1 nao cobrem
+   esse layout. Alvos especificos do #app — no-op fora do Rise (que nao tem #app). */
+body[data-indbackgroundcolors] #app {
+    background-color: var(--ind-color-bg-picker) !important;
+}
+body[data-indheadingcolors] #app :is(h1, h2, h3, h4, h5, h6, [role="heading"]) {
+    color: var(--ind-color-heading-picker) !important;
+}
+body[data-indtextcolors] #app,
+body[data-indtextcolors] #app * {
+    color: var(--ind-color-text-picker) !important;
 }
 
 /* barra cursor do mouse */
@@ -1661,6 +1677,13 @@ button#b42-libras-input:hover {
     display: inline-block;
     height: 80px;
     width: 80px;
+}
+
+/* A ilustracao (box.png 512x512) sem largura estoura no Rise, que nao tem o
+   img{max-width:100%} do normalize do Webflow. Constrange ao container. */
+#b42-list-empty img {
+    max-width: 100%;
+    height: auto;
 }
 
 #btn-anotation {
