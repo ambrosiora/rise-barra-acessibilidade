@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teste cor personalizada — script LOCAL (modo Webflow)</title>
+  <style>
+    /* fundo branco igual Webflow (o conteudo fica transparente sobre o body) */
+    body { background: #fff; color: #222; font-family: sans-serif; margin: 0; }
+    .container { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
+    .conteudo { /* transparente de proposito, igual Webflow: o fundo e do body */ }
+    h1 { color: #003a70; }
+    h2 { color: #0a6; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="conteudo">
+      <h1>Título H1 de teste</h1>
+      <h2>Subtítulo H2</h2>
+      <p>
+        Parágrafo de texto. Abra a barra de acessibilidade (engrenagem) →
+        "Cor personalizada". Teste os três: <strong>Plano de fundo</strong>
+        (deve mudar o fundo do body), <strong>Títulos</strong> e
+        <strong>Texto</strong>.
+      </p>
+      <p>
+        Esta página carrega o b42 LOCAL (com os ajustes), em modo padrão
+        (Webflow) — sem data-mode="rise". Serve só para validar o fix do fundo
+        ancorado no &lt;body&gt;.
+      </p>
+    </div>
+  </div>
+
+  <!-- Script B42 LOCAL (com os ajustes). Modo padrao = Webflow (sem data-mode). -->
+  <script
+    src="_BARRA-ACESSIBILIDADE-LOCAL/b42-accessibility.min.js"
+    data-remove-pdf="true"
+    data-remove-libras="true"
+  ></script>
+</body>
+</html>

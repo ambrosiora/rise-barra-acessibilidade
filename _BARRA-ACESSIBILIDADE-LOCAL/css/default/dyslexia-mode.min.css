@@ -1,1 +1,4 @@
-@font-face{font-family:dyslexia;src:url('../fonts/OpenDyslexic-Regular.otf')}*:not(.ap):not(.ap *){font-family:dyslexia!important}
+/* B42 Acessibilidade */
+/*  Version 2.1.1 */
+/*  Fri Jun 26 2026 11:34:10 GMT-0300 (Brasilia Standard Time) */
+@font-face{font-family:dyslexia;src:url('../fonts/OpenDyslexic-Regular.otf')}:not(.ap):not(.ap *){font-family:dyslexia!important}

@@ -1,6 +1,6 @@
 /* B42 Acessibilidade */
-/*  Version 2.0.29 */
-/*  Wed Jun 24 2026 11:58:47 GMT-0300 (Brasilia Standard Time) */
+/*  Version 2.1.1 */
+/*  Fri Jun 26 2026 11:34:10 GMT-0300 (Brasilia Standard Time) */
 /*!
   * Bootstrap v5.3.0 (https://getbootstrap.com/)
   * Copyright 2011-2023 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)

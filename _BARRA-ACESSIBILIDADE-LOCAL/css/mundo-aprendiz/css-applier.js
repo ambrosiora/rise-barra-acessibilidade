@@ -1,13 +1,22 @@
+/* B42 Acessibilidade */
+/*  Version 2.1.1 */
+/*  Fri Jun 26 2026 11:34:10 GMT-0300 (Brasilia Standard Time) */
 /**
  * mundo-aprendiz — css-applier.js
  * ===========================================================================
  * Motor auxiliar GENERICO de tema. Carregado de forma OPT-IN pela barra B42
  * quando o <script> da barra tem data-applier="true" (clientes sem a flag nao
- * sao afetados). Serve para aplicar QUALQUER ajuste de CSS de dark mode que o
- * .css estatico nao resolva sozinho — nao so o "reflita".
+ * sao afetados). Serve para aplicar QUALQUER ajuste de CSS de tema que o .css
+ * estatico nao resolva sozinho. AGNOSTICO ao tema: atende "dark" e "contrast"
+ * (ambos fundo escuro; o contrast troca branco por #ffc800 no .css). As regras
+ * atuais sao ESTRUTURAIS (marcam ranges/cartoes), iguais para os dois temas.
+ * Para um novo tema, adicione-o em THEMES — a ENGINE abaixo nao muda.
  *
  * COMO FUNCIONA
- *   - Ha um REGISTRO de regras (array RULES). Cada regra e { name, run }.
+ *   - Ha um REGISTRO de regras (array RULES). Cada regra e { name, run } e,
+ *     opcionalmente, { theme }. SEM theme a regra roda em qualquer tema servido
+ *     ATIVO (use para MARCACAO ESTRUTURAL compartilhada por dark e contrast —
+ *     e o caso das regras atuais). COM theme:"x" so roda quando "x" esta ativo.
  *   - run() pode fazer 3 coisas (use o helper que precisar):
  *       1) injectCss(id, css)            -> escreve CSS direto do JS (o jeito
  *                                           mais livre: voce escreve a regra
@@ -31,8 +40,10 @@
  *   // (3) estilo inline (ultimo caso):
  *   { name: "inline", run: function () { applyStyle('.foo', {color:'#fff'}); } }
  *
- * OBS: escope seu CSS/estilo em `.dark-mode ...` para so valer no modo escuro
- * (todo o tema e .dark-mode-scoped). As cores --dm-* vivem no dark-mode.css.
+ * OBS: escope seu CSS/estilo no tema correspondente (`.dark-mode ...`,
+ * `.contrast-mode ...`) para so valer naquele modo. As cores --dm-* vivem no
+ * <tema>-mode.css. Efeitos imperativos (applyStyle/color-scheme) nao tem esse
+ * escopo automatico — a engine os reverte via teardown() quando o tema sai.
  * ===========================================================================
  */
 (function () {
@@ -317,9 +328,27 @@
     } catch (e) {}
   }
 
+  // Reverte o que setDocScheme aplicou: remove o color-scheme inline do <html>
+  // e o <style id="dm-applier-cs"> do doc. Idempotente (no-op se ausente).
+  function resetDocScheme(doc) {
+    if (!doc || !doc.documentElement) return;
+    try {
+      doc.documentElement.style.removeProperty("color-scheme");
+    } catch (e) {}
+    try {
+      var el = doc.getElementById("dm-applier-cs");
+      if (el && el.parentNode) el.parentNode.removeChild(el);
+    } catch (e) {}
+  }
+
   /* =====================================================================
    * REGISTRO DE REGRAS  — adicione suas modificacoes aqui.
    * =================================================================== */
+  // Temas que o applier atende (ambos fundo escuro; as regras de marcacao sao as
+  // mesmas — ver RULES). Mantenha em sincronia com plugin.applierThemes (no
+  // plugin.js). Para um novo tema, adicione o nome aqui.
+  var THEMES = ["dark", "contrast"];
+
   var RULES = [
     {
       // Texto branco nos blocos entre reflita-img.png e reflita-baixo.png.
@@ -460,13 +489,78 @@
    * ENGINE  — nao precisa mexer abaixo para adicionar regras.
    * =================================================================== */
 
+  // Qual tema SERVIDO esta ativo agora (ou null). Sinais que a barra mantem
+  // para o tema ativo: <link id="${tema}-mode"> no <head> (injetado/removido a
+  // cada toggle em addTheme/removeTheme) e a classe .${tema}-mode no container.
+  // dark e contrast sao mutuamente exclusivos, entao o primeiro que casar e o
+  // ativo. (readLine/dyslexia nao estao em THEMES, logo sao ignorados aqui.)
+  function activeTheme() {
+    for (var i = 0; i < THEMES.length; i++) {
+      var t = THEMES[i];
+      if (
+        document.getElementById(t + "-mode") ||
+        document.querySelector("." + t + "-mode")
+      ) {
+        return t;
+      }
+    }
+    return null;
+  }
+
+  // Reverte o color-scheme forcado nos iframes (espelha sync-iframe-canvas-scheme:
+  // casca + aninhados). Idempotente.
+  function resetIframeSchemes() {
+    var frames = document.querySelectorAll(
+      "iframe[data-rise-frontend-sandbox]"
+    );
+    for (var i = 0; i < frames.length; i++) {
+      var doc = frameDoc(frames[i]);
+      if (!doc) continue;
+      resetDocScheme(doc);
+      var nested = doc.querySelectorAll("iframe");
+      for (var j = 0; j < nested.length; j++) {
+        try {
+          nested[j].style.removeProperty("color-scheme");
+        } catch (e) {}
+        resetDocScheme(frameDoc(nested[j]));
+      }
+    }
+  }
+
+  // Desfaz os efeitos IMPERATIVOS que vazariam quando NENHUM tema servido esta
+  // ativo: o color-scheme forcado nos iframes. As classes marcadoras (dm-*) NAO
+  // sao removidas de proposito — sem o <tema>-mode.css e a classe .<tema>-mode
+  // elas ja ficam inertes, e mante-las faz o tema voltar na hora ao reativar
+  // (sem esperar a proxima mutacao re-rodar as regras). So vaza o que e aplicado
+  // fora do escopo do tema (color-scheme/applyStyle).
+  function teardown() {
+    resetIframeSchemes();
+  }
+
+  // Tema servido aplicado na ultima passada — usado para reverter os efeitos
+  // imperativos do tema ANTERIOR ao trocar de tema (ex.: dark -> contrast), e
+  // nao apenas ao desligar para o modo claro.
+  var lastTheme = null;
+
   function runAll() {
+    var active = activeTheme();
+    // Trocou de tema (inclui ir para "nenhum"): limpa o que o tema anterior
+    // aplicou de imperativo (color-scheme dos iframes) antes de reaplicar.
+    if (active !== lastTheme) {
+      teardown();
+      lastTheme = active;
+    }
+    // Sem tema servido ativo: ja revertido acima, nada a rodar.
+    if (!active) return;
+    // Roda so as regras do tema ativo (regra sem theme vale para qualquer tema).
     for (var i = 0; i < RULES.length; i++) {
+      var rule = RULES[i];
+      if (rule.theme && rule.theme !== active) continue;
       try {
-        RULES[i].run();
+        rule.run();
       } catch (e) {
         if (window.console) {
-          console.warn("[css-applier] regra falhou:", RULES[i].name, e);
+          console.warn("[css-applier] regra falhou:", rule.name, e);
         }
       }
     }
@@ -484,12 +578,23 @@
 
   function start() {
     runAll();
+    if (typeof MutationObserver === "undefined") return;
+    // Conteudo do Rise (SPA): re-roda quando a licao/bloco muda.
     var root = document.getElementById("app") || document.body;
-    if (!root || typeof MutationObserver === "undefined") return;
-    new MutationObserver(schedule).observe(root, {
-      childList: true,
-      subtree: true,
-    });
+    if (root) {
+      new MutationObserver(schedule).observe(root, {
+        childList: true,
+        subtree: true,
+      });
+    }
+    // Toggle de tema: a barra adiciona/remove <link id="${tema}-mode"> no <head>.
+    // Observar o <head> faz o applier aplicar (tema on) ou reverter (tema off)
+    // NA HORA do toggle — o observer de #app nao enxerga o <head>.
+    if (document.head) {
+      new MutationObserver(schedule).observe(document.head, {
+        childList: true,
+      });
+    }
   }
 
   if (document.readyState === "loading") {

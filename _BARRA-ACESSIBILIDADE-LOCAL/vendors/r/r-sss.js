@@ -1,6 +1,6 @@
 /* B42 Acessibilidade */
-/*  Version 2.0.29 */
-/*  Wed Jun 24 2026 11:58:47 GMT-0300 (Brasilia Standard Time) */
+/*  Version 2.1.1 */
+/*  Fri Jun 26 2026 11:34:10 GMT-0300 (Brasilia Standard Time) */
 /**
  * Selection save and restore module for Rangy.
  * Saves and restores user selections using marker invisible elements in the DOM.
