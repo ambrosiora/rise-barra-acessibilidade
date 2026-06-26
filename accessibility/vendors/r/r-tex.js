@@ -1,6 +1,6 @@
 /* B42 Acessibilidade */
-/*  Version 2.1.1 */
-/*  Fri Jun 26 2026 11:30:13 GMT-0300 (Brasilia Standard Time) */
+/*  Version 2.1.2 */
+/*  Fri Jun 26 2026 18:30:35 GMT-0300 (Brasilia Standard Time) */
 /**
  * Text range module for Rangy.
  * Text-based manipulation and searching of ranges and selections.

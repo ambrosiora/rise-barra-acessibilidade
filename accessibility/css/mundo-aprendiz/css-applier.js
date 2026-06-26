@@ -1,6 +1,6 @@
 /* B42 Acessibilidade */
-/*  Version 2.1.1 */
-/*  Fri Jun 26 2026 11:30:13 GMT-0300 (Brasilia Standard Time) */
+/*  Version 2.1.2 */
+/*  Fri Jun 26 2026 18:30:35 GMT-0300 (Brasilia Standard Time) */
 /**
  * mundo-aprendiz — css-applier.js
  * ===========================================================================
@@ -181,7 +181,7 @@
     var v = "";
     try {
       v = getComputedStyle(wrap).getPropertyValue("--color-background");
-    } catch (e) {}
+    } catch (e) { }
     return (v || "").trim().toLowerCase();
   }
 
@@ -251,7 +251,7 @@
     if (!doc || depth < 0) return false;
     try {
       if (doc.querySelector(".botao-dinamico-container")) return true;
-    } catch (e) {}
+    } catch (e) { }
     var inner;
     try {
       inner = doc.querySelectorAll("iframe");
@@ -289,7 +289,7 @@
           childList: true,
           subtree: true,
         });
-      } catch (e) {}
+      } catch (e) { }
     }
     if (doc) {
       var inner;
@@ -315,7 +315,7 @@
     if (!doc || !doc.documentElement) return;
     try {
       doc.documentElement.style.setProperty("color-scheme", scheme);
-    } catch (e) {}
+    } catch (e) { }
     try {
       var el = doc.getElementById("dm-applier-cs");
       if (!el) {
@@ -325,7 +325,7 @@
       }
       var css = ":root{color-scheme:" + scheme + "}";
       if (el.textContent !== css) el.textContent = css;
-    } catch (e) {}
+    } catch (e) { }
   }
 
   // Reverte o que setDocScheme aplicou: remove o color-scheme inline do <html>
@@ -334,11 +334,11 @@
     if (!doc || !doc.documentElement) return;
     try {
       doc.documentElement.style.removeProperty("color-scheme");
-    } catch (e) {}
+    } catch (e) { }
     try {
       var el = doc.getElementById("dm-applier-cs");
       if (el && el.parentNode) el.parentNode.removeChild(el);
-    } catch (e) {}
+    } catch (e) { }
   }
 
   /* =====================================================================
@@ -460,7 +460,7 @@
           for (var j = 0; j < nested.length; j++) {
             try {
               nested[j].style.setProperty("color-scheme", scheme);
-            } catch (e) {}
+            } catch (e) { }
             setDocScheme(frameDoc(nested[j]), scheme);
           }
         }
@@ -521,7 +521,7 @@
       for (var j = 0; j < nested.length; j++) {
         try {
           nested[j].style.removeProperty("color-scheme");
-        } catch (e) {}
+        } catch (e) { }
         resetDocScheme(frameDoc(nested[j]));
       }
     }
